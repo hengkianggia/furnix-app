@@ -20,6 +20,8 @@ interface DivProps extends React.HTMLAttributes<HTMLDivElement> {
   itemsCenter?: boolean;
   wrap?: boolean;
   grow?: boolean;
+  mt?: number;
+  mb?: number;
   children: React.ReactNode;
 }
 
@@ -42,6 +44,8 @@ const Div: React.FC<DivProps> = ({
   itemsCenter,
   wrap,
   grow,
+  mt,
+  mb,
   children,
   ...props
 }) => {
@@ -65,6 +69,8 @@ const Div: React.FC<DivProps> = ({
         pointer && `cursor-pointer`,
         relative && `relative`,
         absolute && `absolute`,
+        mt ?? `mt-${mt}`,
+        mb ?? `mt-${mb}`,
         className
       )}
       {...props}
