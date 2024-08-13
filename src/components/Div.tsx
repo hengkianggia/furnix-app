@@ -8,6 +8,7 @@ interface DivProps extends React.HTMLAttributes<HTMLDivElement> {
   center?: boolean;
   centerColumn?: boolean;
   full?: boolean;
+  Hfull?: boolean;
   between?: boolean;
   betweenColumn?: boolean;
   gap?: number;
@@ -32,6 +33,7 @@ const Div: React.FC<DivProps> = ({
   center,
   centerColumn,
   full,
+  Hfull,
   between,
   betweenColumn,
   gap,
@@ -53,6 +55,7 @@ const Div: React.FC<DivProps> = ({
     <div
       className={cn(
         full && `w-full`,
+        Hfull && `h-full`,
         screen && `h-screen`,
         minH && `min-h-[${minH}]`,
         maxH && `min-h-[${maxH}]`,

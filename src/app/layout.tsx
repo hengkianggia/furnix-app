@@ -29,7 +29,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${baiJamjuree.variable} ${onest.variable}`}>
         <Navbar />
-        <main className="w-full min-h-screen flex flex-col items-center">
+        <main className="w-full min-h-screen flex flex-col items-center mt-20">
           {children}
         </main>
         <Footer />

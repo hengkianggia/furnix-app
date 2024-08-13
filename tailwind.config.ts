@@ -19,7 +19,10 @@ const config = {
     },
     extend: {
       fontSize: {
+        22: "22px",
         24: "24px",
+        32: "32px",
+        80: "80px",
       },
       fontFamily: {
         onest: ["var(--onest)"],
@@ -27,8 +30,10 @@ const config = {
       },
       colors: {
         myGray: "#E1DEDE",
+        myDarkGray: "#5B5757",
         myBlack: "#161413",
         myOrange: "#FFB93B",
+        myBrokenWhite: "#F7F4EE",
       },
       keyframes: {
         "accordion-down": {

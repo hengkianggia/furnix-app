@@ -12,7 +12,7 @@ const listNavbar = ["About", "Shop", "Blog", "Contact"];
 const Navbar = () => {
   const [like, setLike] = useState(false);
   return (
-    <nav className="w-full bg-white shadow-md grid place-items-center">
+    <nav className="w-full bg-white shadow-md grid place-items-center fixed left-0 top-0 z-50">
       {/* top content */}
       <Div full className="bg-myBlack text-myGray py-1" center>
         OCTOBER SALE
@@ -21,7 +21,7 @@ const Navbar = () => {
       </Div>
 
       {/* maincontent */}
-      <Wrapper className="my-4">
+      <Wrapper className="my-4 sticky top-0">
         <Div full between itemsCenter>
           <Div pointer>
             <Link href={"/"}>

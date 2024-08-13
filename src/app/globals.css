@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 * {
-  @apply font-onest duration-100 ease-in;
+  @apply font-onest;
 }
 
 h1 {
