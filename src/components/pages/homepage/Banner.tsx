@@ -1,12 +1,13 @@
 import React from "react";
-import Wrapper from "../Wrapper";
-import Div from "../Div";
-import { Button } from "../ui/button";
+
 import { Icon } from "@iconify/react/dist/iconify.js";
 import Image from "next/image";
 
-import fummy from "../../../public/dummy.png";
-import Images from "../Images";
+import fummy from "../../../../public/dummy.png";
+import Wrapper from "@/components/Wrapper";
+import Div from "@/components/Div";
+import Images from "@/components/Images";
+import { Button } from "@/components/ui/button";
 
 export const Banner1 = () => {
   return (
@@ -65,7 +66,11 @@ export const Banner2 = () => {
           </Div>
 
           <Div flex itemsCenter gap={5}>
-            <Images src={fummy} width={400} className="w-36 aspect-square rounded-sm"/>
+            <Images
+              src={fummy}
+              width={400}
+              className="w-36 aspect-square rounded-sm"
+            />
 
             {/* desc */}
             <Div column gap={2}>

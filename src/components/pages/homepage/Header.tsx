@@ -1,11 +1,11 @@
 import React from "react";
-import Wrapper from "../Wrapper";
-import Div from "../Div";
-import { Button } from "../ui/button";
+import Wrapper from "@/components/Wrapper";
+import Div from "@/components/Div";
+import { Button } from "@/components/ui/button";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import Image from "next/image";
 
-import image from "../../../public/dummy.png";
+import image from "../../../../public/dummy.png";
 import { cn } from "@/lib/utils";
 
 const listHeader = [
@@ -33,8 +33,8 @@ const listHeader = [
 
 const Header = () => {
   return (
-    <header className="w-full flex flex-col items-center">
-      <Wrapper full center className="bg-red-400 min-h-[845px] max-h-[845px]">
+    <header className="w-full flex flex-col items-center bg-myBrokenWhite">
+      <Wrapper full center className="min-h-[845px] max-h-[845px]">
         <Div
           centerColumn
           className="w-[70%] text-center leading-none space-y-6"
@@ -47,7 +47,7 @@ const Header = () => {
             that you'll fall in love with
           </p>
           <Button
-            className="uppercase ml-3 bg-transparent border-myBlack rounded-full"
+            className="uppercase ml-3 bg-transparent border-myBlack rounded-full hover:bg-myBlack hover:text-myBrokenWhite"
             variant={"outline"}
           >
             shop now
@@ -56,7 +56,7 @@ const Header = () => {
         </Div>
       </Wrapper>
 
-      <Wrapper flex full center className="gap-10 py-3">
+      <div className="gap-10 py-3 w-full bg-white flex justify-center items-center">
         {listHeader.map((item, idx) => (
           <Div flex itemsCenter className="gap-10" key={idx}>
             <Div>
@@ -77,7 +77,7 @@ const Header = () => {
             </Div>
           </Div>
         ))}
-      </Wrapper>
+      </div>
     </header>
   );
 };

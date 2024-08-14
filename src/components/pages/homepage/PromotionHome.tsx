@@ -1,6 +1,6 @@
 import React from "react";
-import Wrapper from "../Wrapper";
-import Div from "../Div";
+import Wrapper from "@/components/Wrapper";
+import Div from "@/components/Div";
 import { ListItemHomepageOne } from "./ListItemHomepage";
 
 const PromotionHome = () => {

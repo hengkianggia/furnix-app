@@ -7,18 +7,35 @@ import Wrapper from "./Wrapper";
 import { Icon } from "@iconify/react";
 import Link from "next/link";
 
-const listNavbar = ["About", "Shop", "Blog", "Contact"];
+const listNavbar = [
+  {
+    name: "About",
+    path: "/about",
+  },
+  {
+    name: "Shop",
+    path: "/shop",
+  },
+  {
+    name: "Blog",
+    path: "/blog",
+  },
+  {
+    name: "Contact",
+    path: "/contact",
+  },
+];
 
 const Navbar = () => {
   const [like, setLike] = useState(false);
   return (
     <nav className="w-full bg-white shadow-md grid place-items-center fixed left-0 top-0 z-50">
       {/* top content */}
-      <Div full className="bg-myBlack text-myGray py-1" center>
+      {/* <Div full className="bg-myBlack text-myGray py-1" center>
         OCTOBER SALE
         <Icon icon="fluent-mdl2:separator" />
         Up to 40% off
-      </Div>
+      </Div> */}
 
       {/* maincontent */}
       <Wrapper className="my-4 sticky top-0">
@@ -92,8 +109,8 @@ const Navbar = () => {
           <Div>
             <ul className="flex items-center gap-10 text-18">
               {listNavbar.map((item) => (
-                <li className="cursor-pointer" key={item}>
-                  {item}
+                <li className="cursor-pointer text-lg hover:text-myOrange transition-all" key={item.name}>
+                  <Link href={item.path}>{item.name}</Link>
                 </li>
               ))}
             </ul>
@@ -125,9 +142,9 @@ const Navbar = () => {
               className="border border-black rounded-full px-4 py-2 gap-2 group hover:bg-myBlack"
               pointer
             >
-              <Icon icon="bi:cart" className="group-hover:text-myGray" />
-              <p className="group-hover:text-myGray">Cart</p>
-              <p className="text-xs group-hover:text-myGray">$100</p>
+              <Icon icon="bi:cart" className="group-hover:text-white" />
+              <p className="group-hover:text-white">Cart</p>
+              <p className="text-xs group-hover:text-white">$100</p>
             </Div>
           </Div>
         </Div>

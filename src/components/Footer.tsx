@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Wrapper from "./Wrapper";
 import Div from "./Div";
@@ -60,6 +61,12 @@ const list = [
 ];
 
 const Footer = () => {
+  const toTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <footer className="w-full bg-myBlack grid place-items-center pb-10 pt-16 mt-20">
       <Wrapper className="text-white flex flex-col items-center">
@@ -238,6 +245,7 @@ const Footer = () => {
             itemsCenter
             pointer
             className="gap-4 uppercase text-myGray group hover:bg-myGray px-3 py-2 rounded-md"
+            onClick={toTop}
           >
             <p className="text-xs group-hover:text-myBlack">back to top</p>
             <Icon
@@ -264,7 +272,11 @@ const Footer = () => {
             pointer
             className="gap-4 uppercase text-myGray group hover:bg-myGray px-3 py-2 rounded-md"
           >
-            <Image src={payment} alt="payment" className="w-full h-full object-cover object-center" />
+            <Image
+              src={payment}
+              alt="payment"
+              className="w-full h-full object-cover object-center"
+            />
           </Div>
         </Div>
       </Wrapper>

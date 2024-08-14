@@ -1,9 +1,9 @@
 import React from "react";
-import Wrapper from "../Wrapper";
-import Div from "../Div";
+import Wrapper from "@/components/Wrapper";
+import Div from "@/components/Div";
 import { Icon } from "@iconify/react/dist/iconify.js";
-import Images from "../Images";
-import { Separator } from "../ui/separator";
+import Images from "@/components/Images";
+import { Separator } from "@/components/ui/separator";
 
 const listItem = [
   {
@@ -44,7 +44,7 @@ const Category = () => {
         ))}
       </Div>
       <Div grow>
-        <Images/>
+        <Images />
       </Div>
     </Wrapper>
   );
