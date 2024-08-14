@@ -67,7 +67,7 @@ export const ListItemHomepageTwo = ({ even }: { even?: boolean }) => {
         alt="dummy"
         width={250}
         height={250}
-        className="w-full aspect-square"
+        className="w-full aspect-square object-cover object-center"
       />
       <Div column className="p-3 gap-2">
         <h3 className="text-lg">Rustic Dining Table</h3>

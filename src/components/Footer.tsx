@@ -61,7 +61,7 @@ const list = [
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-myBlack grid place-items-center pb-10 pt-16">
+    <footer className="w-full bg-myBlack grid place-items-center pb-10 pt-16 mt-20">
       <Wrapper className="text-white flex flex-col items-center">
         {/* atas */}
         <Div className="grid grid-cols-12 gap-x-4">

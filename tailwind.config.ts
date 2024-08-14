@@ -38,6 +38,7 @@ const config = {
       },
       aspectRatio: {
         "16/7": "16 / 7",
+        "10/9": "10 / 9",
       },
       keyframes: {
         "accordion-down": {
