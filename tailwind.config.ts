@@ -22,6 +22,7 @@ const config = {
         22: "22px",
         24: "24px",
         32: "32px",
+        48: "48px",
         80: "80px",
       },
       fontFamily: {
@@ -34,6 +35,9 @@ const config = {
         myBlack: "#161413",
         myOrange: "#FFB93B",
         myBrokenWhite: "#F7F4EE",
+      },
+      aspectRatio: {
+        "16/7": "16 / 7",
       },
       keyframes: {
         "accordion-down": {
@@ -51,7 +55,7 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), require("tailwind-scrollbar")],
 } satisfies Config;
 
 export default config;

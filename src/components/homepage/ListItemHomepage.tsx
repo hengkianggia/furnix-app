@@ -4,8 +4,9 @@ import Image from "next/image";
 
 import dummy from "../../../public/dummy.png";
 import { cn } from "@/lib/utils";
+import { Icon } from "@iconify/react/dist/iconify.js";
 
-const ListItemHomepage = ({ under = false }: { under?: boolean }) => {
+export const ListItemHomepageOne = ({ under = false }: { under?: boolean }) => {
   return (
     <Div
       column
@@ -52,4 +53,37 @@ const ListItemHomepage = ({ under = false }: { under?: boolean }) => {
   );
 };
 
-export default ListItemHomepage;
+export const ListItemHomepageTwo = ({ even }: { even?: boolean }) => {
+  return (
+    <Div
+      pointer
+      className={cn(
+        "min-w-72 rounded-md snap-center snap-always overflow-hidden",
+        even && "min-w-60"
+      )}
+    >
+      <Image
+        src={dummy}
+        alt="dummy"
+        width={250}
+        height={250}
+        className="w-full aspect-square"
+      />
+      <Div column className="p-3 gap-2">
+        <h3 className="text-lg">Rustic Dining Table</h3>
+        <Div flex itemsCenter>
+          <Icon icon={"material-symbols:star"} className="text-myOrange" />
+          <Icon icon={"material-symbols:star"} className="text-myOrange" />
+          <Icon icon={"material-symbols:star"} className="text-myOrange" />
+          <Icon icon={"material-symbols:star"} className="text-myOrange" />
+          <Icon icon={"material-symbols:star"} className="text-myOrange" />
+        </Div>
+        <p className="line-clamp-3 text-xs text-balance text-myDarkGray">
+          Absolutely thrilled with the new coffee table! We've received so many
+          compliments, and friends are eager to know where we found it.
+        </p>
+        <p className="uppercase text-sm text-myDarkGray">gibby radki</p>
+      </Div>
+    </Div>
+  );
+};
