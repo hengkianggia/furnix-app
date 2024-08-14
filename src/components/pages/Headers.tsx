@@ -2,8 +2,14 @@ import React from "react";
 import Wrapper from "../Wrapper";
 import Div from "../Div";
 import { BreadcrumGroup } from "../BreadcrumGroup";
+import Images from "../Images";
 
-const Headers = () => {
+interface Props {
+  title: string;
+  desc?: string;
+}
+
+const Headers = ({ title, desc }: Props) => {
   return (
     <section className="w-full overflow-hidden">
       <Wrapper>
@@ -11,14 +17,13 @@ const Headers = () => {
       </Wrapper>
 
       <Div full centerColumn relative className="h-[300px] bg-red-400">
-        <Div column itemsCenter className="max-w-[700px] text-center space-y-4">
-          <h1 className="text-48 leading-superThin font-thin">
-            Helping All Create Home Anywhere
-          </h1>
-          <p className="max-w-[70%] text-sm">
-            Discover a curated collection of home essentials that elevate your
-            space and simplify everyday living
-          </p>
+        <Div column itemsCenter className="max-w-[700px] text-center space-y-4 z-20">
+          <h1 className="text-48 leading-superThin font-thin">{title}</h1>
+          <p className="max-w-[70%] text-sm">{desc}</p>
+        </Div>
+
+        <Div absolute full Hfull className="left-0 top-0">
+          <Images />
         </Div>
       </Div>
     </section>

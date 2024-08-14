@@ -10,6 +10,7 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { usePathname } from "next/navigation";
+import { cleanPath } from "@/lib/utils";
 
 export function BreadcrumGroup() {
   const pathname = usePathname();
@@ -25,7 +26,7 @@ export function BreadcrumGroup() {
         <BreadcrumbSeparator />
 
         <BreadcrumbItem>
-          <BreadcrumbPage>{pathname}</BreadcrumbPage>
+          <BreadcrumbPage>{cleanPath(pathname)}</BreadcrumbPage>
         </BreadcrumbItem>
       </BreadcrumbList>
     </Breadcrumb>

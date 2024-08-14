@@ -23,6 +23,7 @@ interface DivProps extends React.HTMLAttributes<HTMLDivElement> {
   grow?: boolean;
   mt?: number;
   mb?: number;
+  grid?: boolean;
   children: React.ReactNode;
 }
 
@@ -48,6 +49,7 @@ const Div: React.FC<DivProps> = ({
   grow,
   mt,
   mb,
+  grid,
   children,
   ...props
 }) => {
@@ -74,6 +76,7 @@ const Div: React.FC<DivProps> = ({
         absolute && `absolute`,
         mt ?? `mt-${mt}`,
         mb ?? `mt-${mb}`,
+        grid && `grid`,
         className
       )}
       {...props}
