@@ -79,7 +79,7 @@ export const ListItemHomepageTwo = ({ even }: { even?: boolean }) => {
           <Icon icon={"material-symbols:star"} className="text-myOrange" />
         </Div>
         <p className="line-clamp-3 text-xs text-balance text-myDarkGray">
-          Absolutely thrilled with the new coffee table! We've received so many
+          Absolutely thrilled with the new coffee table! We&apos;ve received so many
           compliments, and friends are eager to know where we found it.
         </p>
         <p className="uppercase text-sm text-myDarkGray">gibby radki</p>

@@ -48,8 +48,9 @@ export const Banner2 = () => {
       <Wrapper className="grid grid-cols-2 gap-10 px-32 items-center">
         <Div className="space-y-7">
           <h1 className="font-normal">
-            ”Absolutely thrilled with the new coffee table! We've received so
-            many compliments, and friends are eager to know where we found it.”
+            &quot;Absolutely thrilled with the new coffee table! We&apos;ve received
+            so many compliments, and friends are eager to know where we found
+            it.&quot;
           </h1>
 
           {/* icon */}

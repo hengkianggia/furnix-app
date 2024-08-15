@@ -44,7 +44,7 @@ const Header = () => {
           </h1>
           <p className="text-22 w-[70%]">
             From inviting furniture to warm decor, discover the magic of home
-            that you'll fall in love with
+            that you&apos;ll fall in love with
           </p>
           <Button
             className="uppercase ml-3 bg-transparent border-myBlack rounded-full hover:bg-myBlack hover:text-myBrokenWhite"

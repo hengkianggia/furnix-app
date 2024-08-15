@@ -216,9 +216,9 @@ const Footer = () => {
                 </Div>
               </Div>
               <p className="text-xs">
-                By clicking "Subscribe" I consent to receiving commercial
-                information to the above e-mail and to having my data processed
-                in connection with the newsletter.{" "}
+                By clicking &quot;Subscribe&quot; I consent to receiving
+                commercial information to the above e-mail and to having my data
+                processed in connection with the newsletter.
               </p>
             </Div>
           </Div>

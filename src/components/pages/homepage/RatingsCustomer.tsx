@@ -18,7 +18,7 @@ const RatingsCutomer = () => {
             className="gap-4 overflow-x-scroll scrollbar-none snap-x snap-mandatory"
           >
             {listRating.map((_, i) => (
-              <ListItemHomepageTwo even={(i + 1) % 2 == 0} />
+              <ListItemHomepageTwo key={i} even={(i + 1) % 2 == 0} />
             ))}
           </Div>
         </Div>
