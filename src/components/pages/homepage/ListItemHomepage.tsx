@@ -2,7 +2,7 @@ import React from "react";
 import Div from "@/components/Div";
 import Image from "next/image";
 
-import dummy from "../../../../public/dummy.png";
+import dummy from "../../../../public/furniture.jpg";
 import { cn } from "@/lib/utils";
 import { Icon } from "@iconify/react/dist/iconify.js";
 

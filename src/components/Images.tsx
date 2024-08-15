@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 import Image, { StaticImageData } from "next/image";
 import React from "react";
 
-import dummy from "../../public/dummy.png";
+import dummy from "../../public/furniture.jpg";
 
 interface ImagesProps {
   src?: StaticImageData | string;

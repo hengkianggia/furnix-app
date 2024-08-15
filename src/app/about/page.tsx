@@ -1,6 +1,7 @@
 import Div from "@/components/Div";
 import CustomFurniture from "@/components/pages/about/CustomFurniture";
 import Details from "@/components/pages/about/Details";
+import OurStore from "@/components/pages/about/OurStore";
 import { BannerAbout } from "@/components/pages/Banner";
 import Headers from "@/components/pages/Headers";
 import React from "react";
@@ -12,6 +13,7 @@ const About = () => {
       <Details />
       <BannerAbout />
       <CustomFurniture />
+      <OurStore />
     </Div>
   );
 };

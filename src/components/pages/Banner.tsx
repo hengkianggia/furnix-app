@@ -3,7 +3,7 @@ import React from "react";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import Image from "next/image";
 
-import fummy from "../../../public/dummy.png";
+import fummy from "../../../public/furniture.jpg";
 import Wrapper from "@/components/Wrapper";
 import Div from "@/components/Div";
 import Images from "@/components/Images";
@@ -15,11 +15,11 @@ export const Banner1 = () => {
     <section className={`w-full aspect-16/7 max-h-[700px] relative`}>
       <Wrapper column className={`h-full justify-center z-20`}>
         <Div column className="gap-5">
-          <h1 className="text-48 text-myBrokenWhite leading-[60px]">
+          <h1 className="text-48 text-myBlack leading-[60px] font-thin">
             Light Up Your Space <br /> with Our Lamps
           </h1>
           <Button
-            className="uppercase w-fit rounded-full border-myBrokenWhite border bg-transparent text-myBrokenWhite"
+            className="uppercase w-fit rounded-full border-myBlack border bg-transparent text-myBlack hover:bg-myBlack hover:text-myBrokenWhite"
             variant={"outline"}
           >
             subscribe

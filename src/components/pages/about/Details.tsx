@@ -60,12 +60,12 @@ const Details = () => {
             </p>
           </Div>
 
-          <Div flex className="gap-5">
+          <Div flex className="gap-5 overflow-hidden">
             <Div className="basis-7/12">
-              <Images className="h-full" />
+              <Images className="h-96" />
             </Div>
             <Div className="basis-5/12">
-              <Images className="h-full" />
+              <Images className="h-96" />
             </Div>
           </Div>
         </Div>

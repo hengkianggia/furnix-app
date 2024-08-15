@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import Image from "next/image";
 
-import image from "../../../../public/dummy.png";
+import image from "../../../../public/furniture.jpg";
 import { cn } from "@/lib/utils";
 
 const listHeader = [

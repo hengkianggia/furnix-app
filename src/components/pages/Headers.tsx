@@ -16,10 +16,14 @@ const Headers = ({ title, desc }: Props) => {
         <BreadcrumGroup />
       </Wrapper>
 
-      <Div full centerColumn relative className="h-[300px] bg-red-400">
-        <Div column itemsCenter className="max-w-[700px] text-center space-y-4 z-20">
+      <Div full centerColumn relative className="h-[300px]">
+        <Div
+          column
+          itemsCenter
+          className="max-w-[700px] text-center space-y-4 z-20"
+        >
           <h1 className="text-48 leading-superThin font-thin">{title}</h1>
-          <p className="max-w-[70%] text-sm">{desc}</p>
+          <p className="max-w-[70%] text-myDarkGray text-sm">{desc}</p>
         </Div>
 
         <Div absolute full Hfull className="left-0 top-0">
