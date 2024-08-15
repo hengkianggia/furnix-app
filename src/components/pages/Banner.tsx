@@ -9,6 +9,7 @@ import Div from "@/components/Div";
 import Images from "@/components/Images";
 import { Button } from "@/components/ui/button";
 import { Separator } from "../ui/separator";
+import { Input } from "../ui/input";
 
 export const Banner1 = () => {
   return (
@@ -138,5 +139,53 @@ export const BannerAbout = () => {
         </Div>
       </Wrapper>
     </section>
+  );
+};
+
+export const BannerShop = () => {
+  return (
+    <Wrapper full flex itemsCenter className="p-10 bg-myBrokenWhite">
+      <Div className="basis-5/12 space-y-8">
+        <h1 className="text-4xl font-thin text-balance">
+          Get new products and promotions in your inbox
+        </h1>
+        <p className="text-sm text-myDarkGray text-balance">
+          Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna
+        </p>
+
+        <Div full flex between className="w-[80%]">
+          <Input
+            type="email"
+            placeholder="Enter your email"
+            className="rounded-full border border-myBlack"
+          />
+          <Div flex itemsCenter>
+            <Button className="uppercase ml-3 rounded-full bg-myBlack">
+              subscribe
+              <Icon icon={"icons8:right-round"} className="text-24 ml-2" />
+            </Button>
+          </Div>
+        </Div>
+      </Div>
+
+      <Div full relative className="basis-7/12 aspect-16/7">
+        <Images />
+
+        <Div
+          absolute
+          className="w-56 aspect-square bg-orange-400 -bottom-8 -left-8 shadow-lg"
+        >
+          <Images />
+        </Div>
+
+        <Div
+          absolute
+          className="w-56 aspect-square bg-orange-400 -top-8 -right-8 shadow-lg"
+        >
+          <Images />
+        </Div>
+      </Div>
+    </Wrapper>
   );
 };

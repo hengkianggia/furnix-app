@@ -1,4 +1,5 @@
 import Div from "@/components/Div";
+import { BannerShop } from "@/components/pages/Banner";
 import Headers from "@/components/pages/Headers";
 import ShopCatalog from "@/components/pages/shop/ShopCatalog";
 import ShopCategory from "@/components/pages/shop/ShopCategory";
@@ -13,6 +14,7 @@ const Shop = () => {
       />
       <ShopCategory />
       <ShopCatalog />
+      <BannerShop />
     </Div>
   );
 };
