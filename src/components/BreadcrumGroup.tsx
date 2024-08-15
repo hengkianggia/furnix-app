@@ -10,10 +10,12 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { usePathname } from "next/navigation";
-import { cleanPath } from "@/lib/utils";
+import { cleanPath, cn } from "@/lib/utils";
+import path from "path";
 
 export function BreadcrumGroup() {
   const pathname = usePathname();
+  let pathNew = cleanPath(pathname);
   return (
     <Breadcrumb>
       <BreadcrumbList>
@@ -25,9 +27,34 @@ export function BreadcrumGroup() {
 
         <BreadcrumbSeparator />
 
-        <BreadcrumbItem>
-          <BreadcrumbPage>{cleanPath(pathname)}</BreadcrumbPage>
-        </BreadcrumbItem>
+        {pathNew.length > 1 && (
+          <>
+            {pathNew.map((item, index) => (
+              <>
+                <BreadcrumbItem key={index}>
+                  <BreadcrumbLink
+                    asChild
+                    className={cn(
+                      "text-slate-950",
+                      index < pathNew.length - 1 &&
+                        "text-slate-500 hover:text-slate-950"
+                    )}
+                  >
+                    <Link href={index < pathNew.length - 1 ? `/${item}` : ""} className="capitalize">
+                      {item}
+                    </Link>
+                  </BreadcrumbLink>
+                </BreadcrumbItem>
+                {index < pathNew.length - 1 && <BreadcrumbSeparator />}
+              </>
+            ))}
+          </>
+        )}
+        {pathNew.length == 1 && (
+          <BreadcrumbItem>
+            <BreadcrumbPage className="capitalize">{pathNew}</BreadcrumbPage>
+          </BreadcrumbItem>
+        )}
       </BreadcrumbList>
     </Breadcrumb>
   );

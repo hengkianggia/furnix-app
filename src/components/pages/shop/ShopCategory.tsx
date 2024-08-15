@@ -2,7 +2,9 @@ import Div from "@/components/Div";
 import Images from "@/components/Images";
 import { Button } from "@/components/ui/button";
 import Wrapper from "@/components/Wrapper";
+import { furnitureCategories } from "@/data/data";
 import { Icon } from "@iconify/react/dist/iconify.js";
+import Link from "next/link";
 import React from "react";
 
 const ShopCategory = () => {
@@ -23,12 +25,9 @@ const ShopCategory = () => {
         </Div>
       </Div>
       <Div full flex className="gap-5 overflow-x-scroll scrollbar-none">
-        <ItemCategory />
-        <ItemCategory />
-        <ItemCategory />
-        <ItemCategory />
-        <ItemCategory />
-        <ItemCategory />
+        {furnitureCategories.map((item) => (
+          <ItemCategory key={item.id} title={item.name} />
+        ))}
       </Div>
     </Wrapper>
   );
@@ -36,14 +35,17 @@ const ShopCategory = () => {
 
 export default ShopCategory;
 
-export const ItemCategory = () => {
+export const ItemCategory = ({ title }: { title: string }) => {
   return (
     <Div relative pointer>
       <Images className="min-w-80 aspect-square" />
 
       <Div center absolute className="bottom-4 left-0 w-full">
-        <Button variant={"secondary"} className="rounded-full capitalize bg-myBrokenWhite hover:bg-myBlack hover:text-myBrokenWhite">
-          makmukiper
+        <Button
+          variant={"secondary"}
+          className="rounded-full capitalize bg-myBrokenWhite hover:bg-myBlack hover:text-myBrokenWhite"
+        >
+          <Link href={`shop/${title}`}>{title}</Link>
         </Button>
       </Div>
     </Div>

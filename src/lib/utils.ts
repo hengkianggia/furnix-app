@@ -13,9 +13,14 @@ export function addPrefix(prefix: string, classNames: string): string {
 }
 
 export function cleanPath(path: string): string[] {
-  // Menghapus "/" di awal dan akhir string (jika ada)
+  // Menghilangkan slash di awal dan akhir path
   const trimmedPath = path.replace(/^\/|\/$/g, "");
 
-  // Memisahkan string berdasarkan "/" dan menghapus elemen kosong
-  return trimmedPath.split("/").filter((segment) => segment.length > 0);
+  // Memisahkan path berdasarkan slash
+  const segments = trimmedPath.split("/");
+
+  // Mendecode URL-encoded strings dan mengganti underscore dengan spasi
+  return segments
+    .map((segment) => decodeURIComponent(segment).replace(/%20/g, " "))
+    .filter((segment) => segment !== "");
 }

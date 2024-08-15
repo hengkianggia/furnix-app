@@ -5,7 +5,7 @@ import { BreadcrumGroup } from "../BreadcrumGroup";
 import Images from "../Images";
 
 interface Props {
-  title: string;
+  title: string | string[];
   desc?: string;
 }
 
