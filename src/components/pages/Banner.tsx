@@ -3,11 +3,12 @@ import React from "react";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import Image from "next/image";
 
-import fummy from "../../../../public/dummy.png";
+import fummy from "../../../public/dummy.png";
 import Wrapper from "@/components/Wrapper";
 import Div from "@/components/Div";
 import Images from "@/components/Images";
 import { Button } from "@/components/ui/button";
+import { Separator } from "../ui/separator";
 
 export const Banner1 = () => {
   return (
@@ -94,6 +95,46 @@ export const Banner2 = () => {
             alt="image"
             className="w-full aspect-10/9 object-cover object-center rounded-tr-md rounded-tl-md"
           />
+        </Div>
+      </Wrapper>
+    </section>
+  );
+};
+
+export const BannerAbout = () => {
+  return (
+    <section className="w-full py-28 bg-myBrokenWhite">
+      <Wrapper full column className="space-y-10">
+        <Div full column itemsCenter className="space-y-8">
+          <h1 className="text-48 font-thin">A Growing Customer Community</h1>
+          <Div full flex center className="gap-8 px-24">
+            <Div column itemsCenter className="text-center gap-5">
+              <h2 className="text-4xl">biggest</h2>
+              <Separator />
+              <p className="w-[60%] text-myDarkGray">
+                One of the biggest players in the home retail industry
+              </p>
+            </Div>
+            <Div column itemsCenter className="text-center gap-5">
+              <h2 className="text-4xl">&gt; 20 000</h2>
+              <Separator />
+              <p className="w-[60%] text-myDarkGray">
+                Offering products for all your home requirements
+              </p>
+            </Div>
+            <Div column itemsCenter className="text-center gap-5">
+              <h2 className="text-4xl">1.8 Million</h2>
+              <Separator />
+              <p className="w-[60%] text-myDarkGray">
+                Continuously growing with an ever-expanding customer base
+              </p>
+            </Div>
+          </Div>
+        </Div>
+
+        {/* image */}
+        <Div full className="h-[420px] overflow-hidden">
+          <Images />
         </Div>
       </Wrapper>
     </section>

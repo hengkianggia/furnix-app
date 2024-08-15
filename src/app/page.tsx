@@ -1,5 +1,5 @@
 import Div from "@/components/Div";
-import { Banner1, Banner2 } from "@/components/pages/homepage/Banner";
+import { Banner1, Banner2 } from "@/components/pages/Banner";
 import Category from "@/components/pages/homepage/Category";
 import Header from "@/components/pages/homepage/Header";
 import PromotionHome from "@/components/pages/homepage/PromotionHome";

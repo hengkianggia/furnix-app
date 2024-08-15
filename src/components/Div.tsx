@@ -24,6 +24,7 @@ interface DivProps extends React.HTMLAttributes<HTMLDivElement> {
   mt?: number;
   mb?: number;
   grid?: boolean;
+  as?: React.ElementType;
   children: React.ReactNode;
 }
 
@@ -50,11 +51,14 @@ const Div: React.FC<DivProps> = ({
   mt,
   mb,
   grid,
+  as,
   children,
   ...props
 }) => {
+  let Component = as || "div";
+
   return (
-    <div
+    <Component
       className={cn(
         full && `w-full`,
         Hfull && `h-full`,
@@ -82,7 +86,7 @@ const Div: React.FC<DivProps> = ({
       {...props}
     >
       {children}
-    </div>
+    </Component>
   );
 };
 

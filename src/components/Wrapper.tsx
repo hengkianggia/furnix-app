@@ -1,6 +1,19 @@
 import { cn } from "@/lib/utils";
 import React from "react";
 
+interface WrapperProps extends React.HTMLAttributes<HTMLDivElement> {
+  children: React.ReactNode;
+  className?: string;
+  full?: boolean;
+  flex?: boolean;
+  Hfull?: boolean;
+  column?: boolean;
+  center?: boolean;
+  centerColumn?: boolean;
+  between?: boolean;
+  itemsCenter?: boolean;
+}
+
 const Wrapper = ({
   children,
   className,
@@ -10,16 +23,9 @@ const Wrapper = ({
   column,
   center,
   centerColumn,
-}: {
-  children: React.ReactNode;
-  className?: string;
-  full?: boolean;
-  Hfull?: boolean;
-  flex?: boolean;
-  column?: boolean;
-  center?: boolean;
-  centerColumn?: boolean;
-}) => {
+  between,
+  itemsCenter,
+}: WrapperProps) => {
   return (
     <div
       className={cn(
@@ -30,7 +36,9 @@ const Wrapper = ({
         flex && `flex`,
         column && `flex flex-col`,
         center && `flex justify-center items-center`,
-        centerColumn && `flex flex-col justify-center items-center`
+        centerColumn && `flex flex-col justify-center items-center`,
+        between && `flex justify-between`,
+        itemsCenter && `items-center`
       )}
     >
       {children}
