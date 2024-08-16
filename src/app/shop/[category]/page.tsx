@@ -18,7 +18,7 @@ const Category = () => {
         title={cleanPath(category)}
         desc="Discover a curated collection of home essentials that elevate your space and simplify everyday living"
       />
-      <KompleksCatalog />
+      <KompleksCatalog category={cleanPath(category)} />
     </Div>
   );
 };

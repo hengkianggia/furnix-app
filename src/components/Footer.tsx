@@ -83,8 +83,8 @@ const Footer = () => {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
                   d="M18 1H1V3H18V1ZM4 11H18V9H1V20H4V11Z"
                   fill="#ffffff"
                 />
@@ -96,19 +96,19 @@ const Footer = () => {
                   d="M38.0688 19.8572V18.5715C36.8574 19.5429 35.0596 20 32.5195 20C26.3448 20 24 17.6857 24 13.2857V5H26.931V13.9429C26.931 16.6 28.6114 17.8571 31.0736 17.8571H34.2391C36.701 17.8571 38.0687 16.6 38.0687 14.5714V5H41V19.8572H38.0688Z"
                   fill="#ffffff"
                   stroke="#ffffff"
-                  stroke-width="0.96"
+                  strokeWidth={"0.96"}
                 />
                 <path
                   d="M49.765 5.14284V6.42854C50.9079 5.45714 52.6037 5 55 5V7.14283H53.3779C51.0552 7.14283 49.765 8.39995 49.765 10.4286V20H47V5.14284H49.765Z"
                   fill="#ffffff"
                   stroke="#ffffff"
-                  stroke-width="0.96"
+                  strokeWidth={"0.96"}
                 />
                 <path
                   d="M63.931 5.14284V6.42854C65.1425 5.45714 66.9402 5 69.4805 5C75.6552 5 78 7.31425 78 11.7143V20H75.069V11.0571C75.069 8.39995 73.7793 7.14283 71.3172 7.14283H67.7609C65.2989 7.14283 63.931 8.39995 63.931 10.4286V20H61V5.14284H63.931Z"
                   fill="#ffffff"
                   stroke="#ffffff"
-                  stroke-width="0.96"
+                  strokeWidth={"0.96"}
                 />
                 <rect
                   x="84"
@@ -118,7 +118,7 @@ const Footer = () => {
                   rx="1"
                   fill="#ffffff"
                   stroke="#A09D9D"
-                  stroke-width="0.96"
+                  strokeWidth={"0.96"}
                 />
                 <rect
                   x="84"
@@ -127,13 +127,13 @@ const Footer = () => {
                   height="15"
                   fill="#ffffff"
                   stroke="#ffffff"
-                  stroke-width="0.96"
+                  strokeWidth={"0.96"}
                 />
                 <path
                   d="M95.9513 5L101 10.4519L106.049 5H109.415L102.756 12.1827L110 20H106.634L101 13.9134L95.3658 20H92L99.2439 12.1827L92.5852 5H95.9513Z"
                   fill="#ffffff"
                   stroke="#ffffff"
-                  stroke-width="0.96"
+                  strokeWidth={"0.96"}
                 />
               </svg>
               <p className="text-myGray">

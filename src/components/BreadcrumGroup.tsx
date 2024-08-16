@@ -11,7 +11,6 @@ import {
 } from "@/components/ui/breadcrumb";
 import { usePathname } from "next/navigation";
 import { cleanPath, cn } from "@/lib/utils";
-import path from "path";
 
 export function BreadcrumGroup() {
   const pathname = usePathname();
@@ -30,8 +29,8 @@ export function BreadcrumGroup() {
         {pathNew.length > 1 && (
           <>
             {pathNew.map((item, index) => (
-              <>
-                <BreadcrumbItem key={index}>
+              <div key={index} className="flex items-center gap-3">
+                <BreadcrumbItem>
                   <BreadcrumbLink
                     asChild
                     className={cn(
@@ -40,13 +39,16 @@ export function BreadcrumGroup() {
                         "text-slate-500 hover:text-slate-950"
                     )}
                   >
-                    <Link href={index < pathNew.length - 1 ? `/${item}` : ""} className="capitalize">
+                    <Link
+                      href={index < pathNew.length - 1 ? `/${item}` : ""}
+                      className="capitalize"
+                    >
                       {item}
                     </Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 {index < pathNew.length - 1 && <BreadcrumbSeparator />}
-              </>
+              </div>
             ))}
           </>
         )}
