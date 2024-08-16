@@ -48,9 +48,9 @@ export const Banner2 = () => {
       <Wrapper className="grid grid-cols-2 gap-10 px-32 items-center">
         <Div className="space-y-7">
           <h1 className="font-normal">
-            &quot;Absolutely thrilled with the new coffee table! We&apos;ve received
-            so many compliments, and friends are eager to know where we found
-            it.&quot;
+            &quot;Absolutely thrilled with the new coffee table! We&apos;ve
+            received so many compliments, and friends are eager to know where we
+            found it.&quot;
           </h1>
 
           {/* icon */}
@@ -188,5 +188,38 @@ export const BannerShop = () => {
         </Div>
       </Div>
     </Wrapper>
+  );
+};
+
+export const BannerWishlist = () => {
+  return (
+    <section className="w-full bg-myBrokenWhite pt-10 relative h-80 overflow-hidden">
+      <Wrapper className="grid grid-cols-2 gap-10 px-32 items-center z-30">
+        <Div className="space-y-7">
+          <h1 className="text-4xl text-balance font-thin">
+            We&apos;re solving the biggest problems in furniture
+          </h1>
+
+          <p>
+            Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris
+          </p>
+
+          <Button className="uppercase hover:bg-gray-100 hover:text-myBlack">
+            shop now
+            <Icon icon={"icons8:right-round"} className="text-24 ml-2" />
+          </Button>
+        </Div>
+      </Wrapper>
+      <Div absolute className="left-[31vw] sxl:left-[45vw] top-0 w-full">
+        <Image
+          src={fummy}
+          width={500}
+          alt="image"
+          className="w-[90vw] h-full object-cover object-center rounded-tr-md rounded-tl-md"
+        />
+      </Div>
+    </section>
   );
 };

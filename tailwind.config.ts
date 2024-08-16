@@ -44,6 +44,9 @@ const config = {
       lineHeight: {
         superThin: "0.9",
       },
+      screens: {
+        sxl: "2536px",
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },

@@ -124,21 +124,23 @@ const Navbar = () => {
               <Icon icon="carbon:search" />
               <p>Search</p>
             </Div>
-            <Div
-              flex
-              itemsCenter
-              className="gap-2 group"
-              pointer
-              onMouseEnter={() => setLike(!like)}
-              onMouseLeave={() => setLike(!like)}
-            >
-              {like ? (
-                <Icon icon="bi:heart-fill" className="text-red-500" />
-              ) : (
-                <Icon icon="bi:heart" />
-              )}
-              <p>Wishlist</p>
-            </Div>
+            <Link href={"/wishlist"}>
+              <Div
+                flex
+                itemsCenter
+                className="gap-2 group"
+                pointer
+                onMouseEnter={() => setLike(!like)}
+                onMouseLeave={() => setLike(!like)}
+              >
+                {like ? (
+                  <Icon icon="bi:heart-fill" className="text-red-500" />
+                ) : (
+                  <Icon icon="bi:heart" />
+                )}
+                <p>Wishlist</p>
+              </Div>
+            </Link>
             <Link href={"/cart"}>
               <Div
                 flex

@@ -5,7 +5,6 @@ import ItemProduct from "@/components/pages/shop/ItemProduct";
 import { Separator } from "@/components/ui/separator";
 import Wrapper from "@/components/Wrapper";
 import { Icon } from "@iconify/react/dist/iconify.js";
-import { Item } from "@radix-ui/react-select";
 import React from "react";
 
 const Cart = () => {
