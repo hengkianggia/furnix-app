@@ -8,9 +8,10 @@ import React, { useState } from "react";
 
 interface ItemProductProps {
   position?: "center" | "normal";
+  className?: string;
 }
 
-const ItemProduct = ({ position = "center" }: ItemProductProps) => {
+const ItemProduct = ({ position = "center", className }: ItemProductProps) => {
   const [like, setLike] = useState(false);
   const [isPrice, setisPrice] = useState(true);
 
@@ -20,7 +21,10 @@ const ItemProduct = ({ position = "center" }: ItemProductProps) => {
       column
       relative
       pointer
-      className="space-y-4 overflow-hidden rounded-tr-md rounded-tl-md"
+      className={cn(
+        "space-y-4 overflow-hidden rounded-tr-md rounded-tl-md",
+        className
+      )}
     >
       <Div full relative>
         <Images className="aspect-square relative" />

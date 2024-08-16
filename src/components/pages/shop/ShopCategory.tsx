@@ -24,7 +24,8 @@ const ShopCategory = () => {
           />
         </Div>
       </Div>
-      <Div full flex className="gap-5 overflow-x-scroll scrollbar-none">
+
+      <Div full flex className="gap-5 overflow-x-scroll snap-x snap-mandatory scrollbar-none">
         {furnitureCategories.map((item) => (
           <ItemCategory key={item.id} title={item.name} />
         ))}
@@ -37,7 +38,7 @@ export default ShopCategory;
 
 export const ItemCategory = ({ title }: { title: string }) => {
   return (
-    <Div relative pointer>
+    <Div relative pointer className="snap-center snap-always">
       <Images className="min-w-80 aspect-square" />
 
       <Div center absolute className="bottom-4 left-0 w-full">
