@@ -32,6 +32,7 @@ const config = {
       colors: {
         myGray: "#E1DEDE",
         myDarkGray: "#5B5757",
+        mySmoothGray: "#F6F6F6",
         myBlack: "#161413",
         myOrange: "#FFB93B",
         myBrokenWhite: "#F7F4EE",

@@ -143,7 +143,7 @@ const Footer = () => {
 
             <Div className="space-y-1 text-myGray">
               <Div flex itemsCenter className="gap-3">
-                <Icon className="text-2xl" icon={"fluent:call-24-regular"} />
+                <Icon className="text-xl" icon={"fluent:call-24-regular"} />
                 <p>085161919533</p>
               </Div>
               <Div flex itemsCenter className="gap-3">
@@ -151,7 +151,7 @@ const Footer = () => {
                 <p>pengkyjd00@gmail.com</p>
               </Div>
               <Div flex itemsCenter className="gap-3">
-                <Icon className="text-3xl" icon={"carbon:location"} />
+                <Icon className="text-xl" icon={"carbon:location"} />
                 <p>9 Alpha Loop, Plum Branch,sc, 29845 United States</p>
               </Div>
             </Div>
@@ -225,7 +225,7 @@ const Footer = () => {
         </Div>
 
         {/* bawah */}
-        <Div full between itemsCenter className="mt-10">
+        <Div full between itemsCenter className="mt-20">
           <Div flex itemsCenter className="gap-4 uppercase text-myGray">
             <p className="text-xs">stay in touch</p>
             <Icon
@@ -266,12 +266,7 @@ const Footer = () => {
             </p>
           </Div>
 
-          <Div
-            flex
-            itemsCenter
-            pointer
-            className="gap-4 uppercase text-myGray group hover:bg-myGray px-3 py-2 rounded-md"
-          >
+          <Div flex itemsCenter pointer>
             <Image
               src={payment}
               alt="payment"

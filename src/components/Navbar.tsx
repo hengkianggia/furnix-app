@@ -139,16 +139,18 @@ const Navbar = () => {
               )}
               <p>Wishlist</p>
             </Div>
-            <Div
-              flex
-              itemsCenter
-              className="border border-black rounded-full px-4 py-2 gap-2 group hover:bg-myBlack"
-              pointer
-            >
-              <Icon icon="bi:cart" className="group-hover:text-white" />
-              <p className="group-hover:text-white">Cart</p>
-              <p className="text-xs group-hover:text-white">$100</p>
-            </Div>
+            <Link href={"/cart"}>
+              <Div
+                flex
+                itemsCenter
+                className="border border-black rounded-full px-4 py-2 gap-2 group hover:bg-myBlack"
+                pointer
+              >
+                <Icon icon="bi:cart" className="group-hover:text-white" />
+                <p className="group-hover:text-white">Cart</p>
+                <p className="text-xs group-hover:text-white">$100</p>
+              </Div>
+            </Link>
           </Div>
         </Div>
       </Wrapper>
