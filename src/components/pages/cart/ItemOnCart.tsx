@@ -16,7 +16,7 @@ const ItemOnCart = () => {
             <Icon icon={"material-symbols:star"} className="text-myOrange" />
             <Icon icon={"material-symbols:star"} className="text-myOrange" />
           </Div>
-          <h2 className="font-semibold text-balance text-xl leading-6">
+          <h2 className="text-balance text-xl leading-6">
             Upholstered Armchair
           </h2>
         </Div>
