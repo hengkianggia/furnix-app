@@ -1,5 +1,6 @@
 import Div from "@/components/Div";
 import Images from "@/components/Images";
+import Tag from "@/components/Tag";
 import { Button } from "@/components/ui/button";
 import { Icons } from "@/data/data";
 import { Icon } from "@iconify/react/dist/iconify.js";
@@ -42,12 +43,11 @@ const ItemsBlog = () => {
       </Div>
 
       {/* tag */}
-      <Div
-        absolute
-        className="top-4 left-4 rounded-full bg-myBrokenWhite text-myDarkGray uppercase px-4 py-2 text-sm"
-      >
-        tag name
-      </Div>
+
+      <Tag
+        text="tag name"
+        className="absolute top-4 left-4 border-none uppercase"
+      />
     </Div>
   );
 };

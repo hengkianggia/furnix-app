@@ -5,7 +5,7 @@ import RecentComment from "@/components/pages/blog/RecentComment";
 import TinyBlogPopular from "@/components/pages/blog/TinyBlogPopular";
 import Headers from "@/components/pages/Headers";
 import { PaginationComponents } from "@/components/PaginationCompopnents";
-import { Button } from "@/components/ui/button";
+import Tag from "@/components/Tag";
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
 import Wrapper from "@/components/Wrapper";
@@ -127,11 +127,3 @@ const Blog = () => {
 };
 
 export default Blog;
-
-export const Tag = ({ text }: { text: string }) => {
-  return (
-    <Button className="border border-myDarkGray bg-mySmoothGray text-myDarkGray hover:text-myBrokenWhite">
-      {text}
-    </Button>
-  );
-};
