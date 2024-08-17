@@ -262,4 +262,7 @@ export const Icons = {
   HeartFill: "bi:heart-fill",
   Cart: "bi:cart",
   Stars: "material-symbols:star",
+  Dot: "ph:dot-outline",
+  RightTriangle: "mdi:menu-right-outline",
+  Comment: "ant-design:comment-outlined",
 };
