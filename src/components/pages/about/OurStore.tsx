@@ -2,6 +2,7 @@ import Div from "@/components/Div";
 import Images from "@/components/Images";
 import { Button } from "@/components/ui/button";
 import Wrapper from "@/components/Wrapper";
+import { Icons } from "@/data/data";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import React from "react";
 
@@ -51,7 +52,7 @@ const OurStore = () => {
             variant={"ghost"}
           >
             shop now
-            <Icon icon={"icons8:right-round"} className="text-24 ml-2" />
+            <Icon icon={Icons.ArrowRightCircle} className="text-24 ml-2" />
           </Button>
         </Div>
       </Wrapper>
@@ -84,7 +85,7 @@ export const ItemLocation = ({
             variant={"ghost"}
           >
             Book an appointment
-            <Icon icon={"icons8:right-round"} className="text-24 ml-2" />
+            <Icon icon={Icons.ArrowRightCircle} className="text-24 ml-2" />
           </Button>
         </Div>
       </Div>

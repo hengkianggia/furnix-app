@@ -1,6 +1,7 @@
 import Div from "@/components/Div";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { Icons } from "@/data/data";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import React from "react";
 
@@ -10,7 +11,7 @@ const Coupon = () => {
       <Input placeholder="Add Gift Cart/Promo code" className="rounded-full" />
       <Button className="capitalize hover:bg-gray-100" variant={"ghost"}>
         apply
-        <Icon icon={"icons8:right-round"} className="text-24 ml-2" />
+        <Icon icon={Icons.ArrowRightCircle} className="text-24 ml-2" />
       </Button>
     </Div>
   );

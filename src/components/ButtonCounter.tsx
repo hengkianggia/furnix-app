@@ -1,3 +1,4 @@
+import { Icons } from "@/data/data";
 import { cn } from "@/lib/utils";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { useState } from "react";
@@ -25,14 +26,14 @@ export default function ButtonCounter() {
         onClick={decrement}
         disabled={count === 1}
       >
-        <Icon icon={"ic:round-remove"} className="text-2xl text-myDarkGray" />
+        <Icon icon={Icons.Remove} className="text-2xl text-myDarkGray" />
       </button>
       <span className="w-10 grid place-items-center">{count}</span>
       <button
         className="cursor-pointer bg-gray-100 p-1 rounded-full"
         onClick={increment}
       >
-        <Icon icon={"ic:round-add"} className="text-2xl text-myDarkGray" />
+        <Icon icon={Icons.Add} className="text-2xl text-myDarkGray" />
       </button>
     </div>
   );

@@ -2,6 +2,7 @@
 import Div from "@/components/Div";
 import Images from "@/components/Images";
 import { Button } from "@/components/ui/button";
+import { Icons } from "@/data/data";
 import { cn } from "@/lib/utils";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import React, { useState } from "react";
@@ -48,9 +49,9 @@ const ItemProduct = ({ position = "center", className }: ItemProductProps) => {
             onMouseLeave={() => setLike(false)}
           >
             {like ? (
-              <Icon icon="bi:heart-fill" className="text-red-500" />
+              <Icon icon={Icons.HeartFill} className="text-red-500" />
             ) : (
-              <Icon icon="bi:heart" />
+              <Icon icon={Icons.Heart} />
             )}
           </Div>
         </Div>
@@ -66,11 +67,11 @@ const ItemProduct = ({ position = "center", className }: ItemProductProps) => {
         )}
       >
         <Div flex itemsCenter>
-          <Icon icon={"material-symbols:star"} className="text-myOrange" />
-          <Icon icon={"material-symbols:star"} className="text-myOrange" />
-          <Icon icon={"material-symbols:star"} className="text-myOrange" />
-          <Icon icon={"material-symbols:star"} className="text-myOrange" />
-          <Icon icon={"material-symbols:star"} className="text-myOrange" />
+          <Icon icon={Icons.Stars} className="text-myOrange" />
+          <Icon icon={Icons.Stars} className="text-myOrange" />
+          <Icon icon={Icons.Stars} className="text-myOrange" />
+          <Icon icon={Icons.Stars} className="text-myOrange" />
+          <Icon icon={Icons.Stars} className="text-myOrange" />
         </Div>
         <h4>Minimalist Vases Set</h4>
 
@@ -88,7 +89,7 @@ const ItemProduct = ({ position = "center", className }: ItemProductProps) => {
           ) : (
             <Button className="uppercase bg-myBlack text-myBrokenWhite">
               add to cart
-              <Icon icon={"bi:cart"} className="text-lg ml-2" />
+              <Icon icon={Icons.Cart} className="text-lg ml-2" />
             </Button>
           )}
         </Div>

@@ -4,6 +4,7 @@ import Div from "@/components/Div";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import Images from "@/components/Images";
 import { Separator } from "@/components/ui/separator";
+import { Icons } from "@/data/data";
 
 const listItem = [
   {
@@ -71,7 +72,7 @@ export const ThisItem = ({
       </Div>
 
       <Icon
-        icon={"iconamoon:arrow-top-right-1"}
+        icon={Icons.ArrowRightUp}
         className="text-myGray text-xl group-hover:animate-bounce group-hover:text-myBlack"
       />
     </Div>

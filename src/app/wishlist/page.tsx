@@ -9,6 +9,7 @@ import React from "react";
 
 import payments from "../../../public/images/Payments (1).svg";
 import { BannerWishlist } from "@/components/pages/Banner";
+import { Icons } from "@/data/data";
 
 const Wishlist = () => {
   return (
@@ -23,7 +24,7 @@ const Wishlist = () => {
       <Wrapper full>
         <Div full grid className="grid-cols-3 gap-6 px-32">
           <Div flex className="gap-4">
-            <Icon icon={"ph:question-light"} className="text-3xl" />
+            <Icon icon={Icons.Question} className="text-3xl" />
             <Div
               column
               className="text-balance text-myDarkGray space-y-2 text-sm"
@@ -40,7 +41,7 @@ const Wishlist = () => {
 
           {/* center */}
           <Div flex className="gap-4">
-            <Icon icon={"icon-park-outline:return"} className="text-3xl" />
+            <Icon icon={Icons.Return} className="text-3xl" />
             <Div
               column
               className="text-balance text-myDarkGray space-y-2 text-sm"
@@ -56,13 +57,13 @@ const Wishlist = () => {
                 variant={"ghost"}
               >
                 Details
-                <Icon icon={"icons8:right-round"} className="text-24 ml-2" />
+                <Icon icon={Icons.ArrowRightCircle} className="text-24 ml-2" />
               </Button>
             </Div>
           </Div>
 
           <Div flex className="gap-4">
-            <Icon icon={"gala:secure"} className="text-3xl" />
+            <Icon icon={Icons.Secure} className="text-3xl" />
             <Div
               column
               className="text-balance text-myDarkGray space-y-3 text-sm items-start"

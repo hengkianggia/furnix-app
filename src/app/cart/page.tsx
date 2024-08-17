@@ -4,6 +4,7 @@ import MyCart from "@/components/pages/cart/MyCart";
 import ItemProduct from "@/components/pages/shop/ItemProduct";
 import { Separator } from "@/components/ui/separator";
 import Wrapper from "@/components/Wrapper";
+import { Icons } from "@/data/data";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import React from "react";
 
@@ -22,14 +23,8 @@ const Cart = () => {
         <Div full between>
           <h1 className="text-4xl font-thin">You may also need</h1>
           <Div flex itemsCenter pointer className="space-x-3">
-            <Icon
-              icon={"lucide:move-left"}
-              className="text-2xl text-myDarkGray"
-            />
-            <Icon
-              icon={"lucide:move-right"}
-              className="text-2xl text-myDarkGray"
-            />
+            <Icon icon={Icons.ArrowLeft} className="text-2xl text-myDarkGray" />
+            <Icon icon={Icons.ArrowRight} className="text-2xl text-myDarkGray" />
           </Div>
         </Div>
         <Div

@@ -7,6 +7,7 @@ import Image from "next/image";
 
 import image from "../../../../public/furniture.jpg";
 import { cn } from "@/lib/utils";
+import { Icons } from "@/data/data";
 
 const listHeader = [
   {
@@ -51,7 +52,7 @@ const Header = () => {
             variant={"outline"}
           >
             shop now
-            <Icon icon={"icons8:right-round"} className="text-24 ml-2" />
+            <Icon icon={Icons.ArrowRightCircle} className="text-24 ml-2" />
           </Button>
         </Div>
       </Wrapper>

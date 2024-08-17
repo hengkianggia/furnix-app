@@ -10,6 +10,7 @@ import { Separator } from "./ui/separator";
 
 import payment from "../../public/images/Payments.svg";
 import Image from "next/image";
+import { Icons } from "@/data/data";
 
 const list = [
   {
@@ -143,15 +144,15 @@ const Footer = () => {
 
             <Div className="space-y-1 text-myGray">
               <Div flex itemsCenter className="gap-3">
-                <Icon className="text-xl" icon={"fluent:call-24-regular"} />
+                <Icon className="text-xl" icon={Icons.Call} />
                 <p>085161919533</p>
               </Div>
               <Div flex itemsCenter className="gap-3">
-                <Icon className="text-xl" icon={"iconamoon:email-light"} />
+                <Icon className="text-xl" icon={Icons.Email} />
                 <p>pengkyjd00@gmail.com</p>
               </Div>
               <Div flex itemsCenter className="gap-3">
-                <Icon className="text-xl" icon={"carbon:location"} />
+                <Icon className="text-xl" icon={Icons.Location} />
                 <p>9 Alpha Loop, Plum Branch,sc, 29845 United States</p>
               </Div>
             </Div>
@@ -165,7 +166,7 @@ const Footer = () => {
                   <li key={item.title} className="hover:text-white">
                     <Link href={item.link} className="flex items-center gap-2">
                       <Icon
-                        icon={"tdesign:arrow-right-up"}
+                        icon={Icons.ArrowRightUp}
                         className="text-myOrange"
                       />
                       <p>{item.title}</p>
@@ -184,7 +185,7 @@ const Footer = () => {
                   <li key={item.title} className="hover:text-white">
                     <Link href={item.link} className="flex items-center gap-2">
                       <Icon
-                        icon={"tdesign:arrow-right-up"}
+                        icon={Icons.ArrowRightUp}
                         className="text-myOrange"
                       />
                       <p>{item.title}</p>
@@ -209,7 +210,7 @@ const Footer = () => {
                   <Button className="uppercase ml-3" variant={"ghost"}>
                     subscribe
                     <Icon
-                      icon={"icons8:right-round"}
+                      icon={Icons.ArrowRightCircle}
                       className="text-24 ml-2"
                     />
                   </Button>
@@ -228,16 +229,10 @@ const Footer = () => {
         <Div full between itemsCenter className="mt-20">
           <Div flex itemsCenter className="gap-4 uppercase text-myGray">
             <p className="text-xs">stay in touch</p>
-            <Icon
-              icon={"ri:facebook-fill"}
-              className="text-xl cursor-pointer"
-            />
-            <Icon icon={"mdi:instagram"} className="text-xl cursor-pointer" />
-            <Icon icon={"mdi:twitter"} className="text-xl cursor-pointer" />
-            <Icon
-              icon={"ic:baseline-whatsapp"}
-              className="text-xl cursor-pointer"
-            />
+            <Icon icon={Icons.Facebook} className="text-xl cursor-pointer" />
+            <Icon icon={Icons.Instagram} className="text-xl cursor-pointer" />
+            <Icon icon={Icons.Twitter} className="text-xl cursor-pointer" />
+            <Icon icon={Icons.WhatsApp} className="text-xl cursor-pointer" />
           </Div>
 
           <Div
@@ -249,7 +244,7 @@ const Footer = () => {
           >
             <p className="text-xs group-hover:text-myBlack">back to top</p>
             <Icon
-              icon={"lets-icons:arrow-top"}
+              icon={Icons.ArrowUp}
               className="text-xl group-hover:text-myBlack"
             />
           </Div>

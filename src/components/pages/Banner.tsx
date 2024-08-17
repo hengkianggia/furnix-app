@@ -10,6 +10,7 @@ import Images from "@/components/Images";
 import { Button } from "@/components/ui/button";
 import { Separator } from "../ui/separator";
 import { Input } from "../ui/input";
+import { Icons } from "@/data/data";
 
 export const Banner1 = () => {
   return (
@@ -24,7 +25,7 @@ export const Banner1 = () => {
             variant={"outline"}
           >
             subscribe
-            <Icon icon={"icons8:right-round"} className="text-24 ml-2" />
+            <Icon icon={Icons.ArrowRightCircle} className="text-24 ml-2" />
           </Button>
         </Div>
       </Wrapper>
@@ -57,12 +58,9 @@ export const Banner2 = () => {
           <Div flex itemsCenter between>
             <h4 className="uppercase">Alysa Keebler</h4>
             <Div flex itemsCenter gap={3}>
+              <Icon icon={Icons.ArrowLeft} className="text-xl cursor-pointer" />
               <Icon
-                icon={"carbon:arrow-left"}
-                className="text-xl cursor-pointer"
-              />
-              <Icon
-                icon={"carbon:arrow-right"}
+                icon={Icons.ArrowRight}
                 className="text-xl cursor-pointer"
               />
             </Div>
@@ -164,7 +162,7 @@ export const BannerShop = () => {
           <Div flex itemsCenter>
             <Button className="uppercase ml-3 rounded-full bg-myBlack">
               subscribe
-              <Icon icon={"icons8:right-round"} className="text-24 ml-2" />
+              <Icon icon={Icons.ArrowRightCircle} className="text-24 ml-2" />
             </Button>
           </Div>
         </Div>
@@ -208,7 +206,7 @@ export const BannerWishlist = () => {
 
           <Button className="uppercase hover:bg-gray-100 hover:text-myBlack">
             shop now
-            <Icon icon={"icons8:right-round"} className="text-24 ml-2" />
+            <Icon icon={Icons.ArrowRightCircle} className="text-24 ml-2" />
           </Button>
         </Div>
       </Wrapper>

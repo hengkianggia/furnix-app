@@ -22,6 +22,7 @@ import Images from "@/components/Images";
 
 import payments from "../../../../public/images/Payments (1).svg";
 import Image from "next/image";
+import { Icons } from "@/data/data";
 
 const MyCart = () => {
   const router = useRouter();
@@ -40,7 +41,7 @@ const MyCart = () => {
               className="gap-4 uppercase group hover:bg-myBlack hover:text-myBrokenWhite px-3 py-2 rounded-full"
               onClick={() => router.back()}
             >
-              <Icon icon={"icons8:left-round"} className="text-xl " />
+              <Icon icon={Icons.ArrowLeftCircle} className="text-xl " />
               <p className="text-xs k">back to shopping</p>
             </Div>
           </Div>
@@ -203,7 +204,7 @@ const MyCart = () => {
 
               <Button className="uppercase bg-myBlack">
                 Processed to Checkout
-                <Icon icon={"bi:cart"} className="text-xl ml-3" />
+                <Icon icon={Icons.Cart} className="text-xl ml-3" />
               </Button>
             </Div>
           </Div>
@@ -224,7 +225,7 @@ const MyCart = () => {
               variant={"ghost"}
             >
               Learn more
-              <Icon icon={"icons8:right-round"} className="text-xl ml-3" />
+              <Icon icon={Icons.ArrowRightCircle} className="text-xl ml-3" />
             </Button>
 
             <Images className="w-40 h-40 absolute right-5 -top-9 shadow-md" />
@@ -237,7 +238,7 @@ const MyCart = () => {
 
       <Div full grid className="grid-cols-3 gap-6 px-32">
         <Div flex className="gap-4">
-          <Icon icon={"ph:question-light"} className="text-3xl" />
+          <Icon icon={Icons.Question} className="text-3xl" />
           <Div
             column
             className="text-balance text-myDarkGray space-y-2 text-sm"
@@ -253,7 +254,7 @@ const MyCart = () => {
 
         {/* center */}
         <Div flex className="gap-4">
-          <Icon icon={"icon-park-outline:return"} className="text-3xl" />
+          <Icon icon={Icons.Return} className="text-3xl" />
           <Div
             column
             className="text-balance text-myDarkGray space-y-2 text-sm"
@@ -269,13 +270,13 @@ const MyCart = () => {
               variant={"ghost"}
             >
               Details
-              <Icon icon={"icons8:right-round"} className="text-24 ml-2" />
+              <Icon icon={Icons.ArrowRightCircle} className="text-24 ml-2" />
             </Button>
           </Div>
         </Div>
 
         <Div flex className="gap-4">
-          <Icon icon={"gala:secure"} className="text-3xl" />
+          <Icon icon={Icons.Secure} className="text-3xl" />
           <Div
             column
             className="text-balance text-myDarkGray space-y-3 text-sm items-start"

@@ -1,5 +1,6 @@
 import Div from "@/components/Div";
 import Images from "@/components/Images";
+import { Icons } from "@/data/data";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import React from "react";
 
@@ -10,11 +11,11 @@ const ItemOnCart = () => {
       <Div column between className="h-32">
         <Div className="space-y-2">
           <Div flex itemsCenter>
-            <Icon icon={"material-symbols:star"} className="text-myOrange" />
-            <Icon icon={"material-symbols:star"} className="text-myOrange" />
-            <Icon icon={"material-symbols:star"} className="text-myOrange" />
-            <Icon icon={"material-symbols:star"} className="text-myOrange" />
-            <Icon icon={"material-symbols:star"} className="text-myOrange" />
+            <Icon icon={Icons.Stars} className="text-myOrange" />
+            <Icon icon={Icons.Stars} className="text-myOrange" />
+            <Icon icon={Icons.Stars} className="text-myOrange" />
+            <Icon icon={Icons.Stars} className="text-myOrange" />
+            <Icon icon={Icons.Stars} className="text-myOrange" />
           </Div>
           <h2 className="text-balance text-xl leading-6">
             Upholstered Armchair

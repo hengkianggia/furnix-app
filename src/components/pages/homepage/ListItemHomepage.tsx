@@ -5,6 +5,7 @@ import Image from "next/image";
 import dummy from "../../../../public/furniture.jpg";
 import { cn } from "@/lib/utils";
 import { Icon } from "@iconify/react/dist/iconify.js";
+import { Icons } from "@/data/data";
 
 export const ListItemHomepageOne = ({ under = false }: { under?: boolean }) => {
   return (
@@ -72,15 +73,15 @@ export const ListItemHomepageTwo = ({ even }: { even?: boolean }) => {
       <Div column className="p-3 gap-2">
         <h3 className="text-lg">Rustic Dining Table</h3>
         <Div flex itemsCenter>
-          <Icon icon={"material-symbols:star"} className="text-myOrange" />
-          <Icon icon={"material-symbols:star"} className="text-myOrange" />
-          <Icon icon={"material-symbols:star"} className="text-myOrange" />
-          <Icon icon={"material-symbols:star"} className="text-myOrange" />
-          <Icon icon={"material-symbols:star"} className="text-myOrange" />
+          <Icon icon={Icons.Stars} className="text-myOrange" />
+          <Icon icon={Icons.Stars} className="text-myOrange" />
+          <Icon icon={Icons.Stars} className="text-myOrange" />
+          <Icon icon={Icons.Stars} className="text-myOrange" />
+          <Icon icon={Icons.Stars} className="text-myOrange" />
         </Div>
         <p className="line-clamp-3 text-xs text-balance text-myDarkGray">
-          Absolutely thrilled with the new coffee table! We&apos;ve received so many
-          compliments, and friends are eager to know where we found it.
+          Absolutely thrilled with the new coffee table! We&apos;ve received so
+          many compliments, and friends are eager to know where we found it.
         </p>
         <p className="uppercase text-sm text-myDarkGray">gibby radki</p>
       </Div>

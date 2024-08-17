@@ -17,6 +17,7 @@ import {
 } from "@/components/ui/table";
 import ItemOnCart from "../cart/ItemOnCart";
 import ButtonCounter from "@/components/ButtonCounter";
+import { Icons } from "@/data/data";
 
 const MyWishlist = () => {
   const router = useRouter();
@@ -34,7 +35,7 @@ const MyWishlist = () => {
               className="gap-4 uppercase group hover:bg-myBlack hover:text-myBrokenWhite px-3 py-2 rounded-full"
               onClick={() => router.back()}
             >
-              <Icon icon={"icons8:left-round"} className="text-xl " />
+              <Icon icon={Icons.ArrowLeftCircle} className="text-xl " />
               <p className="text-xs k">back to shopping</p>
             </Div>
           </Div>

@@ -6,6 +6,7 @@ import Wrapper from "./Wrapper";
 
 import { Icon } from "@iconify/react";
 import Link from "next/link";
+import { Icons } from "@/data/data";
 
 const listNavbar = [
   {
@@ -121,7 +122,7 @@ const Navbar = () => {
 
           <Div flex itemsCenter className="gap-6">
             <Div flex itemsCenter className="gap-2" pointer>
-              <Icon icon="carbon:search" />
+              <Icon icon={Icons.Search} />
               <p>Search</p>
             </Div>
             <Link href={"/wishlist"}>
@@ -134,9 +135,9 @@ const Navbar = () => {
                 onMouseLeave={() => setLike(!like)}
               >
                 {like ? (
-                  <Icon icon="bi:heart-fill" className="text-red-500" />
+                  <Icon icon={Icons.HeartFill} className="text-red-500" />
                 ) : (
-                  <Icon icon="bi:heart" />
+                  <Icon icon={Icons.Heart} />
                 )}
                 <p>Wishlist</p>
               </Div>
@@ -148,7 +149,7 @@ const Navbar = () => {
                 className="border border-black rounded-full px-4 py-2 gap-2 group hover:bg-myBlack"
                 pointer
               >
-                <Icon icon="bi:cart" className="group-hover:text-white" />
+                <Icon icon={Icons.Cart} className="group-hover:text-white" />
                 <p className="group-hover:text-white">Cart</p>
                 <p className="text-xs group-hover:text-white">$100</p>
               </Div>

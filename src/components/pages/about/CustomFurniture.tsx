@@ -3,6 +3,7 @@ import Images from "@/components/Images";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Wrapper from "@/components/Wrapper";
+import { Icons } from "@/data/data";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import React from "react";
 
@@ -30,7 +31,7 @@ const CustomFurniture = () => {
             <Div flex itemsCenter>
               <Button className="uppercase ml-3 rounded-full bg-myBlack">
                 subscribe
-                <Icon icon={"icons8:right-round"} className="text-24 ml-2" />
+                <Icon icon={Icons.ArrowRightCircle} className="text-24 ml-2" />
               </Button>
             </Div>
           </Div>
