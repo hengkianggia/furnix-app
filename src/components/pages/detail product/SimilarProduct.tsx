@@ -22,6 +22,7 @@ const SimilarProduct = () => {
       <Div full flex className="space-x-5 overflow-x-scroll scrollbar-none">
         {similar.map((item, index) => (
           <ItemProduct
+            key={item}
             className={cn("min-w-80 pt-8", item % 2 == 0 && "pt-0")}
           />
         ))}

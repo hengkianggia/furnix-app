@@ -34,7 +34,7 @@ const ItemsComment = () => {
 
         {/* the comment */}
         <p className="line-clamp-4 text-myDarkGray">
-          I'm absolutely in love with my Mid-Century TV Cabinet! The combination
+          Im absolutely in love with my Mid-Century TV Cabinet! The combination
           of wood and cane doors adds a touch of elegance to my living room. The
           solid oak handles and legs give it a sturdy feel. The soft-close
           drawers are a bonus.
