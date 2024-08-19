@@ -18,19 +18,19 @@ const list = [
     item: [
       {
         title: "About Us",
-        link: "about-us",
+        link: "/about",
       },
       {
         title: "Blog",
-        link: "blog",
+        link: "/blog",
       },
       {
         title: "Contact Us",
-        link: "contact-us",
+        link: "/contact",
       },
       {
         title: "Popular Question",
-        link: "popular-question",
+        link: "/faq",
       },
     ],
   },
@@ -38,7 +38,7 @@ const list = [
     name: "What&apos;s Popular",
     item: [
       {
-        title: "About Us",
+        title: "Knife Blade",
         link: "about-us",
       },
       {
@@ -68,6 +68,7 @@ const Footer = () => {
       behavior: "smooth",
     });
   };
+
   return (
     <footer className="w-full bg-myBlack grid place-items-center pb-10 pt-16 mt-20">
       <Wrapper className="text-white flex flex-col items-center">

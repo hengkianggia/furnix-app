@@ -1,9 +1,11 @@
+"use client";
+
 import { Icons } from "@/data/data";
 import { cn } from "@/lib/utils";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { useState } from "react";
 
-export default function ButtonCounter() {
+export default function ButtonCounter({ className }: { className?: string }) {
   const [count, setCount] = useState(1);
 
   const increment = () => {
@@ -17,7 +19,12 @@ export default function ButtonCounter() {
   };
 
   return (
-    <div className="flex items-center justify-center border border-gray-300 p-2 rounded-full w-fit">
+    <div
+      className={cn(
+        "flex items-center justify-center border border-gray-300 p-2 rounded-full w-fit",
+        className
+      )}
+    >
       <button
         className={cn(
           "cursor-pointer rounded-full bg-gray-100 p-1",
