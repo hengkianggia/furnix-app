@@ -14,7 +14,7 @@ const NotFound = () => {
     <Div
       relative
       column
-      className="w-full h-screen justify-center bg-mySmoothGray z-[999999] fixed top-0 left-0"
+      className="w-full h-screen justify-center bg-mySmoothGray z-50 fixed top-0 left-0"
     >
       <Wrapper full className="px-32 z-10">
         <Div column className="space-y-4 w-[50%]">

@@ -30,7 +30,7 @@ const listNavbar = [
 const Navbar = () => {
   const [like, setLike] = useState(false);
   return (
-    <nav className="w-full bg-white shadow-md grid place-items-center fixed left-0 top-0 z-50">
+    <nav className="w-full bg-white shadow-md grid place-items-center fixed left-0 top-0 z-40">
       {/* top content */}
       {/* <Div full className="bg-myBlack text-myGray py-1" center>
         OCTOBER SALE
