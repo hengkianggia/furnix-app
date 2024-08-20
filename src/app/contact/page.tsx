@@ -87,7 +87,7 @@ const Contact = () => {
           <Div grid className="grid-cols-2 gap-4">
             <h2 className="col-span-2 text-4xl font-thin">Contact Us</h2>
             <p className="col-span-2 text-sm">
-              We'd like to hear from you. Please complete the form below so we
+              We&apos;d like to hear from you. Please complete the form below so we
               can respond to your enquiry
             </p>
 

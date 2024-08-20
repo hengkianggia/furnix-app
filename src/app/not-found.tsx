@@ -21,8 +21,8 @@ const NotFound = () => {
           <h1 className="text-5xl font-thin">That Page Can&apos;t Be Found</h1>
           <p>
             It may have been moved or removed altogether. Please try searching
-            for some other page, or return to the website's homepage to find
-            what you're looking for.
+            for some other page, or return to the website&apos;s homepage to
+            find what you&apos;re looking for.
           </p>
           <Button
             variant={"default"}
