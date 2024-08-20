@@ -266,3 +266,76 @@ export const Icons = {
   RightTriangle: "mdi:menu-right-outline",
   Comment: "ant-design:comment-outlined",
 };
+
+export const rules = [
+  {
+    icon: "hugeicons:stars",
+    title: "Premium Materials",
+  },
+  {
+    icon: "mynaui:swatches",
+    title: "Free Swatches",
+  },
+  {
+    icon: "la:shipping-fast",
+    title: "Flat Rate Shipping",
+  },
+  {
+    icon: "icon-park-outline:return",
+    title: "14-Day Returns ",
+  },
+];
+
+export const ListFaq = [
+  {
+    category: "Shopping & Payment",
+    list: [
+      {
+        title: "Do you have a showroom?",
+        desc: "Fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec. Ipsuma arcu cursus vitae congue mauris rhoncus aenean vel. Ultrices dui sapien eget mi proin. Massa ultricies mi quis hendrerit dolor. Montes nascetur ridiculus mus mauris vitae ultricies leo integer malesuada. Neque sodales ut etiam sit amet nisl purus. Ut porttitor leo a diam sollicitudin tempor.",
+      },
+      {
+        title: "Do you offer Free Shipping?",
+        desc: "Fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec. Ipsuma arcu cursus vitae congue mauris rhoncus aenean vel. Ultrices dui sapien eget mi proin. Massa ultricies mi quis hendrerit dolor. Montes nascetur ridiculus mus mauris vitae ultricies leo integer malesuada. Neque sodales ut etiam sit amet nisl purus. Ut porttitor leo a diam sollicitudin tempor.",
+      },
+      {
+        title: "What modes of payment do you accept?",
+        desc: "Fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec. Ipsuma arcu cursus vitae congue mauris rhoncus aenean vel. Ultrices dui sapien eget mi proin. Massa ultricies mi quis hendrerit dolor. Montes nascetur ridiculus mus mauris vitae ultricies leo integer malesuada. Neque sodales ut etiam sit amet nisl purus. Ut porttitor leo a diam sollicitudin tempor.",
+      },
+    ],
+  },
+  {
+    category: "Delivery & Assembly",
+    list: [
+      {
+        title: "Where do you deliver to?",
+        desc: "Fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec. Ipsuma arcu cursus vitae congue mauris rhoncus aenean vel. Ultrices dui sapien eget mi proin. Massa ultricies mi quis hendrerit dolor. Montes nascetur ridiculus mus mauris vitae ultricies leo integer malesuada. Neque sodales ut etiam sit amet nisl purus. Ut porttitor leo a diam sollicitudin tempor.",
+      },
+      {
+        title: "Do your products come assembled?",
+        desc: "Fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec. Ipsuma arcu cursus vitae congue mauris rhoncus aenean vel. Ultrices dui sapien eget mi proin. Massa ultricies mi quis hendrerit dolor. Montes nascetur ridiculus mus mauris vitae ultricies leo integer malesuada. Neque sodales ut etiam sit amet nisl purus. Ut porttitor leo a diam sollicitudin tempor.",
+      },
+      {
+        title: "How long will it take my item to arrive?",
+        desc: "Fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec. Ipsuma arcu cursus vitae congue mauris rhoncus aenean vel. Ultrices dui sapien eget mi proin. Massa ultricies mi quis hendrerit dolor. Montes nascetur ridiculus mus mauris vitae ultricies leo integer malesuada. Neque sodales ut etiam sit amet nisl purus. Ut porttitor leo a diam sollicitudin tempor.",
+      },
+    ],
+  },
+  {
+    category: "Returns & Warranty",
+    list: [
+      {
+        title: "Can I return my item?",
+        desc: "Fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec. Ipsuma arcu cursus vitae congue mauris rhoncus aenean vel. Ultrices dui sapien eget mi proin. Massa ultricies mi quis hendrerit dolor. Montes nascetur ridiculus mus mauris vitae ultricies leo integer malesuada. Neque sodales ut etiam sit amet nisl purus. Ut porttitor leo a diam sollicitudin tempor.",
+      },
+      {
+        title: "Do you offer warranty for your products?",
+        desc: "Fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec. Ipsuma arcu cursus vitae congue mauris rhoncus aenean vel. Ultrices dui sapien eget mi proin. Massa ultricies mi quis hendrerit dolor. Montes nascetur ridiculus mus mauris vitae ultricies leo integer malesuada. Neque sodales ut etiam sit amet nisl purus. Ut porttitor leo a diam sollicitudin tempor.",
+      },
+      {
+        title: "What should I do if I receive a defective product?",
+        desc: "Fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec. Ipsuma arcu cursus vitae congue mauris rhoncus aenean vel. Ultrices dui sapien eget mi proin. Massa ultricies mi quis hendrerit dolor. Montes nascetur ridiculus mus mauris vitae ultricies leo integer malesuada. Neque sodales ut etiam sit amet nisl purus. Ut porttitor leo a diam sollicitudin tempor.",
+      },
+    ],
+  },
+];

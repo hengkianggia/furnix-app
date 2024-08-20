@@ -24,3 +24,28 @@ export function cleanPath(path: string): string[] {
     .map((segment) => decodeURIComponent(segment).replace(/%20/g, " "))
     .filter((segment) => segment !== "");
 }
+
+export function getRandomEvenNumber(min: number, max: number): number {
+  // Pastikan min dan max adalah bilangan bulat
+  min = Math.ceil(min);
+  max = Math.floor(max);
+
+  // Hitung angka acak dalam rentang tersebut
+  let randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
+
+  // Pastikan angka acak adalah bilangan genap
+  if (randomNum % 2 !== 0) {
+    randomNum += 1;
+  }
+
+  // Jika lebih dari max, kurangi dengan 2
+  if (randomNum > max) {
+    randomNum -= 2;
+  }
+
+  return randomNum;
+}
+
+// Contoh penggunaan
+const randomEvenNumber = getRandomEvenNumber(2, 100);
+console.log(randomEvenNumber);

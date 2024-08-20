@@ -5,29 +5,11 @@ import KompleksCatalog from "@/components/pages/shop/KompleksCatalog";
 import RecomItem from "@/components/pages/shop/RecomItem";
 import { Separator } from "@/components/ui/separator";
 import Wrapper from "@/components/Wrapper";
+import { rules } from "@/data/data";
 import { cleanPath } from "@/lib/utils";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { useParams } from "next/navigation";
 import React from "react";
-
-const rules = [
-  {
-    icon: "hugeicons:stars",
-    title: "Premium Materials",
-  },
-  {
-    icon: "mynaui:swatches",
-    title: "Free Swatches",
-  },
-  {
-    icon: "la:shipping-fast",
-    title: "Flat Rate Shipping",
-  },
-  {
-    icon: "icon-park-outline:return",
-    title: "14-Day Returns ",
-  },
-];
 
 const Category = () => {
   const params = useParams();

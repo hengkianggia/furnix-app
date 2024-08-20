@@ -9,12 +9,17 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
-import { usePathname } from "next/navigation";
+import { useParams, usePathname } from "next/navigation";
 import { cleanPath, cn } from "@/lib/utils";
 
 export function BreadcrumGroup() {
   const pathname = usePathname();
   let pathNew = cleanPath(pathname);
+
+  const { category, id } = useParams();
+
+  console.log(pathNew.length);
+  console.log(category, id);
   return (
     <Breadcrumb>
       <BreadcrumbList>
@@ -35,19 +40,19 @@ export function BreadcrumGroup() {
                     asChild
                     className={cn(
                       "text-slate-950",
-                      index < pathNew.length - 1 &&
+                      index + 1 < pathNew.length &&
                         "text-slate-500 hover:text-slate-950"
                     )}
                   >
                     <Link
-                      href={index < pathNew.length - 1 ? `/${item}` : ""}
+                      href={index + 1 < pathNew.length ? `/${item}` : ""}
                       className="capitalize"
                     >
                       {item}
                     </Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
-                {index < pathNew.length - 1 && <BreadcrumbSeparator />}
+                {index + 1 < pathNew.length && <BreadcrumbSeparator />}
               </div>
             ))}
           </>

@@ -221,3 +221,36 @@ export const BannerWishlist = () => {
     </section>
   );
 };
+
+export const BannerDetailBlogPost = () => {
+  return <Images className="h-full max-h-[500px]" />;
+};
+
+export const BannerContactInformation = () => {
+  return (
+    <Div full column className="p-10 space-y-6 bg-mySmoothGray">
+      <h2 className="text-2xl font-thin">
+        Have Questions? Ask Our Furnix Team!
+      </h2>
+      <p className="text-sm text-balance text-myDarkGray">
+        Ultrices neque ornare aenean euismod elementum nisi. Vulputate mi sit
+        amet mauris commodo quis. Sit amet nisl purus in mollis.
+      </p>
+
+      <Div full grid className="grid-cols-2 gap-3">
+        <Div flex itemsCenter className="space-x-3">
+          <Icon icon={Icons.Call} />
+          +62 851 6191 9533
+        </Div>
+        <Div flex itemsCenter className="space-x-3">
+          <Icon icon={Icons.Email} />
+          pengkyjd00@gmail.com
+        </Div>
+      </Div>
+
+      <Button className="uppercase w-fit" variant={"outline"}>
+        shop now <Icon icon={Icons.ArrowRightCircle} className="text-xl ml-2" />
+      </Button>
+    </Div>
+  );
+};

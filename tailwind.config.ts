@@ -39,6 +39,7 @@ const config = {
       },
       aspectRatio: {
         "16/7": "16 / 7",
+        "16/10": "16 / 10",
         "10/9": "10 / 9",
       },
       lineHeight: {
