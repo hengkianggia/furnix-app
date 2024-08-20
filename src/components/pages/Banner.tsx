@@ -237,13 +237,13 @@ export const BannerContactInformation = () => {
         amet mauris commodo quis. Sit amet nisl purus in mollis.
       </p>
 
-      <Div full grid className="grid-cols-2 gap-3">
-        <Div flex itemsCenter className="space-x-3">
-          <Icon icon={Icons.Call} />
+      <Div full flex itemsCenter between>
+        <Div flex itemsCenter pointer>
+          <Icon icon={Icons.Call} className="text-xl mr-2" />
           +62 851 6191 9533
         </Div>
-        <Div flex itemsCenter className="space-x-3">
-          <Icon icon={Icons.Email} />
+        <Div flex itemsCenter pointer>
+          <Icon icon={Icons.Email} className="text-xl mr-2" />
           pengkyjd00@gmail.com
         </Div>
       </Div>
