@@ -94,7 +94,7 @@ const DetailPost = () => {
           <p className="font-semibold">
             Dining tables come in various shapes, each with its own unique
             charm. Choosing the right shape is like finding the perfect puzzle
-            piece for your dining space, completing the picture of your home's
+            piece for your dining space, completing the picture of your homes
             style and functionality.
           </p>
           <p className="uppercase text-myDarkGray">Jack Renner</p>

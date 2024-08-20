@@ -33,6 +33,7 @@ const DetailFaq = () => {
                 <AccordionItem
                   value={`item-${idx + getRandomEvenNumber(2, 1000)}`}
                   className="pb-2"
+                  key={idx}
                 >
                   <AccordionTrigger>
                     <h3 className="text-lg">{item.title}</h3>
