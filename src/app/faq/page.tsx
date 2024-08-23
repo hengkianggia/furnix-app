@@ -5,7 +5,12 @@ import Headers from "@/components/pages/Headers";
 import Wrapper from "@/components/Wrapper";
 import { rules } from "@/data/data";
 import { Icon } from "@iconify/react/dist/iconify.js";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "FAQ",
+};
 
 const Faq = () => {
   return (

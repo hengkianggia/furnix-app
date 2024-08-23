@@ -11,6 +11,7 @@ import { Separator } from "@/components/ui/separator";
 import Wrapper from "@/components/Wrapper";
 import { Icons } from "@/data/data";
 import { Icon } from "@iconify/react/dist/iconify.js";
+import { Metadata } from "next";
 import React from "react";
 
 const list = [
@@ -33,6 +34,10 @@ const furnitureTags = [
   "OutdoorFurniture",
   "FurnitureTrends",
 ];
+
+export const metadata: Metadata = {
+  title: "Blog",
+};
 
 const Blog = () => {
   return (

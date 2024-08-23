@@ -8,7 +8,12 @@ import { Textarea } from "@/components/ui/textarea";
 import Wrapper from "@/components/Wrapper";
 import { Icons } from "@/data/data";
 import { Icon } from "@iconify/react/dist/iconify.js";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Contact",
+};
 
 const Contact = () => {
   return (

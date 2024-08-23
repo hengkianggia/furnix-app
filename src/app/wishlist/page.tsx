@@ -10,6 +10,11 @@ import React from "react";
 import payments from "../../../public/images/Payments (1).svg";
 import { BannerWishlist } from "@/components/pages/Banner";
 import { Icons } from "@/data/data";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Wishlist",
+};
 
 const Wishlist = () => {
   return (

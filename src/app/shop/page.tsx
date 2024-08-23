@@ -3,7 +3,12 @@ import { BannerShop } from "@/components/pages/Banner";
 import Headers from "@/components/pages/Headers";
 import ShopCatalog from "@/components/pages/shop/ShopCatalog";
 import ShopCategory from "@/components/pages/shop/ShopCategory";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Shop",
+};
 
 const Shop = () => {
   return (

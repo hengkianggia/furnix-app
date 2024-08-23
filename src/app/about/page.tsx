@@ -4,7 +4,12 @@ import Details from "@/components/pages/about/Details";
 import OurStore from "@/components/pages/about/OurStore";
 import { BannerAbout } from "@/components/pages/Banner";
 import Headers from "@/components/pages/Headers";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "About Us",
+};
 
 const About = () => {
   return (
