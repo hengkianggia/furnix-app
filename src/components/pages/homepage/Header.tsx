@@ -42,12 +42,12 @@ const Header = () => {
       >
         <Div
           centerColumn
-          className="w-[70%] text-center leading-none space-y-6"
+          className="w-[70%] text-center leading-none space-y-6 max-md:w-full"
         >
           <h1 className={`text-80 font-light max-lg:text-48`}>
             Furnix - Your Source for Stylish Living
           </h1>
-          <p className={`text-22 w-[70%] max-lg:text-sm max-lg:w-[90%]`}>
+          <p className={`text-22 w-[70%] max-lg:text-sm max-md:w-[90%]`}>
             From inviting furniture to warm decor, discover the magic of home
             that you&apos;ll fall in love with
           </p>

@@ -231,7 +231,7 @@ const Footer = () => {
 
         {/* bawah */}
         <Div full between itemsCenter className="mt-20">
-          <Div flex itemsCenter className="gap-4 uppercase text-myGray">
+          <Div flex itemsCenter className="gap-4 uppercase text-myGray max-md:gap-1">
             <p className="text-xs">stay in touch</p>
             <Icon icon={Icons.Facebook} className="text-xl cursor-pointer" />
             <Icon icon={Icons.Instagram} className="text-xl cursor-pointer" />
@@ -264,13 +264,13 @@ const Footer = () => {
           itemsCenter
           className="max-lg:grid max-lg:grid-cols-1 max-lg:gap-y-4 max-lg:place-items-center"
         >
-          <Div flex itemsCenter className="text-xs text-myGray">
+          <Div flex itemsCenter className="text-xs text-myGray max-md:text-center">
             <p>
               Merkulove © Furnix Template All rights reserved Copyrights 2023
             </p>
           </Div>
 
-          <Div flex itemsCenter pointer>
+          <Div flex itemsCenter pointer className="max-md:w-[90%]">
             <Image
               src={payment}
               alt="payment"

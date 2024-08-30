@@ -10,7 +10,7 @@ const PromotionHome = () => {
       centerColumn
       className="gap-5 overflow-hidden max-md:px-4 max-lg:px-10"
     >
-      <h1 className="text-32 font-baiJamjure font-thin">
+      <h1 className="text-32 font-baiJamjure font-thin max-md:leading-8">
         Level Up Your Living Room
       </h1>
 

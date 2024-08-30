@@ -120,33 +120,33 @@ export const BannerAbout = () => {
             A Growing Customer Community
           </h1>
 
-          <Div full flex center itemsCenter className="gap-8 px-24 max-md:px-0 max-md:gap-3 max-lg:px-3">
+          <Div full flex center itemsCenter className="gap-8 px-24 max-md:px-0 max-md:gap-1 max-lg:px-3">
             <Div column itemsCenter className="text-center gap-5">
-              <h2 className="text-4xl max-md:text-2xl">biggest</h2>
+              <h2 className="text-4xl max-md:text-xl">biggest</h2>
               <Separator />
-              <p className="w-[60%] text-myDarkGray max-md:w-full">
+              <p className="w-[60%] text-myDarkGray max-md:text-xs max-md:w-full">
                 One of the biggest players in the home retail industry
               </p>
             </Div>
             <Div column itemsCenter className="text-center gap-5">
-              <h2 className="text-4xl max-md:text-2xl">&gt; 20 000</h2>
+              <h2 className="text-4xl max-md:text-xl">&gt; 20 000</h2>
               <Separator />
-              <p className="w-[60%] text-myDarkGray max-md:w-full">
+              <p className="w-[60%] text-myDarkGray max-md:text-xs max-md:w-full">
                 Offering products for all your home requirements
               </p>
             </Div>
             <Div column itemsCenter className="text-center gap-5">
-              <h2 className="text-4xl max-md:text-2xl">1.8 Million</h2>
+              <h2 className="text-4xl max-md:text-xl">1.8 Million</h2>
               <Separator />
-              <p className="w-[60%] text-myDarkGray max-md:w-full">
-                Continuously growing with an ever-expanding customer base
+              <p className="w-[60%] text-myDarkGray max-md:text-xs max-md:w-full">
+                Continuously growing with ever-expanding customer base
               </p>
             </Div>
           </Div>
         </Div>
 
         {/* image */}
-        <Div full className="h-[420px] overflow-hidden">
+        <Div full className="h-[420px] overflow-hidden max-md:h-80">
           <Images />
         </Div>
       </Wrapper>
@@ -158,10 +158,10 @@ export const BannerShop = () => {
   return (
     <Wrapper full flex itemsCenter className="p-10 bg-myBrokenWhite">
       <Div className="basis-5/12 space-y-8">
-        <h1 className="text-4xl max-md:text-2xl font-thin text-balance">
+        <h1 className="text-4xl max-md:text-xl font-thin text-balance">
           Get new products and promotions in your inbox
         </h1>
-        <p className="text-sm text-myDarkGray text-balance">
+ max-md:text-xs        <p className="text-sm text-myDarkGray text-balance">
           Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
           labore et dolore magna
         </p>
@@ -207,10 +207,10 @@ export const BannerWishlist = () => {
     <section className="w-full bg-myBrokenWhite pt-10 relative h-80 overflow-hidden">
       <Wrapper className="grid grid-cols-2 gap-10 px-32 items-center z-30">
         <Div className="space-y-7">
-          <h1 className="text-4xl max-md:text-2xl text-balance font-thin">
+          <h1 className="text-4xl max-md:text-xl text-balance font-thin">
             We&apos;re solving the biggest problems in furniture
           </h1>
-
+ max-md:text-xs
           <p>
             Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
             labore et dolore magna. Ut enim ad minim veniam, quis nostrud
@@ -242,10 +242,10 @@ export const BannerDetailBlogPost = () => {
 export const BannerContactInformation = () => {
   return (
     <Div full column className="p-10 space-y-6 bg-mySmoothGray">
-      <h2 className="text-2xl font-thin">
+      <h2 className="text-xl font-thin">
         Have Questions? Ask Our Furnix Team!
       </h2>
-      <p className="text-sm text-balance text-myDarkGray">
+ max-md:text-xs      <p className="text-sm text-balance text-myDarkGray">
         Ultrices neque ornare aenean euismod elementum nisi. Vulputate mi sit
         amet mauris commodo quis. Sit amet nisl purus in mollis.
       </p>
