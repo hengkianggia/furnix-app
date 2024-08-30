@@ -120,7 +120,13 @@ export const BannerAbout = () => {
             A Growing Customer Community
           </h1>
 
-          <Div full flex center itemsCenter className="gap-8 px-24 max-md:px-0 max-md:gap-1 max-lg:px-3">
+          <Div
+            full
+            flex
+            center
+            itemsCenter
+            className="gap-8 px-24 max-md:px-0 max-md:gap-1 max-lg:px-3"
+          >
             <Div column itemsCenter className="text-center gap-5">
               <h2 className="text-4xl max-md:text-xl">biggest</h2>
               <Separator />
@@ -156,17 +162,21 @@ export const BannerAbout = () => {
 
 export const BannerShop = () => {
   return (
-    <Wrapper full flex itemsCenter className="p-10 bg-myBrokenWhite">
-      <Div className="basis-5/12 space-y-8">
-        <h1 className="text-4xl max-md:text-xl font-thin text-balance">
+    <Wrapper
+      full
+      flex
+      itemsCenter
+      className="p-10 bg-myBrokenWhite max-md:px-4 max-lg:px-10"
+    >
+      <Div className="basis-5/12 space-y-8 max-md:basis-full max-md:space-y-4">
+        <h1 className="text-4xl max-md:text-3xl font-thin text-balance">
           Get new products and promotions in your inbox
         </h1>
- max-md:text-xs        <p className="text-sm text-myDarkGray text-balance">
+        <p className="text-sm text-myDarkGray text-balance">
           Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
           labore et dolore magna
         </p>
-
-        <Div full flex between className="w-[80%]">
+        <Div full flex between className="w-[80%] max-md:w-[90%]">
           <Input
             type="email"
             placeholder="Enter your email"
@@ -181,20 +191,17 @@ export const BannerShop = () => {
         </Div>
       </Div>
 
-      <Div full relative className="basis-7/12 aspect-16/7">
-        <Images />
+      <Div full relative className="basis-7/12 aspect-16/7 max-md:hidden">
+        <Images className="max-lg:hidden"/>
 
         <Div
           absolute
-          className="w-56 aspect-square bg-orange-400 -bottom-8 -left-8 shadow-lg"
+          className="w-56 aspect-square bottom-3 left-10 shadow-lg"
         >
           <Images />
         </Div>
 
-        <Div
-          absolute
-          className="w-56 aspect-square bg-orange-400 -top-8 -right-8 shadow-lg"
-        >
+        <Div absolute className="w-56 aspect-square top-3 right-0 shadow-lg">
           <Images />
         </Div>
       </Div>
@@ -210,13 +217,12 @@ export const BannerWishlist = () => {
           <h1 className="text-4xl max-md:text-xl text-balance font-thin">
             We&apos;re solving the biggest problems in furniture
           </h1>
- max-md:text-xs
+          max-md:text-xs
           <p>
             Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
             labore et dolore magna. Ut enim ad minim veniam, quis nostrud
             exercitation ullamco laboris
           </p>
-
           <Button className="uppercase hover:bg-gray-100 hover:text-myBlack">
             shop now
             <Icon icon={Icons.ArrowRightCircle} className="text-24 ml-2" />
@@ -245,11 +251,11 @@ export const BannerContactInformation = () => {
       <h2 className="text-xl font-thin">
         Have Questions? Ask Our Furnix Team!
       </h2>
- max-md:text-xs      <p className="text-sm text-balance text-myDarkGray">
+      max-md:text-xs{" "}
+      <p className="text-sm text-balance text-myDarkGray">
         Ultrices neque ornare aenean euismod elementum nisi. Vulputate mi sit
         amet mauris commodo quis. Sit amet nisl purus in mollis.
       </p>
-
       <Div full flex itemsCenter between>
         <Div flex itemsCenter pointer>
           <Icon icon={Icons.Call} className="text-xl mr-2" />
@@ -260,7 +266,6 @@ export const BannerContactInformation = () => {
           pengkyjd00@gmail.com
         </Div>
       </Div>
-
       <Button className="uppercase w-fit" variant={"outline"}>
         shop now <Icon icon={Icons.ArrowRightCircle} className="text-xl ml-2" />
       </Button>

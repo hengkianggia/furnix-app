@@ -28,7 +28,7 @@ const ItemProduct = ({ position = "center", className }: ItemProductProps) => {
       )}
     >
       <Div full relative>
-        <Images className="aspect-square relative" />
+        <Images className="aspect-square w-full relative" />
         <Div
           absolute
           full
@@ -73,7 +73,7 @@ const ItemProduct = ({ position = "center", className }: ItemProductProps) => {
           <Icon icon={Icons.Stars} className="text-myOrange" />
           <Icon icon={Icons.Stars} className="text-myOrange" />
         </Div>
-        <h4>Minimalist Vases Set</h4>
+        <h4 className="line-clamp-2">Minimalist Vases Set</h4>
 
         <Div
           center

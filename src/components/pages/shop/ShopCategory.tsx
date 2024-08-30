@@ -9,9 +9,9 @@ import React from "react";
 
 const ShopCategory = () => {
   return (
-    <Wrapper full className="space-y-5">
+    <Wrapper full className="space-y-5 max-md:px-4 max-lg:px-10">
       <Div full flex between itemsCenter>
-        <h1 className="text-4xl font-thin">Shop by Category</h1>
+        <h1 className="text-4xl font-thin max-md:text-2xl">Shop by Category</h1>
 
         <Div flex itemsCenter pointer className="space-x-3">
           <Icon icon={Icons.ArrowLeft} className="text-2xl text-myDarkGray" />

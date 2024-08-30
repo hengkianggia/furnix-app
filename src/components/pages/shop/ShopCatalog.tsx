@@ -15,9 +15,9 @@ import {
 
 const ShopCatalog = () => {
   return (
-    <Wrapper full className="space-y-4">
-      <Div full flex between itemsCenter>
-        <Div flex itemsCenter className="space-x-4">
+    <Wrapper full className="space-y-4 max-md:px-4 max-lg:px-10">
+      <Div full flex between itemsCenter className="max-md:justify-end">
+        <Div flex itemsCenter className="space-x-4 max-md:hidden">
           <Button className="bg-transparent text-myBlack border border-myBlack capitalize hover:text-myBrokenWhite">
             rice
           </Button>
@@ -48,7 +48,7 @@ const ShopCatalog = () => {
       </Div>
 
       {/* product */}
-      <Div full grid className="grid-cols-3 gap-4">
+      <Div full grid className="grid-cols-3 gap-4 max-md:grid-cols-2">
         <ItemProduct />
         <ItemProduct />
         <ItemProduct />
