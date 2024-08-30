@@ -7,10 +7,10 @@ const listRating = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 const RatingsCutomer = () => {
   return (
-    <section className="w-full">
+    <section className="w-full max-md:px-4 max-lg:px-10">
       <Wrapper>
         <Div column className="gap-3">
-          <h1 className="font-baiJamjure text-32 font-thin">
+          <h1 className="font-baiJamjure text-32 font-thin max-md:leading-8">
             Ratings from Our Customers
           </h1>
           <Div

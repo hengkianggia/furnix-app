@@ -7,6 +7,16 @@ import Wrapper from "./Wrapper";
 import { Icon } from "@iconify/react";
 import Link from "next/link";
 import { Icons } from "@/data/data";
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetDescription,
+  SheetFooter,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 
 const listNavbar = [
   {
@@ -30,16 +40,12 @@ const listNavbar = [
 const Navbar = () => {
   const [like, setLike] = useState(false);
   return (
-    <nav className="w-full bg-white shadow-md grid place-items-center fixed left-0 top-0 z-40">
-      {/* top content */}
-      {/* <Div full className="bg-myBlack text-myGray py-1" center>
-        OCTOBER SALE
-        <Icon icon="fluent-mdl2:separator" />
-        Up to 40% off
-      </Div> */}
-
-      {/* maincontent */}
-      <Wrapper className="my-4 sticky top-0">
+    <nav
+      className={`w-full bg-white shadow-md grid place-items-center fixed left-0 top-0 z-40 overflow-hidden`}
+    >
+      <Wrapper
+        className={`my-4 sticky top-0 overflow-hidden max-md:px-4 max-lg:px-10 max-lg:py-3`}
+      >
         <Div full between itemsCenter>
           <Div pointer>
             <Link href={"/"}>
@@ -107,7 +113,7 @@ const Navbar = () => {
             </Link>
           </Div>
 
-          <Div>
+          <Div className="max-lg:hidden">
             <ul className="flex items-center gap-10 text-18">
               {listNavbar.map((item) => (
                 <li
@@ -120,7 +126,7 @@ const Navbar = () => {
             </ul>
           </Div>
 
-          <Div flex itemsCenter className="gap-6">
+          <Div flex itemsCenter className="gap-6 max-lg:hidden">
             <Div flex itemsCenter className="gap-2" pointer>
               <Icon icon={Icons.Search} />
               <p>Search</p>
@@ -154,6 +160,69 @@ const Navbar = () => {
                 <p className="text-xs group-hover:text-white">$100</p>
               </Div>
             </Link>
+          </Div>
+
+          <Div className="lg:hidden">
+            <Sheet>
+              <SheetTrigger asChild>
+                <Icon icon={Icons.Menu} className="text-2xl" />
+              </SheetTrigger>
+              <SheetContent className="space-y-10">
+                <Div className="mt-20">
+                  <ul className="flex flex-col gap-10 text-18 items-end">
+                    {listNavbar.map((item) => (
+                      <li
+                        className="cursor-pointer text-3xl hover:text-myOrange transition-all"
+                        key={item.name}
+                      >
+                        <Link href={item.path}>{item.name}</Link>
+                      </li>
+                    ))}
+                  </ul>
+                </Div>
+
+                <Div flex column className="gap-10 items-end">
+                  <Div flex itemsCenter className="gap-2 text-3xl" pointer>
+                    <Icon icon={Icons.Search} className="text-2xl"/>
+                    <p>Search</p>
+                  </Div>
+
+                  <Link href={"/wishlist"}>
+                    <Div
+                      flex
+                      itemsCenter
+                      className="gap-2 group text-3xl"
+                      pointer
+                      onMouseEnter={() => setLike(!like)}
+                      onMouseLeave={() => setLike(!like)}
+                    >
+                      {like ? (
+                        <Icon icon={Icons.HeartFill} className="text-red-500 text-2xl" />
+                      ) : (
+                        <Icon icon={Icons.Heart} className="text-2xl"/>
+                      )}
+                      <p>Wishlist</p>
+                    </Div>
+                  </Link>
+                  <Link href={"/cart"} className="w-full">
+                    <Div
+                      full
+                      flex
+                      center
+                      className="border border-black rounded-full px-4 py-2 gap-2 group hover:bg-myBlack text-3xl"
+                      pointer
+                    >
+                      <Icon
+                        icon={Icons.Cart}
+                        className="group-hover:text-white text-2xl"
+                      />
+                      <p className="group-hover:text-white">Cart</p>
+                      <p className="group-hover:text-white text-lg">$100</p>
+                    </Div>
+                  </Link>
+                </Div>
+              </SheetContent>
+            </Sheet>
           </Div>
         </Div>
       </Wrapper>

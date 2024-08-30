@@ -265,6 +265,7 @@ export const Icons = {
   Dot: "ph:dot-outline",
   RightTriangle: "mdi:menu-right-outline",
   Comment: "ant-design:comment-outlined",
+  Menu: "ic:round-menu",
 };
 
 export const rules = [

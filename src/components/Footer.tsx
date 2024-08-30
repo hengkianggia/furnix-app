@@ -70,11 +70,14 @@ const Footer = () => {
   };
 
   return (
-    <footer className="w-full bg-myBlack grid place-items-center pb-10 pt-16 mt-20">
+    <footer className="w-full bg-myBlack grid place-items-center pb-10 pt-16 mt-20 max-md:px-4 max-lg:px-10">
       <Wrapper className="text-white flex flex-col items-center">
         {/* atas */}
-        <Div className="grid grid-cols-12 gap-x-4">
-          <Div column className="space-y-2 col-span-4">
+        <Div wrap className="grid grid-cols-12 gap-x-4 max-lg:gap-y-10">
+          <Div
+            column
+            className="space-y-2 col-span-4 max-md:col-span-12 max-lg:col-span-5"
+          >
             <Div className="space-y-3">
               <svg
                 width="100"
@@ -159,7 +162,7 @@ const Footer = () => {
             </Div>
           </Div>
 
-          <Div className="space-y-3 col-span-2">
+          <Div className="space-y-3 col-span-2 max-md:col-span-6 max-lg:col-span-3">
             <h1>About</h1>
             <ul className="text-myGray">
               {list[0].item.map((item) => {
@@ -178,7 +181,7 @@ const Footer = () => {
             </ul>
           </Div>
 
-          <Div className="space-y-3 col-span-2">
+          <Div className="space-y-3 col-span-2 max-md:col-span-6 max-lg:col-span-4">
             <h1>What&apos;s Popular</h1>
             <ul className="text-myGray">
               {list[1].item.map((item) => {
@@ -197,7 +200,7 @@ const Footer = () => {
             </ul>
           </Div>
 
-          <Div full className="col-span-4 space-y-3">
+          <Div full className="col-span-4 space-y-3 max-lg:col-span-12">
             <h1 className="font-baiJamjure">Get 5% off your first order!</h1>
             <p>
               Subscribe and get discount for your first order! Also receive
@@ -255,7 +258,12 @@ const Footer = () => {
       <Separator className="bg-myGray my-3" />
 
       <Wrapper>
-        <Div full between itemsCenter>
+        <Div
+          full
+          between
+          itemsCenter
+          className="max-lg:grid max-lg:grid-cols-1 max-lg:gap-y-4 max-lg:place-items-center"
+        >
           <Div flex itemsCenter className="text-xs text-myGray">
             <p>
               Merkulove © Furnix Template All rights reserved Copyrights 2023

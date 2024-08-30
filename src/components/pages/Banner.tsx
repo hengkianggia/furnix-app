@@ -14,10 +14,15 @@ import { Icons } from "@/data/data";
 
 export const Banner1 = () => {
   return (
-    <section className={`w-full aspect-16/7 max-h-[700px] relative`}>
-      <Wrapper column className={`h-full justify-center z-20`}>
+    <section
+      className={`w-full aspect-16/7 max-h-[700px] relative max-md:max-h-[800px]`}
+    >
+      <Wrapper
+        column
+        className={`h-full justify-center z-20 max-md:px-4 max-lg:px-10`}
+      >
         <Div column className="gap-5">
-          <h1 className="text-48 text-myBlack leading-[60px] font-thin">
+          <h1 className="text-48 text-myBlack leading-[60px] font-thin max-lg:text-32 max-lg:leading-8">
             Light Up Your Space <br /> with Our Lamps
           </h1>
           <Button
@@ -45,17 +50,17 @@ export const Banner1 = () => {
 
 export const Banner2 = () => {
   return (
-    <section className="w-full bg-myBrokenWhite pt-10">
-      <Wrapper className="grid grid-cols-2 gap-10 px-32 items-center">
-        <Div className="space-y-7">
-          <h1 className="font-normal">
+    <section className="w-full bg-myBrokenWhite pt-10 max-lg:pb-10">
+      <Wrapper className="grid grid-cols-2 gap-10 px-32 items-center max-md:px-4 max-lg:px-10">
+        <Div className="space-y-7 max-lg:col-span-2">
+          <h1 className="font-normal max-md:w-full max-lg:w-[80%]">
             &quot;Absolutely thrilled with the new coffee table! We&apos;ve
             received so many compliments, and friends are eager to know where we
             found it.&quot;
           </h1>
 
           {/* icon */}
-          <Div flex itemsCenter between>
+          <Div flex itemsCenter between className="max-md:w-full max-lg:w-[80%]">
             <h4 className="uppercase">Alysa Keebler</h4>
             <Div flex itemsCenter gap={3}>
               <Icon icon={Icons.ArrowLeft} className="text-xl cursor-pointer" />
@@ -88,7 +93,7 @@ export const Banner2 = () => {
         </Div>
 
         {/* image */}
-        <Div>
+        <Div className="max-lg:hidden">
           <Image
             src={fummy}
             width={500}

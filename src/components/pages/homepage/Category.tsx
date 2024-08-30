@@ -31,11 +31,11 @@ const listItem = [
 
 const Category = () => {
   return (
-    <Wrapper flex full className="justify-between px-32 h-72">
+    <Wrapper flex full className="justify-between px-32 h-72 max-md:px-4 max-lg:px-10 max-md:justify-center">
       <Div
         Hfull
         column
-        className="basis-5/12 border-myGray border-t border-b justify-evenly"
+        className="basis-5/12 border-myGray border-t border-b justify-evenly max-md:basis-11/12"
       >
         {listItem.map((item, index) => (
           <>
@@ -44,7 +44,7 @@ const Category = () => {
           </>
         ))}
       </Div>
-      <Div grow>
+      <Div grow className="max-md:hidden">
         <Images />
       </Div>
     </Wrapper>

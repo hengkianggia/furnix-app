@@ -14,7 +14,7 @@ export const ListItemHomepageOne = ({ under = false }: { under?: boolean }) => {
       full
       relative
       pointer
-      className="space-y-2 rounded-md overflow-hidden"
+      className="space-y-2 rounded-md overflow-hidden min-w-72 max-w-72 max-lg:snap-center max-lg:snap-always"
     >
       <Div
         relative

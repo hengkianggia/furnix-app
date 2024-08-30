@@ -5,12 +5,12 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-export function addPrefix(prefix: string, classNames: string): string {
-  return classNames
-    .split(" ")
-    .map((className) => `${prefix}${className}`)
-    .join(" ");
-}
+// export function addPrefix(prefix: string, classNames: string): string {
+//   return classNames
+//     .split(" ")
+//     .map((className) => `${prefix}${className}`)
+//     .join(" ");
+// }
 
 export function cleanPath(path: string): string[] {
   // Menghilangkan slash di awal dan akhir path
@@ -48,4 +48,3 @@ export function getRandomEvenNumber(min: number, max: number): number {
 
 // Contoh penggunaan
 const randomEvenNumber = getRandomEvenNumber(2, 100);
-console.log(randomEvenNumber);
