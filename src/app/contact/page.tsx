@@ -22,12 +22,12 @@ const Contact = () => {
         title={"Contacts"}
         desc="Have questions? Contact us using the form below"
       />
-      <Wrapper full className="px-32">
-        <Div full grid className="grid-cols-2 gap-16 place-items-center">
-          <h1 className="text-4xl font-thin text-balance">
+      <Wrapper full className="px-32 max-md:px-4 max-lg:px-10">
+        <Div full grid className="grid-cols-2 gap-16 place-items-center max-md:grid-cols-1 max-md:gap-6 max-lg:gap-10">
+          <h1 className="text-4xl font-thin text-balance max-md:col-span-1 max-lg:col-span-2 max-lg:text-center max-md:text-start">
             Contact Information for Furnix in Different Cities
           </h1>
-          <p className="text-sm text-myDarkGray">
+          <p className="text-sm text-myDarkGray max-md:col-span-1 max-lg:col-span-2 max-lg:text-center max-md:text-start max-md:w-full max-lg:w-[60%]">
             Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
             labore et dolore magna
           </p>
@@ -85,12 +85,12 @@ const Contact = () => {
             </Div>
           </Div>
 
-          <Div full className="aspect-square">
+          <Div full className="aspect-square max-lg:hidden">
             <Images />
           </Div>
 
-          <Div grid className="grid-cols-2 gap-4">
-            <h2 className="col-span-2 text-4xl font-thin">Contact Us</h2>
+          <Div full grid className="grid-cols-2 gap-4 max-md:col-span-1 max-lg:col-span-2">
+            <h2 className="col-span-2 text-4xl font-thin max-lg:text-2xl">Contact Us</h2>
             <p className="col-span-2 text-sm">
               We&apos;d like to hear from you. Please complete the form below so we
               can respond to your enquiry
@@ -120,7 +120,7 @@ const Contact = () => {
                 className="space-y-2 uppercase text-sm text-myDarkGray col-span-2"
               >
                 <h4>message</h4>
-                <Textarea className="rounded-xl  min-h-32" />
+                <Textarea className="rounded-xl  min-h-32 max-lg:min-h-20" />
               </Div>
 
               <Button className="uppercase bg-myBlack w-fit">
