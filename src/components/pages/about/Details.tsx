@@ -46,9 +46,9 @@ const listSHaping = [
 const Details = () => {
   return (
     <section className="w-full">
-      <Wrapper full className="space-y-20">
+      <Wrapper full className="space-y-20 max-md:px-4 max-lg:px-10">
         <Div full column className="gap-8 overflow-hidden">
-          <Div flex className="gap-5">
+          <Div flex className="gap-5 max-md:flex-col">
             <h3 className="text-2xl basis-7/12 text-balance">
               Our mission is to create timeless, versatile, and minimalist
               furniture that seamlessly complements any space
@@ -61,18 +61,18 @@ const Details = () => {
           </Div>
 
           <Div flex className="gap-5 overflow-hidden">
-            <Div className="basis-7/12">
+            <Div className="basis-7/12 max-md:basis-full">
               <Images className="h-96" />
             </Div>
-            <Div className="basis-5/12">
+            <Div className="basis-5/12 max-md:hidden">
               <Images className="h-96" />
             </Div>
           </Div>
         </Div>
 
         <Div full className="space-y-6">
-          <h1 className="text-4xl font-thin">Shaping the Future</h1>
-          <Div grid className="grid-cols-3 gap-6 gap-y-10">
+          <h1 className="text-4xl font-thin max-md:text-3xl">Shaping the Future</h1>
+          <Div grid className="grid-cols-3 gap-6 gap-y-10 max-md:grid-cols-1 max-lg:grid-cols-2">
             {listSHaping.map((item, index) => (
               <ItemShaping
                 key={index}

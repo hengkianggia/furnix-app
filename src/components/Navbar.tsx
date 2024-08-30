@@ -11,10 +11,6 @@ import {
   Sheet,
   SheetClose,
   SheetContent,
-  SheetDescription,
-  SheetFooter,
-  SheetHeader,
-  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 
@@ -175,7 +171,9 @@ const Navbar = () => {
                         className="cursor-pointer text-3xl hover:text-myOrange transition-all"
                         key={item.name}
                       >
-                        <Link href={item.path}>{item.name}</Link>
+                        <SheetClose asChild>
+                          <Link href={item.path}>{item.name}</Link>
+                        </SheetClose>
                       </li>
                     ))}
                   </ul>
@@ -183,42 +181,49 @@ const Navbar = () => {
 
                 <Div flex column className="gap-10 items-end">
                   <Div flex itemsCenter className="gap-2 text-3xl" pointer>
-                    <Icon icon={Icons.Search} className="text-2xl"/>
+                    <Icon icon={Icons.Search} className="text-2xl" />
                     <p>Search</p>
                   </Div>
 
                   <Link href={"/wishlist"}>
-                    <Div
-                      flex
-                      itemsCenter
-                      className="gap-2 group text-3xl"
-                      pointer
-                      onMouseEnter={() => setLike(!like)}
-                      onMouseLeave={() => setLike(!like)}
-                    >
-                      {like ? (
-                        <Icon icon={Icons.HeartFill} className="text-red-500 text-2xl" />
-                      ) : (
-                        <Icon icon={Icons.Heart} className="text-2xl"/>
-                      )}
-                      <p>Wishlist</p>
-                    </Div>
+                    <SheetClose asChild>
+                      <Div
+                        flex
+                        itemsCenter
+                        className="gap-2 group text-3xl"
+                        pointer
+                        onMouseEnter={() => setLike(!like)}
+                        onMouseLeave={() => setLike(!like)}
+                      >
+                        {like ? (
+                          <Icon
+                            icon={Icons.HeartFill}
+                            className="text-red-500 text-2xl"
+                          />
+                        ) : (
+                          <Icon icon={Icons.Heart} className="text-2xl" />
+                        )}
+                        <p>Wishlist</p>
+                      </Div>
+                    </SheetClose>
                   </Link>
-                  <Link href={"/cart"} className="w-full">
-                    <Div
-                      full
-                      flex
-                      center
-                      className="border border-black rounded-full px-4 py-2 gap-2 group hover:bg-myBlack text-3xl"
-                      pointer
-                    >
-                      <Icon
-                        icon={Icons.Cart}
-                        className="group-hover:text-white text-2xl"
-                      />
-                      <p className="group-hover:text-white">Cart</p>
-                      <p className="group-hover:text-white text-lg">$100</p>
-                    </Div>
+                  <Link href={"/cart"}>
+                    <SheetClose asChild className="w-full">
+                      <Div
+                        full
+                        flex
+                        center
+                        className="border border-black rounded-full px-4 py-2 gap-2 group hover:bg-myBlack text-3xl"
+                        pointer
+                      >
+                        <Icon
+                          icon={Icons.Cart}
+                          className="group-hover:text-white text-2xl"
+                        />
+                        <p className="group-hover:text-white">Cart</p>
+                        <p className="group-hover:text-white text-lg">$100</p>
+                      </Div>
+                    </SheetClose>
                   </Link>
                 </Div>
               </SheetContent>

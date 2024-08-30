@@ -10,8 +10,8 @@ import React from "react";
 const CustomFurniture = () => {
   return (
     <Div as={"section"} full>
-      <Wrapper full flex between itemsCenter className="px-32 gap-6">
-        <Div className="basis-6/12 space-y-4">
+      <Wrapper full flex between itemsCenter className="px-32 gap-6 max-md:px-4 max-lg:px-10 max-md:flex-col">
+        <Div className="basis-6/12 space-y-4 max-md:text-center">
           <h1 className="text-4xl font-thin text-balance">
             120+ Fabrics for Your Custom Furniture
           </h1>
@@ -22,7 +22,7 @@ const CustomFurniture = () => {
             exercitation ullamco laboris
           </p>
 
-          <Div full flex between className="w-[80%]">
+          <Div full flex between className="w-[80%] max-md:w-full">
             <Input
               type="email"
               placeholder="Enter your email"
@@ -38,7 +38,7 @@ const CustomFurniture = () => {
         </Div>
 
         {/* images */}
-        <Div className="basis-6/12">
+        <Div className="basis-6/12 max-md:w-full">
           <Images className="aspect-square rounded-md" />
         </Div>
       </Wrapper>

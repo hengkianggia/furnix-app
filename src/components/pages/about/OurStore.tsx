@@ -31,7 +31,7 @@ const OurStore = () => {
       <Wrapper full column itemsCenter className="gap-6">
         <h1 className="text-4xl font-thin">Visit Our Stores</h1>
 
-        <Div full grid className="grid-cols-2 gap-4 px-32">
+        <Div full grid className="grid-cols-2 gap-4 px-32 max-md:px-4 max-lg:px-10 max-md:grid-cols-1">
           {location.map((item, index) => (
             <ItemLocation
               key={index}
@@ -41,7 +41,7 @@ const OurStore = () => {
           ))}
         </Div>
 
-        <Div className="w-[50%] text-center mt-20 space-y-3">
+        <Div className="w-[50%] text-center mt-20 space-y-3 max-md:w-[80%]">
           <h1 className="text-3xl font-thin">Not in your town yet?</h1>
           <p className="text-sm text-myDarkGray">
             Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut

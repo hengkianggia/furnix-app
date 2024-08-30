@@ -18,8 +18,6 @@ export function BreadcrumGroup() {
 
   const { category, id } = useParams();
 
-  console.log(pathNew.length);
-  console.log(category, id);
   return (
     <Breadcrumb>
       <BreadcrumbList>

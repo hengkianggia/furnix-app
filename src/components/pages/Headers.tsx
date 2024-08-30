@@ -12,7 +12,7 @@ interface Props {
 const Headers = ({ title, desc }: Props) => {
   return (
     <section className="w-full overflow-hidden">
-      <Wrapper>
+      <Wrapper className="max-md:px-4 max-lg:px-10">
         <BreadcrumGroup />
       </Wrapper>
 
@@ -22,7 +22,7 @@ const Headers = ({ title, desc }: Props) => {
           itemsCenter
           className="max-w-[700px] text-center space-y-4 z-20"
         >
-          <h1 className="text-48 leading-superThin font-thin">{title}</h1>
+          <h1 className="text-48 leading-superThin font-thin max-md:text-32">{title}</h1>
           <p className="max-w-[70%] text-myDarkGray text-sm">{desc}</p>
         </Div>
 

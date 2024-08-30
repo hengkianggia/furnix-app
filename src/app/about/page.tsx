@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 const About = () => {
   return (
-    <Div column className="gap-44">
+    <Div column className="gap-44 max-md:gap-20 max-lg:gap-32">
       <Headers title="Helping All Create Home Anywhere" />
       <Details />
       <BannerAbout />

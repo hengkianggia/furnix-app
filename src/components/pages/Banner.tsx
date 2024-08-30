@@ -60,7 +60,12 @@ export const Banner2 = () => {
           </h1>
 
           {/* icon */}
-          <Div flex itemsCenter between className="max-md:w-full max-lg:w-[80%]">
+          <Div
+            flex
+            itemsCenter
+            between
+            className="max-md:w-full max-lg:w-[80%]"
+          >
             <h4 className="uppercase">Alysa Keebler</h4>
             <Div flex itemsCenter gap={3}>
               <Icon icon={Icons.ArrowLeft} className="text-xl cursor-pointer" />
@@ -108,29 +113,32 @@ export const Banner2 = () => {
 
 export const BannerAbout = () => {
   return (
-    <section className="w-full py-28 bg-myBrokenWhite">
-      <Wrapper full column className="space-y-10">
+    <section className="w-full py-28 bg-myBrokenWhite max-md:py-16">
+      <Wrapper full column className="space-y-10 max-md:px-4 max-lg:px-10">
         <Div full column itemsCenter className="space-y-8">
-          <h1 className="text-48 font-thin">A Growing Customer Community</h1>
-          <Div full flex center className="gap-8 px-24">
+          <h1 className="text-48 font-thin max-md:text-32 max-md:text-center max-md:leading-8">
+            A Growing Customer Community
+          </h1>
+
+          <Div full flex center itemsCenter className="gap-8 px-24 max-md:px-0 max-md:gap-3 max-lg:px-3">
             <Div column itemsCenter className="text-center gap-5">
-              <h2 className="text-4xl">biggest</h2>
+              <h2 className="text-4xl max-md:text-2xl">biggest</h2>
               <Separator />
-              <p className="w-[60%] text-myDarkGray">
+              <p className="w-[60%] text-myDarkGray max-md:w-full">
                 One of the biggest players in the home retail industry
               </p>
             </Div>
             <Div column itemsCenter className="text-center gap-5">
-              <h2 className="text-4xl">&gt; 20 000</h2>
+              <h2 className="text-4xl max-md:text-2xl">&gt; 20 000</h2>
               <Separator />
-              <p className="w-[60%] text-myDarkGray">
+              <p className="w-[60%] text-myDarkGray max-md:w-full">
                 Offering products for all your home requirements
               </p>
             </Div>
             <Div column itemsCenter className="text-center gap-5">
-              <h2 className="text-4xl">1.8 Million</h2>
+              <h2 className="text-4xl max-md:text-2xl">1.8 Million</h2>
               <Separator />
-              <p className="w-[60%] text-myDarkGray">
+              <p className="w-[60%] text-myDarkGray max-md:w-full">
                 Continuously growing with an ever-expanding customer base
               </p>
             </Div>
@@ -150,7 +158,7 @@ export const BannerShop = () => {
   return (
     <Wrapper full flex itemsCenter className="p-10 bg-myBrokenWhite">
       <Div className="basis-5/12 space-y-8">
-        <h1 className="text-4xl font-thin text-balance">
+        <h1 className="text-4xl max-md:text-2xl font-thin text-balance">
           Get new products and promotions in your inbox
         </h1>
         <p className="text-sm text-myDarkGray text-balance">
@@ -199,7 +207,7 @@ export const BannerWishlist = () => {
     <section className="w-full bg-myBrokenWhite pt-10 relative h-80 overflow-hidden">
       <Wrapper className="grid grid-cols-2 gap-10 px-32 items-center z-30">
         <Div className="space-y-7">
-          <h1 className="text-4xl text-balance font-thin">
+          <h1 className="text-4xl max-md:text-2xl text-balance font-thin">
             We&apos;re solving the biggest problems in furniture
           </h1>
 
