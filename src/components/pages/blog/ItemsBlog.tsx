@@ -21,16 +21,16 @@ const ItemsBlog = ({ classNameImage }: { classNameImage?: string }) => {
             className="gap-3 uppercase text-sm text-myDarkGray"
           >
             <h4>October 12, 2023</h4>
-            <Icon icon={Icons.Dot} className="text-2xl" />
-            <h4>Interior Design</h4>
-            <Icon icon={Icons.Dot} className="text-2xl" />
-            <h4>2 Comments</h4>
+            <Icon icon={Icons.Dot} className="text-2xl max-lg:hidden" />
+            <h4 className="max-lg:hidden">Interior Design</h4>
+            <Icon icon={Icons.Dot} className="text-2xl max-lg:hidden" />
+            <h4 className="max-lg:hidden">2 Comments</h4>
           </Div>
 
-          <h1 className="text-3xl font-thin">
+          <h1 className="text-3xl font-thin max-lg:text-xl">
             Dining Table Shapes: Which One Suits Your Dining Space Best?
           </h1>
-          <p className="line-clamp-2 text-sm text-myDarkGray">
+          <p className="line-clamp-2 text-sm text-myDarkGray max-md:text-xs">
             Nibh ipsum consequat nisl vel pretium lectus. Quis risus sed
             vulputate odio ut enim. Sit amet risus nullam eget felis eget nunc
             lobortis. Tellus id interdum velit laoreet id donec ultrices
@@ -49,7 +49,7 @@ const ItemsBlog = ({ classNameImage }: { classNameImage?: string }) => {
 
         <Tag
           text="tag name"
-          className="absolute top-4 left-4 border-none uppercase"
+          className="absolute top-4 left-4 border-none uppercase max-lg:top-2 max-lg:left-2"
         />
       </Div>
     </Link>

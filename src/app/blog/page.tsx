@@ -46,9 +46,12 @@ const Blog = () => {
         title={"Our stories"}
         desc="Discover the latest interior design trends and furniture tips on our blog"
       />
-      <Wrapper full flex className="gap-10">
+      <Wrapper full flex className="gap-10 max-md:px-4 max-lg:px-10">
         {/* left */}
-        <Div column className="basis-8/12 gap-10">
+        <Div
+          column
+          className="basis-8/12 gap-10 max-md:flex max-lg:basis-full max-lg:grid max-lg:grid-cols-2 max-lg:gap-5"
+        >
           <ItemsBlog />
           <ItemsBlog />
           <ItemsBlog />
@@ -56,12 +59,14 @@ const Blog = () => {
           <ItemsBlog />
           <ItemsBlog />
           <ItemsBlog />
-
-          <PaginationComponents />
+          <ItemsBlog />
+          <Div className="max-lg:col-span-2">
+            <PaginationComponents />
+          </Div>
         </Div>
 
         {/* right */}
-        <Div className="basis-4/12 h-[88vh] overflow-y-scroll scrollbar-none bg-mySmoothGray p-8 space-y-7 sticky top-24">
+        <Div className="basis-4/12 h-[88vh] overflow-y-scroll scrollbar-none bg-mySmoothGray p-8 space-y-7 sticky top-24 max-lg:hidden">
           <Div className="space-y-3">
             <h4 className="uppercase">search</h4>
             <Input placeholder="Type something here" className="rounded-full" />
