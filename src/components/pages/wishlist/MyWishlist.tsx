@@ -23,7 +23,7 @@ const MyWishlist = () => {
   const router = useRouter();
   return (
     <Wrapper full column className="mt-20 space-y-20">
-      <Div full flex relative className="space-x-6 px-32">
+      <Div full flex relative className="space-x-6 px-32 max-lg:px-0">
         <Div full column className="space-y-6">
           {/* atas */}
           <Div full between>
@@ -78,6 +78,7 @@ const MyWishlist = () => {
                     x remove
                   </TableCell>
                 </TableRow>
+
                 <TableRow>
                   <TableCell>
                     <ItemOnCart />

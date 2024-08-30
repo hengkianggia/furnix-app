@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 const Wishlist = () => {
   return (
     <Div as={"section"} full className="space-y-32">
-      <Wrapper full>
+      <Wrapper full className="max-md:px-4 max-lg:px-10">
         <BreadcrumGroup />
         <MyWishlist />
       </Wrapper>
@@ -27,7 +27,11 @@ const Wishlist = () => {
       <BannerWishlist />
 
       <Wrapper full>
-        <Div full grid className="grid-cols-3 gap-6 px-32">
+        <Div
+          full
+          grid
+          className="grid-cols-3 gap-6 px-32 max-md:px-4 max-lg:px-10 max-md:grid-cols-1"
+        >
           <Div flex className="gap-4">
             <Icon icon={Icons.Question} className="text-3xl" />
             <Div

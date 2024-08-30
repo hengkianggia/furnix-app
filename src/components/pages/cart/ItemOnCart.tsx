@@ -6,8 +6,8 @@ import React from "react";
 
 const ItemOnCart = () => {
   return (
-    <Div full flex itemsCenter className="space-x-4">
-      <Images className="w-32 aspect-square" />
+    <Div full flex itemsCenter className="space-x-4 max-md:space-x-0">
+      <Images className="w-32 aspect-square max-md:hidden" />
       <Div column between className="h-32">
         <Div className="space-y-2">
           <Div flex itemsCenter>
@@ -17,12 +17,12 @@ const ItemOnCart = () => {
             <Icon icon={Icons.Stars} className="text-myOrange" />
             <Icon icon={Icons.Stars} className="text-myOrange" />
           </Div>
-          <h2 className="text-balance text-xl leading-6">
+          <h2 className="text-balance text-xl leading-6 max-md:text-base max-md:leading-4">
             Upholstered Armchair
           </h2>
         </Div>
 
-        <Div className="uppercase">
+        <Div className="uppercase max-md:text-sm">
           <h4 className="text-myDarkGray">body fabric</h4>
           <h4>gray velvet</h4>
         </Div>
