@@ -5,6 +5,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { Icons } from "@/data/data";
 import Tag from "@/components/Tag";
+import StarsRating from "@/components/StarsRating";
 
 const ItemsComment = () => {
   return (
@@ -20,20 +21,14 @@ const ItemsComment = () => {
           <Div column className="space-y-1">
             <h4>Amira Anderson</h4>
             <p>October 29, 2023 at 3:30PM</p>
-            <Div flex itemsCenter>
-              <Icon icon={Icons.Stars} className="text-myOrange" />
-              <Icon icon={Icons.Stars} className="text-myOrange" />
-              <Icon icon={Icons.Stars} className="text-myOrange" />
-              <Icon icon={Icons.Stars} className="text-myOrange" />
-              <Icon icon={Icons.Stars} className="text-myOrange" />
-            </Div>
+            <StarsRating />
           </Div>
 
           <Tag text="Reply" className="py-1" />
         </Div>
 
         {/* the comment */}
-        <p className="line-clamp-4 text-myDarkGray">
+        <p className="line-clamp-4 text-myDarkGray max-md:text-sm">
           Im absolutely in love with my Mid-Century TV Cabinet! The combination
           of wood and cane doors adds a touch of elegance to my living room. The
           solid oak handles and legs give it a sturdy feel. The soft-close

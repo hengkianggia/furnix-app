@@ -6,7 +6,7 @@ import Images from "@/components/Images";
 
 const RecomItem = () => {
   return (
-    <Wrapper full flex className="px-32 gap-4">
+    <Wrapper full flex className="px-32 gap-4 max-md:px-4 max-lg:px-10 max-md:flex-col">
       <Div className="basis-5/12">
         <Images />
       </Div>

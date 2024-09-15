@@ -18,25 +18,35 @@ import React from "react";
 
 const ProductInformation = () => {
   return (
-    <Wrapper full flex className="gap-10 pb-14 border-b border-myDarkGray">
-      <Div grid className="basis-7/12 grid-cols-2 gap-5">
+    <Wrapper
+      full
+      flex
+      className="gap-10 pb-14 border-b border-myDarkGray max-md:px-4 max-lg:px-10 max-lg:flex-col"
+    >
+      <Div
+        grid
+        className="basis-7/12 grid-cols-2 gap-5 max-md:gap-2 max-md:w-full"
+      >
         <Images className="col-span-2 aspect-10/9" />
-        <Div className="bg-orange-400 aspect-square">
+        <Div className="aspect-square">
           <Images />
         </Div>
-        <Div className="bg-orange-400 aspect-square">
+        <Div className="aspect-square">
           <Images />
         </Div>
-        <Div className="bg-orange-400 aspect-square">
+        <Div className="aspect-square">
           <Images />
         </Div>
-        <Div className="bg-orange-400 aspect-square">
+        <Div className="aspect-square">
           <Images />
         </Div>
       </Div>
 
       {/* kanan */}
-      <Div column className="basis-5/12 gap-3 h-fit sticky top-24">
+      <Div
+        column
+        className="basis-5/12 gap-3 h-fit sticky top-24 max-md:w-full"
+      >
         {/* rating */}
         <Div flex itemsCenter className="space-x-3">
           <Div flex itemsCenter>
@@ -51,10 +61,10 @@ const ProductInformation = () => {
         </Div>
 
         {/* info */}
-        <h1 className="text-6xl font-thin text-balance">
+        <h1 className="text-6xl font-thin text-balance max-md:text-3xl">
           Cane Elegance TV Cabinet
         </h1>
-        <p className="text-myDarkGray text-balance">
+        <p className="text-myDarkGray text-balances">
           Ullamcorper morbi tincidunt ornare massa eget. Viverra adipiscing at
           in tellus integer feugiat scelerisque varius. Pulvinar proin gravida
           hendrerit lectus.
@@ -62,8 +72,13 @@ const ProductInformation = () => {
         <h2 className="text-4xl font-thin">$899</h2>
 
         {/* select */}
-        <Div flex wrap itemsCenter className="mt-8 gap-5">
-          <Div className="space-y-2 basis-5/12">
+        <Div
+          flex
+          wrap
+          itemsCenter
+          className="mt-8 gap-5 max-md:mt-4 max-md:gap-3"
+        >
+          <Div className="space-y-2 basis-5/12 ">
             <h4 className="uppercase text-sm text-myDarkGray">primary color</h4>
             <Div>
               <Select>
@@ -139,26 +154,26 @@ const ProductInformation = () => {
           <h2 className="text-2xl font-thin">Detail</h2>
           <Separator />
           <Div full column className="py-10 bg-mySmoothGray space-y-4">
-            <Div flex itemsCenter full className="mx-8">
+            <Div flex itemsCenter full className="mx-8 max-md:mx-4">
               <h4 className="capitalize text-myDarkGray basis-4/12">style</h4>
               <p>Mid-century modern</p>
             </Div>
             <Separator />
-            <Div flex itemsCenter full className="mx-8">
+            <Div flex itemsCenter full className="mx-8 max-md:mx-4">
               <h4 className="capitalize text-myDarkGray basis-4/12">
                 Dimensions
               </h4>
               <p>37.5”H x 34.5”W x 18”D</p>
             </Div>
             <Separator />
-            <Div flex itemsCenter full className="mx-8">
+            <Div flex itemsCenter full className="mx-8 max-md:mx-4">
               <h4 className="capitalize text-myDarkGray basis-4/12">
                 materials
               </h4>
               <p>Solid oak, MDF, oak veneer, steel</p>
             </Div>
             <Separator />
-            <Div flex itemsCenter full className="mx-8">
+            <Div flex itemsCenter full className="mx-8 max-md:mx-4">
               <h4 className="capitalize text-myDarkGray basis-4/12">SKU No.</h4>
               <p>SKU001119</p>
             </Div>

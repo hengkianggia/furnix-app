@@ -18,7 +18,7 @@ const Category = () => {
     : params.category;
 
   return (
-    <Div as={"section"} full column className="gap-32">
+    <Div as={"section"} full column className="gap-32 max-md:gap-20">
       <Headers
         title={cleanPath(category)}
         desc="Discover a curated collection of home essentials that elevate your space and simplify everyday living"
@@ -26,7 +26,12 @@ const Category = () => {
       <KompleksCatalog category={cleanPath(category)} />
       <RecomItem />
       <Separator />
-      <Wrapper full flex center className="space-x-14">
+      <Wrapper
+        full
+        flex
+        center
+        className="space-x-14 max-md:px-4 max-lg:px-10 max-md:flex-col max-md:gap-3 max-md:justify-center max-md:space-x-0"
+      >
         {rules.map((rule) => (
           <Div key={rule.title} flex itemsCenter className="space-x-3">
             <Icon icon={rule.icon} className="text-2xl" />

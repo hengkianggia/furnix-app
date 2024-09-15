@@ -9,18 +9,18 @@ import React from "react";
 
 const DetailProduct = () => {
   return (
-    <Div as={"section"} full column className="space-y-20">
+    <Div as={"section"} full column className="space-y-20 max-md:space-y-16">
       <Div>
-        <Wrapper>
+        <Wrapper className="max-md:px-4 max-lg:px-10">
           <BreadcrumGroup />
         </Wrapper>
         <Separator />
       </Div>
 
       <ProductInformation />
-      <ReviewProduct />
+      {/* <ReviewProduct /> */}
 
-      <SimilarProduct />
+      {/* <SimilarProduct /> */}
     </Div>
   );
 };

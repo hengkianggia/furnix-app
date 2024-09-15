@@ -43,10 +43,10 @@ const KompleksCatalog = ({ category }: { category: string | string[] }) => {
   )?.productTypes;
 
   return (
-    <Wrapper full flex className="gap-10 relative">
+    <Wrapper full flex className="gap-10 relative max-md:px-4 max-lg:px-10">
       <Div column className="basis-9/12 gap-6">
-        <Div full flex itemsCenter between>
-          <p className="uppercase text-sm text-myDarkGray">
+        <Div full flex itemsCenter between className="max-md:justify-end">
+          <p className="uppercase text-sm text-myDarkGray max-md:hidden">
             Showing 1–12 of 71 results
           </p>
 
@@ -68,7 +68,7 @@ const KompleksCatalog = ({ category }: { category: string | string[] }) => {
           </Div>
         </Div>
 
-        <Div full grid className="grid-cols-3 gap-3">
+        <Div full grid className="grid-cols-3 gap-3 max-md:grid-cols-2">
           <ItemProduct />
           <ItemProduct />
           <ItemProduct />
@@ -87,7 +87,7 @@ const KompleksCatalog = ({ category }: { category: string | string[] }) => {
       </Div>
 
       {/* right */}
-      <Div column className="basis-3/12 h-fit sticky top-24 gap-6">
+      <Div column className="basis-3/12 h-fit sticky top-24 gap-6 max-md:hidden">
         <Input placeholder="Search by product" className="w-full m-0" />
 
         <Accordion type="single" collapsible className="w-full">

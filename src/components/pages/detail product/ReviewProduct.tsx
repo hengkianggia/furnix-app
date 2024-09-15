@@ -32,9 +32,13 @@ const raitings = [
 
 const ReviewProduct = () => {
   return (
-    <Wrapper full flex className="gap-10">
-      <Div full column className="basis-7/12 gap-y-6">
-        <h1 className="text-4xl font-thin">2 Reviews for Product</h1>
+    <Wrapper
+      full
+      flex
+      className="gap-10 max-md:px-4 max-lg:px-10 max-md:flex-col"
+    >
+      <Div full column className="basis-7/12 gap-y-6 max-md:order-2">
+        <h1 className="text-4xl font-thin max-md:text-3xl">2 Reviews for Product</h1>
 
         {/* items comment */}
         <Div full column className="space-y-10">
@@ -48,7 +52,7 @@ const ReviewProduct = () => {
       <Div
         full
         column
-        className="basis-5/12 border border-myGray h-fit p-8 space-y-5"
+        className="basis-5/12 border border-myGray h-fit p-8 space-y-5 max-md:order-1"
       >
         <Div full between itemsCenter>
           <Div flex itemsCenter>

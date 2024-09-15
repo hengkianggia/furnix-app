@@ -10,7 +10,7 @@ const similar = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 const SimilarProduct = () => {
   return (
-    <Wrapper full className="space-y-8 mt-20">
+    <Wrapper full className="space-y-8 mt-20 max-md:px-4 max-lg:px-10">
       <Div full between itemsCenter>
         <h3 className="text-3xl font-thin">You may also need</h3>
         <Div flex itemsCenter className="space-x-3">
