@@ -1,29 +1,28 @@
-"use client";
 import Div from "@/components/Div";
 import Headers from "@/components/pages/Headers";
 import KompleksCatalog from "@/components/pages/shop/KompleksCatalog";
 import RecomItem from "@/components/pages/shop/RecomItem";
 import { Separator } from "@/components/ui/separator";
 import Wrapper from "@/components/Wrapper";
-import { rules } from "@/data/data";
+import { furnitureCategories, rules } from "@/data/data";
 import { cleanPath } from "@/lib/utils";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { useParams } from "next/navigation";
 import React from "react";
 
-const Category = () => {
-  const params = useParams();
-  const category = Array.isArray(params.category)
-    ? params.category[0]
-    : params.category;
-
+export function generateStaticParams() {
+  return furnitureCategories.map((item) => ({
+    id: item.name,
+  }));
+}
+const Category = ({ params }: { params: { category: string } }) => {
   return (
     <Div as={"section"} full column className="gap-32 max-md:gap-20">
       <Headers
-        title={cleanPath(category)}
+        title={cleanPath(params.category)}
         desc="Discover a curated collection of home essentials that elevate your space and simplify everyday living"
       />
-      <KompleksCatalog category={cleanPath(category)} />
+      <KompleksCatalog category={cleanPath(params.category)} />
       <RecomItem />
       <Separator />
       <Wrapper

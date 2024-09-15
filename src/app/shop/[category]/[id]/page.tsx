@@ -18,9 +18,9 @@ const DetailProduct = () => {
       </Div>
 
       <ProductInformation />
-      {/* <ReviewProduct /> */}
+      <ReviewProduct />
 
-      {/* <SimilarProduct /> */}
+      <SimilarProduct />
     </Div>
   );
 };

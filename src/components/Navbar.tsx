@@ -11,6 +11,7 @@ import {
   Sheet,
   SheetClose,
   SheetContent,
+  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 
@@ -163,12 +164,13 @@ const Navbar = () => {
               <SheetTrigger asChild>
                 <Icon icon={Icons.Menu} className="text-2xl" />
               </SheetTrigger>
-              <SheetContent className="space-y-10">
+              <SheetContent className="space-y-5">
+                <SheetTitle className="text-2xl font-thin">Menu</SheetTitle>
                 <Div className="mt-20">
-                  <ul className="flex flex-col gap-10 text-18 items-end">
+                  <ul className="flex flex-col gap-5 text-18 items-end">
                     {listNavbar.map((item) => (
                       <li
-                        className="cursor-pointer text-3xl hover:text-myOrange transition-all"
+                        className="cursor-pointer text-2xl hover:text-myOrange transition-all"
                         key={item.name}
                       >
                         <SheetClose asChild>
@@ -179,8 +181,8 @@ const Navbar = () => {
                   </ul>
                 </Div>
 
-                <Div flex column className="gap-10 items-end">
-                  <Div flex itemsCenter className="gap-2 text-3xl" pointer>
+                <Div flex column className="gap-5 items-end">
+                  <Div flex itemsCenter className="gap-2 text-2xl" pointer>
                     <Icon icon={Icons.Search} className="text-2xl" />
                     <p>Search</p>
                   </Div>
@@ -190,7 +192,7 @@ const Navbar = () => {
                       <Div
                         flex
                         itemsCenter
-                        className="gap-2 group text-3xl"
+                        className="gap-2 group text-2xl"
                         pointer
                         onMouseEnter={() => setLike(!like)}
                         onMouseLeave={() => setLike(!like)}
@@ -207,13 +209,14 @@ const Navbar = () => {
                       </Div>
                     </SheetClose>
                   </Link>
+
                   <Link href={"/cart"}>
                     <SheetClose asChild className="w-full">
                       <Div
                         full
                         flex
                         center
-                        className="border border-black rounded-full px-4 py-2 gap-2 group hover:bg-myBlack text-3xl"
+                        className="border border-black rounded-full px-4 py-2 gap-2 group hover:bg-myBlack text-2xl"
                         pointer
                       >
                         <Icon
