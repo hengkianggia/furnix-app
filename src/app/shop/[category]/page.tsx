@@ -7,7 +7,6 @@ import Wrapper from "@/components/Wrapper";
 import { furnitureCategories, rules } from "@/data/data";
 import { cleanPath } from "@/lib/utils";
 import { Icon } from "@iconify/react/dist/iconify.js";
-import { useParams } from "next/navigation";
 import React from "react";
 
 export function generateStaticParams() {

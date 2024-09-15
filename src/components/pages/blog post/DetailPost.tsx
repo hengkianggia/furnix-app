@@ -12,19 +12,25 @@ import ItemsBlog from "../blog/ItemsBlog";
 const DetailPost = () => {
   return (
     <Wrapper className="space-y-6">
-      <Div column className="px-32 mt-6 gap-4">
+      <Div column className="px-32 mt-6 gap-4 max-md:px-4 max-lg:px-10">
         <Div
           flex
           itemsCenter
           className="gap-3 uppercase text-sm text-myDarkGray"
         >
           <h4>October 12, 2023</h4>
-          <Icon icon={Icons.Dot} className="text-xl cursor-pointer" />
-          <h4>Interior Design</h4>
-          <Icon icon={Icons.Dot} className="text-xl cursor-pointer" />
-          <h4>2 Comments</h4>
+          <Icon
+            icon={Icons.Dot}
+            className="text-xl cursor-pointer max-md:hidden"
+          />
+          <h4 className="max-md:hidden">Interior Design</h4>
+          <Icon
+            icon={Icons.Dot}
+            className="text-xl cursor-pointer max-md:hidden"
+          />
+          <h4 className="max-md:hidden">2 Comments</h4>
         </Div>
-        <h1 className="text-5xl cursor-pointer font-thin text-balance mb-4">
+        <h1 className="text-5xl cursor-pointer font-thin text-balance mb-4 max-md:text-3xl">
           Living in Style: A Journey Through Contemporary Furniture Trends
         </h1>
         <p className="text-myDarkGray">
@@ -50,7 +56,7 @@ const DetailPost = () => {
           diam sit amet nisl suscipit.
         </p>
 
-        <ul className="list-decimal max-w-[60%] space-y-2 px-4">
+        <ul className="list-decimal max-w-[60%] space-y-2 px-4 max-md:max-w-full">
           <li>
             Turpis egestas maecenas pharetra convallis posuere morbi leo. Ornare
             massa eget egestas purus viverra:
@@ -76,13 +82,13 @@ const DetailPost = () => {
         </p>
       </Div>
 
-      <Div full className="grid grid-cols-3 gap-4">
+      <Div full className="grid grid-cols-3 gap-4 max-md:hidden max-lg:px-10">
         <ItemProduct />
         <ItemProduct />
         <ItemProduct />
       </Div>
 
-      <Div column className="px-32 mt-6 gap-4">
+      <Div column className="px-32 mt-6 gap-4 max-md:px-4 max-lg:px-10">
         <p className="text-myDarkGray">
           Quisque egestas diam in arcu cursus euismod quis viverra nibh. Eu
           consequat ac felis donec et odio pellentesque diam volutpat. Elit
@@ -111,7 +117,7 @@ const DetailPost = () => {
         </p>
       </Div>
 
-      <Div full grid className="grid-cols-2 gap-4">
+      <Div full grid className="grid-cols-2 gap-4 max-md:hidden max-lg:px-10">
         <Div column itemsCenter className="space-y-3">
           <Images className="aspect-video" />
           <h3 className="text-lg text-myDarkGray font-thin">
@@ -126,7 +132,7 @@ const DetailPost = () => {
         </Div>
       </Div>
 
-      <Div column className="px-32 mt-6 gap-4">
+      <Div column className="px-32 mt-6 gap-4 max-md:px-4 max-lg:px-10">
         <p className="text-myDarkGray">
           Ac turpis egestas integer eget aliquet nibh praesent tristique. Tempor
           orci dapibus ultrices in iaculis nunc sed augue lacus. Pellentesque
@@ -140,7 +146,11 @@ const DetailPost = () => {
           porttitor rhoncus dolor purus non enim praesent elementum facilisis.
         </p>
 
-        <Div flex itemsCenter className="space-x-6 self-end">
+        <Div
+          flex
+          itemsCenter
+          className="space-x-6 self-end max-md:text-sm max-md:space-x-3"
+        >
           <h4 className="uppercase text-myDarkGray">share</h4>
           <Icon icon={Icons.Facebook} className="text-xl cursor-pointer" />
           <Icon icon={Icons.Instagram} className="text-xl cursor-pointer" />
@@ -151,35 +161,49 @@ const DetailPost = () => {
 
       <Separator />
 
-      <Div full flex between itemsCenter className="px-32">
-        <Div column pointer className="space-y-3 w-80">
+      <Div
+        full
+        flex
+        between
+        itemsCenter
+        className="px-32 max-md:px-4 max-lg:px-10 max-md:items-start"
+      >
+        <Div column pointer className="space-y-3 w-80 max-md:space-y-1">
           <Div flex itemsCenter className="space-x-3 text-myDarkGray">
             <Icon icon={Icons.ArrowLeft} className="text-xl" />
             <p className="uppercase text-sm">previous</p>
           </Div>
 
-          <h4 className="text-xl font-thin text-myDarkGray">
+          <h4 className="text-xl font-thin text-myDarkGray max-md:text-sm">
             Accessorizing with Accent Chairs: Adding Flair to Any Room
           </h4>
         </Div>
 
-        <Div column pointer className="space-y-3 items-end w-80">
+        <Div
+          column
+          pointer
+          className="space-y-3 items-end w-80 max-md:space-y-1"
+        >
           <Div flex itemsCenter className="space-x-3 text-myDarkGray">
             <p className="uppercase text-sm">next</p>
             <Icon icon={Icons.ArrowRight} className="text-xl" />
           </Div>
 
-          <h4 className="text-xl font-thin text-myDarkGray text-end">
+          <h4 className="text-xl font-thin text-myDarkGray text-end max-md:text-sm">
             Furniture Choices for an Eco-Conscious Home
           </h4>
         </Div>
       </Div>
 
-      <Div full flex itemsCenter className="px-32">
+      <Div full flex itemsCenter className="px-32 max-md:px-4 max-lg:px-10">
         <LeaveComment />
       </Div>
 
-      <Div full grid className="grid-cols-3 gap-4">
+      <Div
+        full
+        grid
+        className="grid-cols-3 gap-4 max-md:grid-cols-1 max-md:px-4 max-lg:px-10"
+      >
         <ItemsBlog classNameImage="aspect-square" />
         <ItemsBlog classNameImage="aspect-square" />
         <ItemsBlog classNameImage="aspect-square" />

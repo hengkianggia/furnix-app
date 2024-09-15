@@ -9,7 +9,7 @@ import React from "react";
 const LeaveComment = () => {
   return (
     <Div full className="mt-10 space-y-5">
-      <h1 className="text-4xl font-thin">Leave Your Comment</h1>
+      <h1 className="text-4xl font-thin max-md:text-2xl">Leave Your Comment</h1>
 
       {/* rating */}
       <Div full flex itemsCenter className="space-x-4 uppercase">
@@ -26,11 +26,17 @@ const LeaveComment = () => {
       {/* inputan */}
 
       <Div full grid className="grid-cols-2 gap-4">
-        <Div column className="space-y-2 uppercase text-sm text-myDarkGray">
+        <Div
+          column
+          className="space-y-2 uppercase text-sm text-myDarkGray max-md:col-span-2"
+        >
           <h4>your name</h4>
           <Input placeholder="Name" className="rounded-full" />
         </Div>
-        <Div column className="space-y-2 uppercase text-sm text-myDarkGray">
+        <Div
+          column
+          className="space-y-2 uppercase text-sm text-myDarkGray max-md:col-span-2"
+        >
           <h4>your email</h4>
           <Input placeholder="Email" type="email" className="rounded-full" />
         </Div>
