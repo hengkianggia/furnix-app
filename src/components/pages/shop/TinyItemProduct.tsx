@@ -8,7 +8,7 @@ const TinyItemProduct = () => {
       <Images className="w-20 aspect-square" />
 
       <Div column className="space-y-1">
-        <h3 className="truncate text-lg">Decorative Throw Pillow</h3>
+        <h3 className="line-clamp-2 text-lg text-wrap">Decorative Throw Pillow</h3>
         <Div flex itemsCenter className="space-x-4">
           <p>$ 161.40</p>
           <p className="text-gray-300 line-through">$ 161.40</p>

@@ -23,7 +23,7 @@ const Category = ({ params }: { params: { category: string } }) => {
       />
       <KompleksCatalog category={cleanPath(params.category)} />
       <RecomItem />
-      <Separator />
+      <Separator className="max-lg:hidden"/>
       <Wrapper
         full
         flex
