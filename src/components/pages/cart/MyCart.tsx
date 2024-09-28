@@ -23,12 +23,22 @@ import Images from "@/components/Images";
 import payments from "../../../../public/images/Payments (1).svg";
 import Image from "next/image";
 import { Icons } from "@/data/data";
+import SmallCartItem from "./SmallCartItem";
 
 const MyCart = () => {
   const router = useRouter();
   return (
-    <Wrapper full column className="mt-20 space-y-20">
-      <Div full flex relative className="space-x-6">
+    <Wrapper
+      full
+      column
+      className="mt-20 gap-y-20 max-md:mt-10 max-md:px-4 max-lg:px-10"
+    >
+      <Div
+        full
+        flex
+        relative
+        className="space-x-6 max-md:hidden max-lg:flex-col"
+      >
         {/* kiri */}
         <Div column className="basis-8/12 space-y-6">
           {/* atas */}
@@ -62,98 +72,13 @@ const MyCart = () => {
                     Quantity
                   </TableHead>
                   <TableHead className="w-[15%]">Totall</TableHead>
-                  <TableHead className="w-[12%]"></TableHead>
+                  <TableHead className="w-[12%] max-lg:w-[8%]"></TableHead>
                 </TableRow>
               </TableHeader>
 
               <TableBody>
                 <TableRow>
-                  <TableCell>
-                    <ItemOnCart />
-                  </TableCell>
-                  <TableCell className="font-baiJamjure text-xl">
-                    $399.20
-                  </TableCell>
-                  <TableCell>
-                    <ButtonCounter />
-                  </TableCell>
-                  <TableCell className="font-baiJamjure text-xl">
-                    $399.20
-                  </TableCell>
-                  <TableCell className="text-center cursor-pointer">
-                    x remove
-                  </TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell>
-                    <ItemOnCart />
-                  </TableCell>
-                  <TableCell className="font-baiJamjure text-xl">
-                    $399.20
-                  </TableCell>
-                  <TableCell>
-                    <ButtonCounter />
-                  </TableCell>
-                  <TableCell className="font-baiJamjure text-xl">
-                    $399.20
-                  </TableCell>
-                  <TableCell className="text-center cursor-pointer">
-                    x remove
-                  </TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell>
-                    <ItemOnCart />
-                  </TableCell>
-                  <TableCell className="font-baiJamjure text-xl">
-                    $399.20
-                  </TableCell>
-                  <TableCell>
-                    <ButtonCounter />
-                  </TableCell>
-                  <TableCell className="font-baiJamjure text-xl">
-                    $399.20
-                  </TableCell>
-                  <TableCell className="text-center cursor-pointer">
-                    x remove
-                  </TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell>
-                    <ItemOnCart />
-                  </TableCell>
-                  <TableCell className="font-baiJamjure text-xl">
-                    $399.20
-                  </TableCell>
-                  <TableCell>
-                    <ButtonCounter />
-                  </TableCell>
-                  <TableCell className="font-baiJamjure text-xl">
-                    $399.20
-                  </TableCell>
-                  <TableCell className="text-center cursor-pointer">
-                    x remove
-                  </TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell>
-                    <ItemOnCart />
-                  </TableCell>
-                  <TableCell className="font-baiJamjure text-xl">
-                    $399.20
-                  </TableCell>
-                  <TableCell>
-                    <ButtonCounter />
-                  </TableCell>
-                  <TableCell className="font-baiJamjure text-xl">
-                    $399.20
-                  </TableCell>
-                  <TableCell className="text-center cursor-pointer">
-                    x remove
-                  </TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell>
+                  <TableCell className="max-lg:px-0">
                     <ItemOnCart />
                   </TableCell>
                   <TableCell className="font-baiJamjure text-xl">
@@ -179,7 +104,7 @@ const MyCart = () => {
         </Div>
 
         {/* kanan */}
-        <Div className="basis-4/12 mt-14 space-y-12 h-fit sticky top-24">
+        <Div className="basis-4/12 mt-14 space-y-12 h-fit sticky top-24 ">
           <Div column full className="bg-mySmoothGray">
             <h1 className="w-full py-8 px-6 text-3xl font-thin">Cart Totals</h1>
             <Separator className="bg-gray-400" />
@@ -234,10 +159,67 @@ const MyCart = () => {
         </Div>
       </Div>
 
+      <Div full column className="md:hidden gap-10">
+        <Div full between>
+          <h1 className="text-4xl font-thin">My Cart</h1>
+          <Div
+            flex
+            itemsCenter
+            pointer
+            className="gap-4 uppercase group hover:bg-myBlack hover:text-myBrokenWhite px-3 py-2 rounded-full"
+            onClick={() => router.back()}
+          >
+            <Icon icon={Icons.ArrowLeftCircle} className="text-xl " />
+            <p className="text-xs k">back to shopping</p>
+          </Div>
+        </Div>
+
+        <Div full column className="gap-3">
+          <SmallCartItem />
+        </Div>
+
+        <Coupon className="w-full" />
+
+        <Div full className="space-y-12 h-fit">
+          <Div column full className="bg-mySmoothGray">
+            <h1 className="w-full py-8 px-6 text-3xl font-thin">Cart Totals</h1>
+            <Separator className="bg-gray-400" />
+
+            <Div column full className="py-8 px-6 space-y-5">
+              <Div full between itemsCenter>
+                <p className="text-myDarkGray">Cart Subtotal</p>
+                <h4 className="font-semibold">$1379.18</h4>
+              </Div>
+
+              <Div full between itemsCenter>
+                <p className="text-myDarkGray">Shipping</p>
+                <h4 className="font-semibold">FREE</h4>
+              </Div>
+
+              <Separator className="bg-gray-400" />
+
+              <Div full between itemsCenter>
+                <p className="text-myDarkGray">Total</p>
+                <h4 className="font-semibold">$1379.18</h4>
+              </Div>
+
+              <Button className="uppercase bg-myBlack">
+                Processed to Checkout
+                <Icon icon={Icons.Cart} className="text-xl ml-3" />
+              </Button>
+            </Div>
+          </Div>
+        </Div>
+      </Div>
+
       <Separator />
 
-      <Div full grid className="grid-cols-3 gap-6 px-32">
-        <Div flex className="gap-4">
+      <Div
+        full
+        grid
+        className="grid-cols-3 gap-6 px-32 max-md:grid-cols-1 max-md:px-4 max-lg:px-0 max-lg:gap-0"
+      >
+        <Div flex className="gap-4 ">
           <Icon icon={Icons.Question} className="text-3xl" />
           <Div
             column
@@ -253,7 +235,7 @@ const MyCart = () => {
         </Div>
 
         {/* center */}
-        <Div flex className="gap-4">
+        <Div flex className="gap-4 ">
           <Icon icon={Icons.Return} className="text-3xl" />
           <Div
             column
@@ -275,7 +257,7 @@ const MyCart = () => {
           </Div>
         </Div>
 
-        <Div flex className="gap-4">
+        <Div flex className="gap-4 ">
           <Icon icon={Icons.Secure} className="text-3xl" />
           <Div
             column

@@ -11,6 +11,8 @@ import {
   Sheet,
   SheetClose,
   SheetContent,
+  SheetDescription,
+  SheetHeader,
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
@@ -165,7 +167,10 @@ const Navbar = () => {
                 <Icon icon={Icons.Menu} className="text-2xl" />
               </SheetTrigger>
               <SheetContent className="space-y-5">
-                <SheetTitle className="text-2xl font-thin">Menu</SheetTitle>
+                <SheetHeader className="text-start">
+                  <SheetTitle className="text-2xl font-thin">Menu</SheetTitle>
+                  <SheetDescription></SheetDescription>
+                </SheetHeader>
                 <Div className="mt-20">
                   <ul className="flex flex-col gap-5 text-18 items-end">
                     {listNavbar.map((item) => (

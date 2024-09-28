@@ -1,14 +1,20 @@
 import Div from "@/components/Div";
 import Images from "@/components/Images";
 import { Icons } from "@/data/data";
+import { cn } from "@/lib/utils";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import React from "react";
 
-const ItemOnCart = () => {
+const ItemOnCart = ({ className }: { className?: string }) => {
   return (
-    <Div full flex itemsCenter className="space-x-4 max-md:space-x-0">
-      <Images className="w-32 aspect-square max-md:hidden" />
-      <Div column between className="h-32">
+    <Div
+      full
+      flex
+      itemsCenter
+      className={cn("space-x-4 max-md:space-x-0", className)}
+    >
+      <Images className="w-32 aspect-square" />
+      <Div full column between className="h-32">
         <Div className="space-y-2">
           <Div flex itemsCenter>
             <Icon icon={Icons.Stars} className="text-myOrange" />
