@@ -208,7 +208,7 @@ export const BannerShop = () => {
 
 export const BannerWishlist = () => {
   return (
-    <section className="w-full bg-myBrokenWhite pt-10 relative h-80 overflow-hidden max-lg:py-10 max-lg:h-full">
+    <section className="w-full bg-myBrokenWhite pt-10 relative h-80 overflow-hidden max-lg:py-10 max-lg:h-full mt-32 max-lg:mt-20">
       <Wrapper className="grid grid-cols-2 gap-10 px-32 items-center z-30 max-md:px-4 max-lg:px-10">
         <Div full className="space-y-7 max-lg:space-y-2 max-md:col-span-2">
           <h1 className="text-4xl max-md:text-2xl text-balance font-thin">

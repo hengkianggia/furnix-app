@@ -37,7 +37,7 @@ const MyCart = () => {
         full
         flex
         relative
-        className="space-x-6 max-md:hidden max-lg:flex-col"
+        className="space-x-6 max-md:hidden max-lg:flex-col max-lg:space-x-0"
       >
         {/* kiri */}
         <Div column className="basis-8/12 space-y-6">
@@ -104,7 +104,7 @@ const MyCart = () => {
         </Div>
 
         {/* kanan */}
-        <Div className="basis-4/12 mt-14 space-y-12 h-fit sticky top-24 ">
+        <Div className="basis-4/12 mt-14 space-y-12 h-fit sticky top-24">
           <Div column full className="bg-mySmoothGray">
             <h1 className="w-full py-8 px-6 text-3xl font-thin">Cart Totals</h1>
             <Separator className="bg-gray-400" />

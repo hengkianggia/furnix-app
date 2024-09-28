@@ -11,6 +11,7 @@ import payments from "../../../public/images/Payments (1).svg";
 import { BannerWishlist } from "@/components/pages/Banner";
 import { Icons } from "@/data/data";
 import { Metadata } from "next";
+import { Separator } from "@/components/ui/separator";
 
 export const metadata: Metadata = {
   title: "Wishlist",
@@ -18,15 +19,18 @@ export const metadata: Metadata = {
 
 const Wishlist = () => {
   return (
-    <Div as={"section"} full className="space-y-32">
-      <Wrapper full className="max-md:px-4 max-lg:px-10">
+    <Div as={"section"} full column>
+      <Wrapper full className="max-md:px-4 max-lg:px-10 max-md:border-b">
         <BreadcrumGroup />
-        <MyWishlist />
       </Wrapper>
+
+      <Separator />
+
+      <MyWishlist />
 
       <BannerWishlist />
 
-      <Wrapper full>
+      <Wrapper full className="mt-32 max-lg:mt-20">
         <Div
           full
           grid

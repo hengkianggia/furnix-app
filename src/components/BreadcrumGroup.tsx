@@ -16,8 +16,6 @@ export function BreadcrumGroup() {
   const pathname = usePathname();
   let pathNew = cleanPath(pathname);
 
-  const { category, id } = useParams();
-
   return (
     <Breadcrumb>
       <BreadcrumbList>
