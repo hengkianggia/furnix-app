@@ -23,7 +23,11 @@ import SmallCartItem from "../cart/SmallCartItem";
 const MyWishlist = () => {
   const router = useRouter();
   return (
-    <Wrapper full column className="mt-20 space-y-20 max-md:mt-10 max-md:px-4 max-lg:px-10">
+    <Wrapper
+      full
+      column
+      className="mt-20 space-y-20 max-md:mt-10 max-md:px-4 max-lg:px-10"
+    >
       <Div
         full
         flex
@@ -193,7 +197,7 @@ const MyWishlist = () => {
           </Div>
 
           <Div full column className="gap-3">
-            <SmallCartItem />
+            <SmallCartItem type={"WISHLIST"} />
           </Div>
         </Div>
       </Div>

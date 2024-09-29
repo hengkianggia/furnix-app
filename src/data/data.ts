@@ -266,6 +266,7 @@ export const Icons = {
   RightTriangle: "mdi:menu-right-outline",
   Comment: "ant-design:comment-outlined",
   Menu: "ic:round-menu",
+  Trash: "iconoir:trash",
 };
 
 export const rules = [

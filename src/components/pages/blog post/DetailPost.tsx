@@ -8,6 +8,7 @@ import Images from "@/components/Images";
 import { Separator } from "@/components/ui/separator";
 import LeaveComment from "../detail product/LeaveComment";
 import ItemsBlog from "../blog/ItemsBlog";
+import ShareMedia from "@/components/ShareMedia";
 
 const DetailPost = () => {
   return (
@@ -30,7 +31,8 @@ const DetailPost = () => {
           />
           <h4 className="max-md:hidden">2 Comments</h4>
         </Div>
-        <h1 className="text-5xl cursor-pointer font-thin text-balance mb-4 max-md:text-3xl">
+
+        <h1 className="text-5xl cursor-pointer font-thin lg:text-balance mb-4 max-md:text-3xl">
           Living in Style: A Journey Through Contemporary Furniture Trends
         </h1>
         <p className="text-myDarkGray">
@@ -146,17 +148,7 @@ const DetailPost = () => {
           porttitor rhoncus dolor purus non enim praesent elementum facilisis.
         </p>
 
-        <Div
-          flex
-          itemsCenter
-          className="space-x-6 self-end max-md:text-sm max-md:space-x-3"
-        >
-          <h4 className="uppercase text-myDarkGray">share</h4>
-          <Icon icon={Icons.Facebook} className="text-xl cursor-pointer" />
-          <Icon icon={Icons.Instagram} className="text-xl cursor-pointer" />
-          <Icon icon={Icons.Twitter} className="text-xl cursor-pointer" />
-          <Icon icon={Icons.WhatsApp} className="text-xl cursor-pointer" />
-        </Div>
+        <ShareMedia />
       </Div>
 
       <Separator />

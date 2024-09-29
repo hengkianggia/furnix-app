@@ -27,10 +27,10 @@ const ItemsBlog = ({ classNameImage }: { classNameImage?: string }) => {
             <h4 className="max-lg:hidden">2 Comments</h4>
           </Div>
 
-          <h1 className="text-3xl font-thin max-lg:text-xl">
+          <h1 className="text-3xl max-lg:text-balance font-thin max-lg:text-xl">
             Dining Table Shapes: Which One Suits Your Dining Space Best?
           </h1>
-          <p className="line-clamp-2 text-sm text-myDarkGray max-md:text-xs">
+          <p className="line-clamp-2 text-sm text-balance text-myDarkGray max-md:text-xs">
             Nibh ipsum consequat nisl vel pretium lectus. Quis risus sed
             vulputate odio ut enim. Sit amet risus nullam eget felis eget nunc
             lobortis. Tellus id interdum velit laoreet id donec ultrices

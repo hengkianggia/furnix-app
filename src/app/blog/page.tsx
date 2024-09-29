@@ -49,6 +49,7 @@ const Blog = () => {
       <Wrapper full flex className="gap-10 max-md:px-4 max-lg:px-10">
         {/* left */}
         <Div
+        full
           column
           className="basis-8/12 gap-10 max-md:flex max-lg:basis-full max-lg:grid max-lg:grid-cols-2 max-lg:gap-5"
         >
