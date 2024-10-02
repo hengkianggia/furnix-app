@@ -162,8 +162,8 @@ const ProductInformation = ({ title }: { title: string }) => {
                 materials
               </h4>
               <div className="w-fit flex-wrap flex gap-x-1">
-                {dataShow.detail.materials.map((item) => {
-                  return <p>{item}, </p>;
+                {dataShow.detail.materials.map((item, idx) => {
+                  return <p key={idx}>{item}, </p>;
                 })}
               </div>
             </Div>
