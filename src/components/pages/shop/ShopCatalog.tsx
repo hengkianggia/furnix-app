@@ -49,12 +49,12 @@ const ShopCatalog = () => {
 
       {/* product */}
       <Div full grid className="grid-cols-3 gap-4 max-md:grid-cols-2">
-        <ItemProduct />
-        <ItemProduct />
-        <ItemProduct />
-        <ItemProduct />
-        <ItemProduct />
-        <ItemProduct />
+        <ItemProduct title="Product 1" price={131} discount={10} />
+        <ItemProduct title="Product 1" price={131} discount={10} />
+        <ItemProduct title="Product 1" price={131} discount={10} />
+        <ItemProduct title="Product 1" price={131} discount={10} />
+        <ItemProduct title="Product 1" price={131} discount={10} />
+        <ItemProduct title="Product 1" price={131} discount={10} />
       </Div>
       <PaginationComponents />
     </Wrapper>

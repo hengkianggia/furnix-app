@@ -44,7 +44,7 @@ export const ItemCategory = ({ title }: { title: string }) => {
           variant={"secondary"}
           className="rounded-full capitalize bg-myBrokenWhite hover:bg-myBlack hover:text-myBrokenWhite"
         >
-          <Link href={`shop/${title}`}>{title}</Link>
+          <Link href={`/shop/${title}`}>{title}</Link>
         </Button>
       </Div>
     </Div>
