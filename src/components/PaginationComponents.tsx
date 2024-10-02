@@ -62,14 +62,16 @@ export function PaginationComponents({
             </PaginationItem>
           </>
         )}
-        <PaginationItem>
-          <Button
-            variant={"ghost"}
-            className={cn("space-x-2", pages == totalPage && "bg-gray-200")}
-          >
-            {totalPage}
-          </Button>
-        </PaginationItem>
+        {pages && totalPage != 1 && (
+          <PaginationItem>
+            <Button
+              variant={"ghost"}
+              className={cn("space-x-2", pages == totalPage && "bg-gray-200")}
+            >
+              {totalPage}
+            </Button>
+          </PaginationItem>
+        )}
         {pages! != String(totalPage) && (
           <PaginationItem
             onClick={() => {

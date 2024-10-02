@@ -37,7 +37,6 @@ const KompleksCatalog = ({
   );
 
   dataFilter = data;
-  console.log(type);
 
   if (type) {
     let dataType = dataFilter.filter(
