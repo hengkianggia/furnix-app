@@ -22,8 +22,6 @@ const Category = ({
   searchParams?: { [key: string]: string | string[] | undefined };
 }) => {
   const cleanParams = cleanPath(params.category);
-  const page = searchParams?.page;
-
 
   return (
     <Div as={"section"} full column className="gap-32 max-md:gap-20">
@@ -34,7 +32,7 @@ const Category = ({
       <KompleksCatalog
         category={cleanParams}
         type={searchParams?.type}
-        page={page}
+        page={searchParams?.page}
       />
       <RecomItem />
       <Separator className="max-lg:hidden" />

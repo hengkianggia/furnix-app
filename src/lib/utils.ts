@@ -52,5 +52,43 @@ export function calculateFinalPrice(price: number, discount: number): number {
   }
   const discountAmount = (price * discount) / 100;
   const finalPrice = price - discountAmount;
-  return finalPrice
+  return finalPrice;
+}
+
+interface Product {
+  id: number;
+  title: string;
+  summary: string;
+  price: number;
+  discount: number;
+  description: string;
+  colors: string[];
+  style: string[];
+  typeCategory: string;
+  detail: {
+    style: string;
+    dimension: string;
+    materials: string[];
+    SKU: string;
+  };
+}
+
+export function paginateProducts(
+  products: Product[],
+  totalData: number,
+  itemsPerPage: number,
+  currentPage: number
+): Product[] {
+  const totalPages = Math.ceil(totalData / itemsPerPage);
+
+  // Validasi halaman saat ini
+  if (currentPage < 1 || currentPage > totalPages) {
+    throw new Error("Current page is out of range.");
+  }
+
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+
+  // Mengambil produk untuk halaman saat ini
+  return products.slice(startIndex, endIndex);
 }

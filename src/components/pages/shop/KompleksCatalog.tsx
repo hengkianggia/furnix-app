@@ -15,6 +15,7 @@ import { PaginationComponents } from "@/components/PaginationComponents";
 
 import { dataProduct, furnitureCategories } from "@/data/data";
 import FilterProduct from "./FilterProduct";
+import { paginateProducts } from "@/lib/utils";
 
 const KompleksCatalog = ({
   category,
@@ -33,7 +34,9 @@ const KompleksCatalog = ({
     (item) => item?.categoryName?.toLowerCase() == category[0].toLowerCase()
   );
 
-  let dataShow = data.slice(0, 0 + 9);
+  let pages = page ?? 1;
+
+  let dataShow = paginateProducts(data, data.length, 9, +pages!);
   const totalPage = Math.ceil(data.length / 9);
 
   return (
@@ -45,7 +48,9 @@ const KompleksCatalog = ({
       <Div column className="basis-9/12 gap-6 max-md:basis-full">
         <Div full flex itemsCenter between className="max-md:justify-end">
           <p className="uppercase text-sm text-myDarkGray max-md:hidden">
-            Showing {dataShow.length} of {data.length} results
+            Showing{" "}
+            {pages == totalPage ? data.length : dataShow.length * +pages!} of{" "}
+            {data.length} results
           </p>
 
           <Div>
