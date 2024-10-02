@@ -138,14 +138,14 @@ const ProductInformation = ({ title }: { title: string }) => {
           <Div
             full
             column
-            className="py-10 bg-mySmoothGray space-y-4 overflow-x-hidden"
+            className="py-8 bg-mySmoothGray space-y-4 overflow-x-hidden"
           >
-            <Div flex itemsCenter full className="mx-8 max-md:mx-4">
+            <Div flex itemsCenter full className="px-8 max-md:px-4">
               <h4 className="capitalize text-myDarkGray basis-4/12">style</h4>
               <p>{dataShow.detail.style}</p>
             </Div>
             <Separator />
-            <Div flex itemsCenter full className="mx-8 max-md:mx-4">
+            <Div flex itemsCenter full className="px-8 max-md:px-4">
               <h4 className="capitalize text-myDarkGray basis-4/12">
                 Dimensions
               </h4>
@@ -156,19 +156,19 @@ const ProductInformation = ({ title }: { title: string }) => {
               flex
               itemsCenter
               full
-              className="mx-8 max-md:mx-4 overflow-x-hidden"
+              className="px-8 max-md:px-4 overflow-x-hidden"
             >
               <h4 className="capitalize text-myDarkGray basis-4/12">
                 materials
               </h4>
-              <div className="w-fit flex-wrap flex gap-x-2 ">
+              <div className="w-fit flex-wrap flex gap-x-1">
                 {dataShow.detail.materials.map((item) => {
-                  return <p>{item}</p>;
+                  return <p>{item}, </p>;
                 })}
               </div>
             </Div>
             <Separator />
-            <Div flex itemsCenter full className="mx-8 max-md:mx-4">
+            <Div flex itemsCenter full className="px-8 max-md:px-4">
               <h4 className="capitalize text-myDarkGray basis-4/12">SKU No.</h4>
               <p>{dataShow.detail.SKU}</p>
             </Div>

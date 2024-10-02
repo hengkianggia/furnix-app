@@ -14,15 +14,28 @@ export function generateStaticParams() {
     id: item.name,
   }));
 }
-const Category = ({ params }: { params: { category: string } }) => {
+const Category = ({
+  params,
+  searchParams,
+}: {
+  params: { category: string };
+  searchParams?: { [key: string]: string | string[] | undefined };
+}) => {
   const cleanParams = cleanPath(params.category);
+  const page = searchParams?.page;
+
+
   return (
     <Div as={"section"} full column className="gap-32 max-md:gap-20">
       <Headers
         title={cleanParams}
         desc="Discover a curated collection of home essentials that elevate your space and simplify everyday living"
       />
-      <KompleksCatalog category={cleanParams} />
+      <KompleksCatalog
+        category={cleanParams}
+        type={searchParams?.type}
+        page={page}
+      />
       <RecomItem />
       <Separator className="max-lg:hidden" />
       <Wrapper
@@ -41,5 +54,4 @@ const Category = ({ params }: { params: { category: string } }) => {
     </Div>
   );
 };
-
 export default Category;

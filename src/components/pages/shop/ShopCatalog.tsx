@@ -2,7 +2,7 @@ import Div from "@/components/Div";
 import Wrapper from "@/components/Wrapper";
 import React from "react";
 import ItemProduct from "./ItemProduct";
-import { PaginationComponents } from "@/components/PaginationCompopnents";
+import { PaginationComponents } from "@/components/PaginationComponents";
 import { Button } from "@/components/ui/button";
 import {
   SelectItem,

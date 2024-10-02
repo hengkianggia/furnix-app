@@ -4,7 +4,7 @@ import ItemsBlog from "@/components/pages/blog/ItemsBlog";
 import RecentComment from "@/components/pages/blog/RecentComment";
 import TinyBlogPopular from "@/components/pages/blog/TinyBlogPopular";
 import Headers from "@/components/pages/Headers";
-import { PaginationComponents } from "@/components/PaginationCompopnents";
+import { PaginationComponents } from "@/components/PaginationComponents";
 import Tag from "@/components/Tag";
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
@@ -49,7 +49,7 @@ const Blog = () => {
       <Wrapper full flex className="gap-10 max-md:px-4 max-lg:px-10">
         {/* left */}
         <Div
-        full
+          full
           column
           className="basis-8/12 gap-10 max-md:flex max-lg:basis-full max-lg:grid max-lg:grid-cols-2 max-lg:gap-5"
         >
