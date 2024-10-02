@@ -230,7 +230,7 @@ const Footer = () => {
         </Div>
 
         {/* bawah */}
-        <Div full between itemsCenter className="mt-20">
+        <Div full between itemsCenter className="mt-20 max-md:mt-10">
           <Div flex itemsCenter className="gap-4 uppercase text-myGray max-md:gap-1">
             <p className="text-xs">stay in touch</p>
             <Icon icon={Icons.Facebook} className="text-xl cursor-pointer" />
