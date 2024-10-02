@@ -17,10 +17,10 @@ export function PaginationComponents({
   page,
   totalPage,
 }: {
-  categoryPath: string;
-  type: string | string[] | undefined;
-  page: string | string[] | undefined;
-  totalPage: number;
+  categoryPath?: string;
+  type?: string | string[] | undefined;
+  page?: string | string[] | undefined;
+  totalPage?: number;
 }) {
   const router = useRouter();
   let pages = page ?? 1;
