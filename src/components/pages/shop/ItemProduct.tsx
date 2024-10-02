@@ -12,9 +12,9 @@ import React, { useState } from "react";
 interface ItemProductProps {
   position?: "center" | "normal";
   className?: string;
-  title: string;
-  price: number;
-  discount: number;
+  title?: string;
+  price?: number;
+  discount?: number;
 }
 
 const ItemProduct = ({
@@ -28,7 +28,7 @@ const ItemProduct = ({
   const [isPrice, setisPrice] = useState(true);
 
   const params = useParams();
-  const priceAfterDiscount = calculateFinalPrice(price, discount);
+  const priceAfterDiscount = calculateFinalPrice(price!, discount!);
 
   return (
     <Link href={`/shop/${params.category}/${title}`} className="w-full">
