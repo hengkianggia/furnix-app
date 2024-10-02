@@ -15,15 +15,16 @@ export function generateStaticParams() {
   }));
 }
 const Category = ({ params }: { params: { category: string } }) => {
+  const cleanParams = cleanPath(params.category);
   return (
     <Div as={"section"} full column className="gap-32 max-md:gap-20">
       <Headers
-        title={cleanPath(params.category)}
+        title={cleanParams}
         desc="Discover a curated collection of home essentials that elevate your space and simplify everyday living"
       />
-      <KompleksCatalog category={cleanPath(params.category)} />
+      <KompleksCatalog category={cleanParams} />
       <RecomItem />
-      <Separator className="max-lg:hidden"/>
+      <Separator className="max-lg:hidden" />
       <Wrapper
         full
         flex

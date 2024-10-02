@@ -345,6 +345,7 @@ export const ListFaq = [
 export const dataProduct = [
   {
     id: 172617,
+    categoryName: "Living Room Furniture",
     title: "Contemporary Leather Sofa",
     summary:
       "A modern and luxurious leather sofa perfect for adding elegance to any living room.",
@@ -364,6 +365,7 @@ export const dataProduct = [
   },
   {
     id: 942829,
+    categoryName: "Living Room Furniture",
     title: "Classic Sectional Sofa Set",
     summary:
       "A spacious and comfortable sectional sofa set that fits perfectly into any corner of your living room.",
@@ -383,6 +385,7 @@ export const dataProduct = [
   },
   {
     id: 716217,
+    categoryName: "Living Room Furniture",
     title: "Modern Loveseat",
     summary:
       "A stylish loveseat designed to provide comfortable seating for two in any living space.",
@@ -402,6 +405,7 @@ export const dataProduct = [
   },
   {
     id: 172617,
+    categoryName: "Living Room Furniture",
     title: "Minimalist Armchair",
     summary:
       "A sleek and comfortable armchair, perfect for adding a touch of style to any room.",
@@ -421,6 +425,7 @@ export const dataProduct = [
   },
   {
     id: 256712,
+    categoryName: "Living Room Furniture",
     title: "Recliner Lounge Chair",
     summary:
       "A plush recliner designed for ultimate comfort and relaxation, perfect for movie nights.",
@@ -440,6 +445,7 @@ export const dataProduct = [
   },
   {
     id: 983822,
+    categoryName: "Living Room Furniture",
     title: "Electric Power Recliner",
     summary:
       "An advanced power recliner with adjustable settings for personalized comfort.",
@@ -459,6 +465,7 @@ export const dataProduct = [
   },
   {
     id: 273627,
+    categoryName: "Living Room Furniture",
     title: "Round Coffee Table",
     summary:
       "A round coffee table that serves as a stylish centerpiece for any living room.",
@@ -478,6 +485,7 @@ export const dataProduct = [
   },
   {
     id: 737236,
+    categoryName: "Living Room Furniture",
     title: "Lift-Top Coffee Table",
     summary: "A functional lift-top coffee table with hidden storage space.",
     price: 219.99,
@@ -502,6 +510,7 @@ export const dataProduct = [
   },
   {
     id: 541252,
+    categoryName: "Living Room Furniture",
     title: "Wooden End Table",
     summary:
       "A compact end table designed for small spaces, perfect for placing beside a sofa or chair.",
@@ -521,6 +530,7 @@ export const dataProduct = [
   },
   {
     id: 938928,
+    categoryName: "Living Room Furniture",
     title: "Glass Top End Table",
     summary:
       "A sleek and modern end table with a tempered glass top and metal frame.",
@@ -546,6 +556,7 @@ export const dataProduct = [
   },
   {
     id: 746921,
+    categoryName: "Living Room Furniture",
     title: "Wood Console Table",
     summary:
       "A versatile console table suitable for entryways or living rooms.",
@@ -565,6 +576,7 @@ export const dataProduct = [
   },
   {
     id: 983985,
+    categoryName: "Living Room Furniture",
     title: "Metal Frame Console Table",
     summary: "A modern console table with a metal frame and open shelving.",
     price: 279.99,
@@ -583,6 +595,7 @@ export const dataProduct = [
   },
   {
     id: 823827,
+    categoryName: "Living Room Furniture",
     title: "Modern TV Stand",
     summary:
       "A sleek TV stand with ample storage for media and entertainment devices.",
@@ -608,6 +621,7 @@ export const dataProduct = [
   },
   {
     id: 273627,
+    categoryName: "Living Room Furniture",
     title: "Rustic Wooden TV Stand",
     summary:
       "A rustic wooden TV stand that adds a natural touch to any living room.",
@@ -627,6 +641,7 @@ export const dataProduct = [
   },
   {
     id: 726762,
+    categoryName: "Living Room Furniture",
     title: "Wall-Mounted Entertainment Center",
     summary:
       "A stylish entertainment center that mounts to the wall for a modern look.",
@@ -646,6 +661,7 @@ export const dataProduct = [
   },
   {
     id: 637368,
+    categoryName: "Living Room Furniture",
     title: "Traditional Wooden Entertainment Unit",
     summary:
       "A classic entertainment unit with built-in shelves and cabinets for storage.",
@@ -665,6 +681,7 @@ export const dataProduct = [
   },
   {
     id: 625253,
+    categoryName: "Living Room Furniture",
     title: "Round Ottoman Pouf",
     summary:
       "A versatile round ottoman pouf for extra seating or as a footrest.",
@@ -684,6 +701,7 @@ export const dataProduct = [
   },
   {
     id: 425423,
+    categoryName: "Living Room Furniture",
     title: "Storage Ottoman Bench",
     summary:
       "A functional ottoman bench with storage space for organizing your living room.",
@@ -703,6 +721,7 @@ export const dataProduct = [
   },
   {
     id: 837383,
+    categoryName: "Living Room Furniture",
     title: "Knitted Pouf",
     summary: "A cozy knitted pouf for casual seating or as a stylish footrest.",
     price: 59.99,
@@ -721,6 +740,7 @@ export const dataProduct = [
   },
   {
     id: 837483,
+    categoryName: "Living Room Furniture",
     title: "Leather Pouf Ottoman",
     summary:
       "A stylish leather pouf ottoman that serves as both seating and decor.",
@@ -740,6 +760,7 @@ export const dataProduct = [
   },
   {
     id: 934759,
+    categoryName: "Living Room Furniture",
     title: "Velvet Accent Chair",
     summary:
       "A stylish velvet accent chair that adds a touch of luxury to your living space.",
@@ -759,6 +780,7 @@ export const dataProduct = [
   },
   {
     id: 995868,
+    categoryName: "Living Room Furniture",
     title: "Leather Swivel Accent Chair",
     summary:
       "A contemporary leather accent chair with a swivel base for added functionality.",
@@ -778,6 +800,7 @@ export const dataProduct = [
   },
   {
     id: 276236,
+    categoryName: "Living Room Furniture",
     title: "Elegant Chaise Lounge",
     summary: "A classic chaise lounge perfect for relaxing in style.",
     price: 399.99,
@@ -796,6 +819,7 @@ export const dataProduct = [
   },
   {
     id: 252634,
+    categoryName: "Living Room Furniture",
     title: "Velvet Tufted Chaise Lounge",
     summary: "A velvet chaise lounge that combines luxury and comfort.",
     price: 449.99,
@@ -814,6 +838,7 @@ export const dataProduct = [
   },
   {
     id: 826263,
+    categoryName: "Living Room Furniture",
     title: "Tall Wooden Bookcase",
     summary:
       "A spacious wooden bookcase with multiple shelves for organizing books and decor.",
@@ -833,6 +858,7 @@ export const dataProduct = [
   },
   {
     id: 727382,
+    categoryName: "Living Room Furniture",
     title: "Metal Frame Bookcase",
     summary:
       "A modern metal frame bookcase with open shelves for a contemporary look.",
@@ -852,6 +878,7 @@ export const dataProduct = [
   },
   {
     id: 272523,
+    categoryName: "Living Room Furniture",
     title: "Modern Media Storage Cabinet",
     summary:
       "A sleek media storage cabinet for organizing your DVDs, games, and more.",
@@ -877,6 +904,7 @@ export const dataProduct = [
   },
   {
     id: 284725,
+    categoryName: "Living Room Furniture",
     title: "Rustic Media Console",
     summary:
       "A rustic media console with open shelving and cabinets for all your media needs.",
@@ -896,6 +924,7 @@ export const dataProduct = [
   },
   {
     id: 627428,
+    categoryName: "Bedroom Furniture",
     title: "King Size Luxury Bed",
     summary:
       "A luxurious king-size bed designed for ultimate comfort and elegance.",
@@ -915,6 +944,7 @@ export const dataProduct = [
   },
   {
     id: 927362,
+    categoryName: "Bedroom Furniture",
     title: "Space-Saving Bed Frame",
     summary:
       "A compact bed frame designed for modern apartments and smaller bedrooms.",
@@ -934,6 +964,7 @@ export const dataProduct = [
   },
   {
     id: 828362,
+    categoryName: "Bedroom Furniture",
     title: "Classic Oak Headboard",
     summary: "An elegant oak headboard that complements any bed style.",
     price: 249.99,
@@ -952,6 +983,7 @@ export const dataProduct = [
   },
   {
     id: 728193,
+    categoryName: "Bedroom Furniture",
     title: "Upholstered Tufted Headboard",
     summary:
       "A stylish tufted headboard with soft upholstery for added comfort.",
@@ -971,6 +1003,7 @@ export const dataProduct = [
   },
   {
     id: 232748,
+    categoryName: "Bedroom Furniture",
     title: "Elegant Dresser with Mirror",
     summary:
       "A sleek and spacious dresser with an attached mirror for added convenience.",
@@ -990,6 +1023,7 @@ export const dataProduct = [
   },
   {
     id: 726823,
+    categoryName: "Bedroom Furniture",
     title: "Rustic Wooden Dresser",
     summary:
       "A sturdy wooden dresser that provides ample storage with a rustic look.",
@@ -1009,6 +1043,7 @@ export const dataProduct = [
   },
   {
     id: 824923,
+    categoryName: "Bedroom Furniture",
     title: "Contemporary Chest of Drawers",
     summary:
       "A tall and sleek chest of drawers designed for modern living spaces.",
@@ -1034,6 +1069,7 @@ export const dataProduct = [
   },
   {
     id: 273828,
+    categoryName: "Bedroom Furniture",
     title: "Classic Wooden Chest of Drawers",
     summary:
       "A classic and sturdy chest of drawers with a timeless wooden design.",
@@ -1053,6 +1089,7 @@ export const dataProduct = [
   },
   {
     id: 927548,
+    categoryName: "Bedroom Furniture",
     title: "Modern Nightstand with Storage",
     summary: "A sleek nightstand with a drawer and shelf for bedside storage.",
     price: 199.99,
@@ -1077,6 +1114,7 @@ export const dataProduct = [
   },
   {
     id: 839363,
+    categoryName: "Bedroom Furniture",
     title: "Vintage Style Nightstand",
     summary: "A charming vintage-style nightstand with intricate detailing.",
     price: 229.99,
@@ -1095,6 +1133,7 @@ export const dataProduct = [
   },
   {
     id: 638262,
+    categoryName: "Bedroom Furniture",
     title: "Spacious Modern Wardrobe",
     summary:
       "A modern wardrobe with ample storage space for clothing and accessories.",
@@ -1120,6 +1159,7 @@ export const dataProduct = [
   },
   {
     id: 627482,
+    categoryName: "Bedroom Furniture",
     title: "Classic Wooden Armoire",
     summary:
       "A large and elegant armoire that adds a touch of class to your bedroom.",
@@ -1139,6 +1179,7 @@ export const dataProduct = [
   },
   {
     id: 632815,
+    categoryName: "Bedroom Furniture",
     title: "Elegant Vanity Table Set",
     summary:
       "A beautiful vanity table set with a mirror and comfortable stool.",
@@ -1158,6 +1199,7 @@ export const dataProduct = [
   },
   {
     id: 638482,
+    categoryName: "Bedroom Furniture",
     title: "Vintage Style Vanity Table",
     summary:
       "A charming vanity table with intricate vintage details and a large mirror.",
@@ -1177,6 +1219,7 @@ export const dataProduct = [
   },
   {
     id: 936482,
+    categoryName: "Bedroom Furniture",
     title: "Contemporary Bedroom Bench",
     summary:
       "A stylish bedroom bench designed for comfort and modern aesthetics.",
@@ -1196,6 +1239,7 @@ export const dataProduct = [
   },
   {
     id: 836128,
+    categoryName: "Bedroom Furniture",
     title: "Rustic Wooden Bedroom Bench",
     summary: "A sturdy wooden bench that adds a rustic touch to any bedroom.",
     price: 259.99,
@@ -1214,6 +1258,7 @@ export const dataProduct = [
   },
   {
     id: 975476,
+    categoryName: "Bedroom Furniture",
     title: "Storage Bed with Drawers",
     summary:
       "A modern storage bed equipped with multiple drawers for extra space.",
@@ -1239,6 +1284,7 @@ export const dataProduct = [
   },
   {
     id: 285935,
+    categoryName: "Bedroom Furniture",
     title: "Traditional Platform Storage Bed",
     summary:
       "A platform storage bed that combines traditional design with functionality.",
@@ -1258,6 +1304,7 @@ export const dataProduct = [
   },
   {
     id: 341748,
+    categoryName: "Bedroom Furniture",
     title: "Bunk Bed with Ladder",
     summary:
       "A space-saving bunk bed perfect for kids' rooms with a built-in ladder.",
@@ -1277,6 +1324,7 @@ export const dataProduct = [
   },
   {
     id: 489452,
+    categoryName: "Bedroom Furniture",
     title: "Rustic Wooden Bunk Bed",
     summary:
       "A wooden bunk bed with a rustic finish, perfect for a countryside-themed room.",
@@ -1296,6 +1344,7 @@ export const dataProduct = [
   },
   {
     id: 283472,
+    categoryName: "Bedroom Furniture",
     title: "Loft Bed with Study Desk",
     summary:
       "A loft bed that comes with an integrated study desk, ideal for small spaces.",
@@ -1315,6 +1364,7 @@ export const dataProduct = [
   },
   {
     id: 138563,
+    categoryName: "Bedroom Furniture",
     title: "Classic Wooden Loft Bed",
     summary:
       "A sturdy wooden loft bed with a natural finish and classic design.",
@@ -1334,6 +1384,7 @@ export const dataProduct = [
   },
   {
     id: 384827,
+    categoryName: "Bedroom Furniture",
     title: "Memory Foam Mattress",
     summary:
       "A comfortable memory foam mattress that conforms to your body for a restful sleep.",
@@ -1353,6 +1404,7 @@ export const dataProduct = [
   },
   {
     id: 837461,
+    categoryName: "Bedroom Furniture",
     title: "Spring Coil Mattress",
     summary:
       "A firm spring coil mattress offering support and durability for long-lasting use.",
@@ -1372,6 +1424,7 @@ export const dataProduct = [
   },
   {
     id: 683926,
+    categoryName: "Bedroom Furniture",
     title: "Box Spring Foundation",
     summary:
       "A sturdy box spring foundation to provide extra support for your mattress.",
@@ -1391,6 +1444,7 @@ export const dataProduct = [
   },
   {
     id: 836193,
+    categoryName: "Bedroom Furniture",
     title: "Foldable Box Spring Base",
     summary: "A foldable box spring base for easy storage and transportation.",
     price: 249.99,
@@ -1409,6 +1463,7 @@ export const dataProduct = [
   },
   {
     id: 937502,
+    categoryName: "Bedroom Furniture",
     title: "Complete Bedroom Set",
     summary:
       "A complete bedroom set including bed frame, nightstands, and dresser.",
@@ -1428,6 +1483,7 @@ export const dataProduct = [
   },
   {
     id: 819463,
+    categoryName: "Dining Room Furniture",
     title: "Rustic Farmhouse Bedroom Set",
     summary:
       "A charming rustic bedroom set with a natural wood finish and vintage style.",
@@ -1447,6 +1503,7 @@ export const dataProduct = [
   },
   {
     id: 348291,
+    categoryName: "Dining Room Furniture",
     title: "Classic Wooden Dining Table",
     summary:
       "A spacious dining table perfect for family meals, crafted with a classic wooden design.",
@@ -1466,6 +1523,7 @@ export const dataProduct = [
   },
   {
     id: 654123,
+    categoryName: "Dining Room Furniture",
     title: "Glass Top Dining Table",
     summary:
       "A sleek and elegant dining table with a clear glass top and metal frame.",
@@ -1485,6 +1543,7 @@ export const dataProduct = [
   },
   {
     id: 912384,
+    categoryName: "Dining Room Furniture",
     title: "Comfort Upholstered Dining Chair",
     summary:
       "Comfortable upholstered dining chair, perfect for any dining table setup.",
@@ -1504,6 +1563,7 @@ export const dataProduct = [
   },
   {
     id: 758493,
+    categoryName: "Dining Room Furniture",
     title: "Wooden Slat Dining Chair",
     summary:
       "Stylish wooden dining chair with slat back design and durable construction.",
@@ -1523,6 +1583,7 @@ export const dataProduct = [
   },
   {
     id: 235871,
+    categoryName: "Dining Room Furniture",
     title: "Buffet with Storage Drawers",
     summary:
       "A buffet with multiple storage drawers and a spacious top surface for serving.",
@@ -1542,6 +1603,7 @@ export const dataProduct = [
   },
   {
     id: 937152,
+    categoryName: "Dining Room Furniture",
     title: "Rustic Wooden Buffet",
     summary: "A sturdy wooden buffet with a rustic design and open shelving.",
     price: 399.99,
@@ -1560,6 +1622,7 @@ export const dataProduct = [
   },
   {
     id: 512346,
+    categoryName: "Dining Room Furniture",
     title: "Modern Glossy Sideboard",
     summary:
       "A sleek and glossy sideboard with smooth surfaces and ample storage.",
@@ -1579,6 +1642,7 @@ export const dataProduct = [
   },
   {
     id: 874512,
+    categoryName: "Dining Room Furniture",
     title: "Classic Wooden Sideboard",
     summary:
       "A classic wooden sideboard with carved details and traditional appeal.",
@@ -1598,6 +1662,7 @@ export const dataProduct = [
   },
   {
     id: 183762,
+    categoryName: "Dining Room Furniture",
     title: "Elegant China Cabinet",
     summary:
       "A stunning glass-front china cabinet to showcase and protect your fine dinnerware.",
@@ -1617,6 +1682,7 @@ export const dataProduct = [
   },
   {
     id: 219384,
+    categoryName: "Dining Room Furniture",
     title: "Modern Display China Cabinet",
     summary:
       "A sleek and modern china cabinet with adjustable shelves and glass doors.",
@@ -1636,6 +1702,7 @@ export const dataProduct = [
   },
   {
     id: 412983,
+    categoryName: "Dining Room Furniture",
     title: "Vintage Brass Bar Cart",
     summary:
       "A stylish brass bar cart with glass shelves, perfect for serving and storing beverages.",
@@ -1655,6 +1722,7 @@ export const dataProduct = [
   },
   {
     id: 874392,
+    categoryName: "Dining Room Furniture",
     title: "Contemporary Metal Bar Cart",
     summary:
       "A sleek and mobile metal bar cart with a modern touch and open design.",
@@ -1674,6 +1742,7 @@ export const dataProduct = [
   },
   {
     id: 593214,
+    categoryName: "Dining Room Furniture",
     title: "Traditional Dining Set",
     summary:
       "A complete dining set with a table and six chairs, perfect for family dinners.",
@@ -1693,6 +1762,7 @@ export const dataProduct = [
   },
   {
     id: 817362,
+    categoryName: "Dining Room Furniture",
     title: "Contemporary Glass Dining Set",
     summary:
       "A modern dining set with a tempered glass table and stylish metal chairs.",
@@ -1712,6 +1782,7 @@ export const dataProduct = [
   },
   {
     id: 781234,
+    categoryName: "Dining Room Furniture",
     title: "Industrial Counter-Height Table",
     summary:
       "A rugged counter-height table with an industrial look and sturdy construction.",
@@ -1731,6 +1802,7 @@ export const dataProduct = [
   },
   {
     id: 293874,
+    categoryName: "Dining Room Furniture",
     title: "Classic Wooden Counter-Height Table",
     summary:
       "A traditional wooden counter-height table with a polished finish and elegant style.",
@@ -1750,6 +1822,7 @@ export const dataProduct = [
   },
   {
     id: 459213,
+    categoryName: "Dining Room Furniture",
     title: "Contemporary Extendable Dining Table",
     summary:
       "A modern extendable dining table with smooth mechanism and stylish design.",
@@ -1769,6 +1842,7 @@ export const dataProduct = [
   },
   {
     id: 573849,
+    categoryName: "Dining Room Furniture",
     title: "Traditional Wooden Extendable Table",
     summary:
       "A classic wooden extendable table with a timeless design and durable build.",
@@ -1788,6 +1862,7 @@ export const dataProduct = [
   },
   {
     id: 674123,
+    categoryName: "Dining Room Furniture",
     title: "Rustic Dining Bench",
     summary:
       "A sturdy rustic dining bench made from reclaimed wood, perfect for a farmhouse feel.",
@@ -1807,6 +1882,7 @@ export const dataProduct = [
   },
   {
     id: 783912,
+    categoryName: "Dining Room Furniture",
     title: "Modern Upholstered Dining Bench",
     summary:
       "A sleek dining bench with a cushioned seat, adding a modern look to your dining area.",
@@ -1826,6 +1902,7 @@ export const dataProduct = [
   },
   {
     id: 345827,
+    categoryName: "Dining Room Furniture",
     title: "Classic Wood Server Table",
     summary:
       "A server table with a classic design, offering storage and style for your dining room.",
@@ -1845,6 +1922,7 @@ export const dataProduct = [
   },
   {
     id: 894376,
+    categoryName: "Dining Room Furniture",
     title: "Contemporary Glass Server Table",
     summary:
       "A modern server table with glass shelves and sleek design for stylish dining spaces.",
@@ -1864,6 +1942,7 @@ export const dataProduct = [
   },
   {
     id: 512783,
+    categoryName: "Dining Room Furniture",
     title: "Classic Wooden Wine Rack",
     summary:
       "A classic wooden wine rack that stores and displays up to 12 bottles of wine.",
@@ -1883,6 +1962,7 @@ export const dataProduct = [
   },
   {
     id: 378492,
+    categoryName: "Dining Room Furniture",
     title: "Metal Wall-Mounted Wine Rack",
     summary:
       "A modern wall-mounted wine rack made of metal, perfect for saving space.",
@@ -1902,6 +1982,7 @@ export const dataProduct = [
   },
   {
     id: 891234,
+    categoryName: "Dining Room Furniture",
     title: "Traditional Wooden Hutch",
     summary:
       "A beautifully crafted wooden hutch with glass doors and storage cabinets.",
@@ -1921,6 +2002,7 @@ export const dataProduct = [
   },
   {
     id: 561932,
+    categoryName: "Dining Room Furniture",
     title: "Contemporary Hutch with LED Lighting",
     summary:
       "A modern hutch with sleek design and LED lighting to display your favorite items.",
@@ -1940,6 +2022,7 @@ export const dataProduct = [
   },
   {
     id: 761293,
+    categoryName: "Dining Room Furniture",
     title: "Rustic Kitchen Island with Seating",
     summary:
       "A rustic kitchen island featuring a spacious top and seating for two.",
@@ -1959,6 +2042,7 @@ export const dataProduct = [
   },
   {
     id: 812375,
+    categoryName: "Dining Room Furniture",
     title: "Modern Kitchen Island with Stools",
     summary:
       "A modern kitchen island with a sleek design, storage, and seating for two.",
@@ -1978,6 +2062,7 @@ export const dataProduct = [
   },
   {
     id: 123456,
+    categoryName: "Home Office Furniture",
     title: "Classic Wooden Desk",
     summary:
       "A spacious wooden desk suitable for a home office with a classic touch.",
@@ -1997,6 +2082,7 @@ export const dataProduct = [
   },
   {
     id: 234567,
+    categoryName: "Home Office Furniture",
     title: "Adjustable Office Desk",
     summary:
       "An ergonomic desk with adjustable height for comfort and versatility.",
@@ -2016,6 +2102,7 @@ export const dataProduct = [
   },
   {
     id: 345678,
+    categoryName: "Home Office Furniture",
     title: "Leather Executive Chair",
     summary: "A luxurious leather chair designed for ultimate office comfort.",
     price: 299.99,
@@ -2034,6 +2121,7 @@ export const dataProduct = [
   },
   {
     id: 456789,
+    categoryName: "Home Office Furniture",
     title: "Mesh Back Office Chair",
     summary:
       "A breathable office chair with mesh back support and comfortable seating.",
@@ -2053,6 +2141,7 @@ export const dataProduct = [
   },
   {
     id: 567890,
+    categoryName: "Home Office Furniture",
     title: "Ergonomic Lumbar Support Chair",
     summary:
       "An ergonomic chair offering full lumbar support for optimal posture.",
@@ -2078,6 +2167,7 @@ export const dataProduct = [
   },
   {
     id: 678901,
+    categoryName: "Home Office Furniture",
     title: "Ergonomic Swivel Chair",
     summary:
       "A versatile swivel chair designed for ergonomic support and movement.",
@@ -2097,6 +2187,7 @@ export const dataProduct = [
   },
   {
     id: 789012,
+    categoryName: "Home Office Furniture",
     title: "Wooden Bookcase",
     summary:
       "A sturdy wooden bookcase with multiple shelves for ample storage.",
@@ -2116,6 +2207,7 @@ export const dataProduct = [
   },
   {
     id: 890123,
+    categoryName: "Home Office Furniture",
     title: "Modern Metal Bookcase",
     summary:
       "A sleek metal bookcase with open shelves for a contemporary look.",
@@ -2135,6 +2227,7 @@ export const dataProduct = [
   },
   {
     id: 901234,
+    categoryName: "Home Office Furniture",
     title: "Metal Filing Cabinet",
     summary:
       "A sturdy and spacious filing cabinet with a secure locking system.",
@@ -2154,6 +2247,7 @@ export const dataProduct = [
   },
   {
     id: 112345,
+    categoryName: "Home Office Furniture",
     title: "Wooden Filing Cabinet",
     summary: "A classic wooden filing cabinet for organized document storage.",
     price: 159.99,
@@ -2172,6 +2266,7 @@ export const dataProduct = [
   },
   {
     id: 123457,
+    categoryName: "Home Office Furniture",
     title: "Compact Computer Desk",
     summary: "A space-saving computer desk designed for small home offices.",
     price: 229.99,
@@ -2190,6 +2285,7 @@ export const dataProduct = [
   },
   {
     id: 234568,
+    categoryName: "Home Office Furniture",
     title: "Corner Computer Desk",
     summary:
       "A corner computer desk offering ample space and ergonomic design.",
@@ -2209,6 +2305,7 @@ export const dataProduct = [
   },
   {
     id: 345679,
+    categoryName: "Home Office Furniture",
     title: "Traditional Writing Desk",
     summary:
       "A stylish wooden writing desk with a vintage touch for home offices.",
@@ -2228,6 +2325,7 @@ export const dataProduct = [
   },
   {
     id: 456780,
+    categoryName: "Home Office Furniture",
     title: "Modern Writing Desk",
     summary:
       "A contemporary writing desk with clean lines and a minimalist design.",
@@ -2247,6 +2345,7 @@ export const dataProduct = [
   },
   {
     id: 567891,
+    categoryName: "Home Office Furniture",
     title: "Electric Standing Desk",
     summary:
       "A height-adjustable standing desk with electric controls for convenience.",
@@ -2266,6 +2365,7 @@ export const dataProduct = [
   },
   {
     id: 678902,
+    categoryName: "Home Office Furniture",
     title: "Manual Standing Desk",
     summary:
       "A manually adjustable standing desk designed for healthy work habits.",
@@ -2285,6 +2385,7 @@ export const dataProduct = [
   },
   {
     id: 789013,
+    categoryName: "Home Office Furniture",
     title: "L-Shaped Office Desk",
     summary:
       "A spacious L-shaped desk designed to maximize workspace in your office.",
@@ -2304,6 +2405,7 @@ export const dataProduct = [
   },
   {
     id: 890124,
+    categoryName: "Home Office Furniture",
     title: "Compact L-Shaped Desk",
     summary:
       "A compact L-shaped desk ideal for small office spaces and home use.",
@@ -2323,6 +2425,7 @@ export const dataProduct = [
   },
   {
     id: 901235,
+    categoryName: "Home Office Furniture",
     title: "Desk Organizer Set",
     summary:
       "A multi-functional desk organizer set for storing office supplies.",
@@ -2342,6 +2445,7 @@ export const dataProduct = [
   },
   {
     id: 112346,
+    categoryName: "Home Office Furniture",
     title: "Bamboo Desk Organizer",
     summary: "Eco-friendly bamboo desk organizer with natural finish.",
     price: 24.99,
@@ -2360,6 +2464,7 @@ export const dataProduct = [
   },
   {
     id: 123458,
+    categoryName: "Home Office Furniture",
     title: "Printer Stand with Wheels",
     summary: "A mobile printer stand with shelves for extra storage.",
     price: 79.99,
@@ -2378,6 +2483,7 @@ export const dataProduct = [
   },
   {
     id: 234569,
+    categoryName: "Home Office Furniture",
     title: "Wooden Printer Stand",
     summary: "A classic wooden printer stand with built-in storage.",
     price: 69.99,
@@ -2396,6 +2502,7 @@ export const dataProduct = [
   },
   {
     id: 345680,
+    categoryName: "Home Office Furniture",
     title: "Tall Storage Cabinet",
     summary:
       "A tall office storage cabinet with lockable doors for secure storage.",
@@ -2415,6 +2522,7 @@ export const dataProduct = [
   },
   {
     id: 456781,
+    categoryName: "Home Office Furniture",
     title: "Compact Office Storage",
     summary:
       "A compact office storage cabinet with shelves for easy organization.",
@@ -2434,6 +2542,7 @@ export const dataProduct = [
   },
   {
     id: 567892,
+    categoryName: "Home Office Furniture",
     title: "LED Desk Lamp",
     summary: "An energy-efficient LED desk lamp with adjustable brightness.",
     price: 39.99,
@@ -2452,6 +2561,7 @@ export const dataProduct = [
   },
   {
     id: 678903,
+    categoryName: "Home Office Furniture",
     title: "Clamp-On Desk Lamp",
     summary:
       "A versatile clamp-on desk lamp with flexible neck for adjustable lighting.",
@@ -2471,6 +2581,7 @@ export const dataProduct = [
   },
   {
     id: 789014,
+    categoryName: "Home Office Furniture",
     title: "Cork Bulletin Board",
     summary:
       "A classic cork bulletin board for posting notes, reminders, and photos.",
@@ -2490,6 +2601,7 @@ export const dataProduct = [
   },
   {
     id: 890125,
+    categoryName: "Home Office Furniture",
     title: "Magnetic Bulletin Board",
     summary:
       "A magnetic bulletin board with a smooth surface for posting notes.",
@@ -2509,6 +2621,7 @@ export const dataProduct = [
   },
   {
     id: 901236,
+    categoryName: "Home Office Furniture",
     title: "Magnetic Whiteboard",
     summary: "A large magnetic whiteboard for presentations and office use.",
     price: 59.99,
@@ -2527,6 +2640,7 @@ export const dataProduct = [
   },
   {
     id: 112347,
+    categoryName: "Home Office Furniture",
     title: "Portable Whiteboard",
     summary: "A portable whiteboard with a stand for easy mobility.",
     price: 49.99,
@@ -2545,6 +2659,7 @@ export const dataProduct = [
   },
   {
     id: 123459,
+    categoryName: "Home Office Furniture",
     title: "Complete Office Set",
     summary: "A full office set including desk, chair, and storage solutions.",
     price: 899.99,
@@ -2563,6 +2678,7 @@ export const dataProduct = [
   },
   {
     id: 234570,
+    categoryName: "Home Office Furniture",
     title: "Executive Office Set",
     summary: "A luxurious executive office set with premium furniture pieces.",
     price: 1199.99,
@@ -2581,6 +2697,7 @@ export const dataProduct = [
   },
   {
     id: 682345,
+    categoryName: "Kitchen Furniture",
     title: "Rustic Wooden Kitchen Island",
     summary:
       "A beautifully crafted kitchen island with ample storage and a rustic design.",
@@ -2600,6 +2717,7 @@ export const dataProduct = [
   },
   {
     id: 192457,
+    categoryName: "Kitchen Furniture",
     title: "Contemporary Steel Kitchen Island",
     summary:
       "Modern kitchen island with a sleek design, perfect for any contemporary kitchen.",
@@ -2619,6 +2737,7 @@ export const dataProduct = [
   },
   {
     id: 573819,
+    categoryName: "Kitchen Furniture",
     title: "Classic Bar Stool Set",
     summary:
       "Set of 2 bar stools with cushioned seats, ideal for any home bar or kitchen counter.",
@@ -2638,6 +2757,7 @@ export const dataProduct = [
   },
   {
     id: 496231,
+    categoryName: "Kitchen Furniture",
     title: "Adjustable Swivel Bar Stool",
     summary:
       "Modern swivel bar stool with adjustable height for versatile seating.",
@@ -2657,6 +2777,7 @@ export const dataProduct = [
   },
   {
     id: 718324,
+    categoryName: "Kitchen Furniture",
     title: "Industrial Counter Stool",
     summary:
       "Sturdy and stylish industrial-style counter stool for versatile seating.",
@@ -2676,6 +2797,7 @@ export const dataProduct = [
   },
   {
     id: 395867,
+    categoryName: "Kitchen Furniture",
     title: "Farmhouse Counter Stool",
     summary:
       "A cozy farmhouse-style counter stool with a wooden seat and classic design.",
@@ -2695,6 +2817,7 @@ export const dataProduct = [
   },
   {
     id: 532178,
+    categoryName: "Kitchen Furniture",
     title: "Tall Pantry Cabinet",
     summary:
       "Spacious pantry cabinet with adjustable shelves for optimal kitchen storage.",
@@ -2714,6 +2837,7 @@ export const dataProduct = [
   },
   {
     id: 618547,
+    categoryName: "Kitchen Furniture",
     title: "Rustic Wooden Pantry Cabinet",
     summary:
       "A rustic pantry cabinet with barn door design and ample storage space.",
@@ -2733,6 +2857,7 @@ export const dataProduct = [
   },
   {
     id: 759431,
+    categoryName: "Kitchen Furniture",
     title: "Metal Bakers Rack",
     summary:
       "A durable metal bakers rack with multiple shelves and an industrial look.",
@@ -2752,6 +2877,7 @@ export const dataProduct = [
   },
   {
     id: 486732,
+    categoryName: "Kitchen Furniture",
     title: "Wooden Bakers Rack with Drawers",
     summary:
       "A multi-functional wooden bakers rack with shelves and drawers for storage.",
@@ -2771,6 +2897,7 @@ export const dataProduct = [
   },
   {
     id: 123456,
+    categoryName: "Kitchen Furniture",
     title: "Rolling Kitchen Cart",
     summary:
       "A versatile rolling kitchen cart with open shelves and a sturdy design.",
@@ -2790,6 +2917,7 @@ export const dataProduct = [
   },
   {
     id: 654789,
+    categoryName: "Kitchen Furniture",
     title: "Expandable Wooden Kitchen Cart",
     summary:
       "A stylish wooden kitchen cart with an expandable top and multiple shelves.",
@@ -2810,6 +2938,7 @@ export const dataProduct = [
 
   {
     id: 332167,
+    categoryName: "Kitchen Furniture",
     title: "Cozy Breakfast Nook Set",
     summary:
       "A compact and cozy breakfast nook set that fits perfectly in any small dining space.",
@@ -2829,6 +2958,7 @@ export const dataProduct = [
   },
   {
     id: 874523,
+    categoryName: "Kitchen Furniture",
     title: "Rustic Farmhouse Breakfast Nook",
     summary:
       "Farmhouse-style breakfast nook with storage space under the benches.",
@@ -2848,6 +2978,7 @@ export const dataProduct = [
   },
   {
     id: 452836,
+    categoryName: "Kitchen Furniture",
     title: "Modern Dining Nook Set",
     summary:
       "Stylish dining nook set with cushioned seating for added comfort.",
@@ -2867,6 +2998,7 @@ export const dataProduct = [
   },
   {
     id: 914378,
+    categoryName: "Kitchen Furniture",
     title: "Compact Space-Saving Dining Nook",
     summary:
       "Space-saving dining nook set that provides style and functionality.",
@@ -2886,6 +3018,7 @@ export const dataProduct = [
   },
   {
     id: 165982,
+    categoryName: "Kitchen Furniture",
     title: "Stainless Steel Microwave Cart",
     summary:
       "Durable stainless steel microwave cart with shelves and wheels for easy movement.",
@@ -2905,6 +3038,7 @@ export const dataProduct = [
   },
   {
     id: 394817,
+    categoryName: "Kitchen Furniture",
     title: "Wooden Microwave Cart with Storage",
     summary:
       "Multi-functional wooden microwave cart with storage cabinets and open shelves.",
@@ -2924,6 +3058,7 @@ export const dataProduct = [
   },
   {
     id: 842913,
+    categoryName: "Kitchen Furniture",
     title: "Wall-Mounted Pot Rack",
     summary:
       "A functional and stylish wall-mounted pot rack for easy kitchen organization.",
@@ -2943,6 +3078,7 @@ export const dataProduct = [
   },
   {
     id: 193284,
+    categoryName: "Kitchen Furniture",
     title: "Ceiling Hanging Pot Rack",
     summary:
       "A ceiling-hanging pot rack with hooks, perfect for keeping kitchen essentials within reach.",
@@ -2962,6 +3098,7 @@ export const dataProduct = [
   },
   {
     id: 672835,
+    categoryName: "Kitchen Furniture",
     title: "Stainless Steel Utility Table",
     summary:
       "A sturdy stainless steel utility table with a simple and functional design.",
@@ -2981,6 +3118,7 @@ export const dataProduct = [
   },
   {
     id: 853421,
+    categoryName: "Kitchen Furniture",
     title: "Portable Folding Utility Table",
     summary:
       "A portable utility table that folds for easy storage and transport.",
@@ -3000,6 +3138,7 @@ export const dataProduct = [
   },
   {
     id: 483291,
+    categoryName: "Kitchen Furniture",
     title: "Classic Wooden Kitchen Corner Bench",
     summary:
       "A traditional wooden kitchen corner bench with ample seating space.",
@@ -3019,6 +3158,7 @@ export const dataProduct = [
   },
   {
     id: 573628,
+    categoryName: "Kitchen Furniture",
     title: "Modern Upholstered Kitchen Corner Bench",
     summary:
       "A modern corner bench with soft cushioning and stylish upholstery.",
@@ -3038,6 +3178,7 @@ export const dataProduct = [
   },
   {
     id: 298473,
+    categoryName: "Kitchen Furniture",
     title: "Traditional Buffet and Hutch Set",
     summary:
       "A traditional buffet and hutch set with glass doors and storage cabinets.",
@@ -3057,6 +3198,7 @@ export const dataProduct = [
   },
   {
     id: 612497,
+    categoryName: "Kitchen Furniture",
     title: "Rustic Farmhouse Buffet and Hutch",
     summary:
       "Farmhouse-style buffet and hutch set with open shelving and storage cabinets.",
@@ -3076,6 +3218,7 @@ export const dataProduct = [
   },
   {
     id: 758492,
+    categoryName: "Kitchen Furniture",
     title: "Contemporary Wine Cabinet",
     summary: "A stylish wine cabinet with wine rack storage and glass holders.",
     price: 299.99,
@@ -3094,6 +3237,7 @@ export const dataProduct = [
   },
   {
     id: 416725,
+    categoryName: "Kitchen Furniture",
     title: "Vintage Wooden Wine Cabinet",
     summary:
       "A vintage-style wine cabinet with storage for bottles and glasses.",
@@ -3113,6 +3257,7 @@ export const dataProduct = [
   },
   {
     id: 395247,
+    categoryName: "Kitchen Furniture",
     title: "Mobile Serving Cart with Wheels",
     summary:
       "A mobile serving cart with wheels, perfect for entertaining guests.",
@@ -3132,6 +3277,7 @@ export const dataProduct = [
   },
   {
     id: 681245,
+    categoryName: "Kitchen Furniture",
     title: "Wooden Farmhouse Serving Cart",
     summary:
       "A charming wooden farmhouse-style serving cart with shelves and wheels.",
@@ -3151,6 +3297,7 @@ export const dataProduct = [
   },
   {
     id: 736542,
+    categoryName: "Outdoor Furniture",
     title: "Classic Patio Set",
     summary:
       "Perfect patio set for outdoor relaxation with family and friends.",
@@ -3170,6 +3317,7 @@ export const dataProduct = [
   },
   {
     id: 192384,
+    categoryName: "Outdoor Furniture",
     title: "Luxury Outdoor Patio Set",
     summary:
       "A luxurious outdoor patio set with comfortable seating for your gatherings.",
@@ -3189,6 +3337,7 @@ export const dataProduct = [
   },
   {
     id: 567123,
+    categoryName: "Outdoor Furniture",
     title: "Rustic Garden Bench",
     summary: "A charming wooden garden bench for your outdoor space.",
     price: 249.99,
@@ -3207,6 +3356,7 @@ export const dataProduct = [
   },
   {
     id: 998823,
+    categoryName: "Outdoor Furniture",
     title: "Modern Metal Garden Bench",
     summary: "A sleek and modern bench to accent your outdoor garden.",
     price: 329.99,
@@ -3225,6 +3375,7 @@ export const dataProduct = [
   },
   {
     id: 453687,
+    categoryName: "Outdoor Furniture",
     title: "8-Piece Outdoor Dining Set",
     summary: "A full dining set for outdoor family meals and gatherings.",
     price: 899.99,
@@ -3243,6 +3394,7 @@ export const dataProduct = [
   },
   {
     id: 112387,
+    categoryName: "Outdoor Furniture",
     title: "Compact Outdoor Dining Set",
     summary: "A compact and elegant dining set for small outdoor spaces.",
     price: 599.99,
@@ -3261,6 +3413,7 @@ export const dataProduct = [
   },
   {
     id: 782310,
+    categoryName: "Outdoor Furniture",
     title: "Relaxing Lounge Chair",
     summary: "A comfortable lounge chair designed for outdoor relaxation.",
     price: 199.99,
@@ -3279,6 +3432,7 @@ export const dataProduct = [
   },
   {
     id: 491027,
+    categoryName: "Outdoor Furniture",
     title: "Wicker Lounge Chair",
     summary: "Stylish wicker lounge chair for a chic outdoor setup.",
     price: 249.99,
@@ -3297,6 +3451,7 @@ export const dataProduct = [
   },
   {
     id: 628473,
+    categoryName: "Outdoor Furniture",
     title: "Wooden Adirondack Chair",
     summary: "Classic wooden Adirondack chair for your backyard comfort.",
     price: 149.99,
@@ -3315,6 +3470,7 @@ export const dataProduct = [
   },
   {
     id: 328546,
+    categoryName: "Outdoor Furniture",
     title: "Plastic Adirondack Chair",
     summary: "Weather-resistant plastic Adirondack chair for outdoor use.",
     price: 99.99,
@@ -3333,6 +3489,7 @@ export const dataProduct = [
   },
   {
     id: 927643,
+    categoryName: "Outdoor Furniture",
     title: "Modern Outdoor Sofa",
     summary: "A sleek outdoor sofa for a modern and comfortable space.",
     price: 549.99,
@@ -3351,6 +3508,7 @@ export const dataProduct = [
   },
   {
     id: 187432,
+    categoryName: "Outdoor Furniture",
     title: "Classic Wicker Outdoor Sofa",
     summary: "Traditional outdoor sofa with classic wicker design.",
     price: 699.99,
@@ -3369,6 +3527,7 @@ export const dataProduct = [
   },
   {
     id: 348972,
+    categoryName: "Outdoor Furniture",
     title: "Luxury Outdoor Sectional",
     summary: "A large and luxurious sectional for outdoor relaxation.",
     price: 1299.99,
@@ -3387,6 +3546,7 @@ export const dataProduct = [
   },
   {
     id: 129837,
+    categoryName: "Outdoor Furniture",
     title: "Compact Outdoor Sectional",
     summary: "A small yet comfortable sectional for outdoor lounging.",
     price: 899.99,
@@ -3405,6 +3565,7 @@ export const dataProduct = [
   },
   {
     id: 276493,
+    categoryName: "Outdoor Furniture",
     title: "Cotton Hammock",
     summary: "A soft and comfortable hammock made from durable cotton fabric.",
     price: 69.99,
@@ -3423,6 +3584,7 @@ export const dataProduct = [
   },
   {
     id: 654392,
+    categoryName: "Outdoor Furniture",
     title: "Portable Nylon Hammock",
     summary: "A lightweight and portable hammock for outdoor adventures.",
     price: 49.99,
@@ -3441,6 +3603,7 @@ export const dataProduct = [
   },
   {
     id: 981274,
+    categoryName: "Outdoor Furniture",
     title: "Wooden Porch Swing",
     summary: "A classic wooden swing designed for porch relaxation.",
     price: 299.99,
@@ -3459,6 +3622,7 @@ export const dataProduct = [
   },
   {
     id: 658392,
+    categoryName: "Outdoor Furniture",
     title: "Metal Frame Porch Swing",
     summary: "A modern metal porch swing with cushioned seating.",
     price: 359.99,
@@ -3477,6 +3641,7 @@ export const dataProduct = [
   },
   {
     id: 462839,
+    categoryName: "Outdoor Furniture",
     title: "Traditional Picnic Table",
     summary: "A classic wooden picnic table for outdoor dining.",
     price: 199.99,
@@ -3495,6 +3660,7 @@ export const dataProduct = [
   },
   {
     id: 782654,
+    categoryName: "Outdoor Furniture",
     title: "Folding Metal Picnic Table",
     summary: "A foldable and portable picnic table for easy outdoor dining.",
     price: 149.99,
@@ -3513,6 +3679,7 @@ export const dataProduct = [
   },
   {
     id: 394718,
+    categoryName: "Outdoor Furniture",
     title: "Outdoor Bar Set with Stools",
     summary:
       "An elegant outdoor bar set with matching stools for entertaining.",
@@ -3532,6 +3699,7 @@ export const dataProduct = [
   },
   {
     id: 567981,
+    categoryName: "Outdoor Furniture",
     title: "Rustic Wooden Bar Set",
     summary: "A rustic wooden bar set with a natural finish for outdoor fun.",
     price: 499.99,
@@ -3550,6 +3718,7 @@ export const dataProduct = [
   },
   {
     id: 123487,
+    categoryName: "Outdoor Furniture",
     title: "Adjustable Sun Lounger",
     summary: "A comfortable and adjustable sun lounger for soaking up the sun.",
     price: 249.99,
@@ -3568,6 +3737,7 @@ export const dataProduct = [
   },
   {
     id: 789123,
+    categoryName: "Outdoor Furniture",
     title: "Wicker Sun Lounger",
     summary: "A stylish wicker sun lounger for poolside relaxation.",
     price: 299.99,
@@ -3586,6 +3756,7 @@ export const dataProduct = [
   },
   {
     id: 659412,
+    categoryName: "Outdoor Furniture",
     title: "Large Outdoor Storage Box",
     summary: "A spacious storage box for keeping outdoor items organized.",
     price: 129.99,
@@ -3604,6 +3775,7 @@ export const dataProduct = [
   },
   {
     id: 984123,
+    categoryName: "Outdoor Furniture",
     title: "Wooden Outdoor Storage Chest",
     summary: "A natural wood storage chest for garden essentials.",
     price: 179.99,
@@ -3622,6 +3794,7 @@ export const dataProduct = [
   },
   {
     id: 291874,
+    categoryName: "Outdoor Furniture",
     title: "Outdoor Ottoman with Cushion",
     summary: "A stylish outdoor ottoman with weather-resistant cushions.",
     price: 89.99,
@@ -3640,6 +3813,7 @@ export const dataProduct = [
   },
   {
     id: 987654,
+    categoryName: "Outdoor Furniture",
     title: "Wicker Outdoor Ottoman",
     summary: "A classic wicker ottoman for added outdoor comfort.",
     price: 119.99,
@@ -3658,6 +3832,7 @@ export const dataProduct = [
   },
   {
     id: 462917,
+    categoryName: "Outdoor Furniture",
     title: "Large Patio Umbrella",
     summary: "A large and stylish patio umbrella for sun protection.",
     price: 99.99,
@@ -3676,6 +3851,7 @@ export const dataProduct = [
   },
   {
     id: 321654,
+    categoryName: "Outdoor Furniture",
     title: "Tilting Patio Umbrella",
     summary: "A tilting umbrella for customizable sun protection.",
     price: 129.99,
@@ -3694,6 +3870,7 @@ export const dataProduct = [
   },
   {
     id: 512349,
+    categoryName: "Outdoor Furniture",
     title: "Metal Frame Gazebo",
     summary: "A sturdy metal frame gazebo for outdoor gatherings.",
     price: 499.99,
@@ -3712,6 +3889,7 @@ export const dataProduct = [
   },
   {
     id: 876543,
+    categoryName: "Outdoor Furniture",
     title: "Wooden Gazebo with Curtains",
     summary: "A classic wooden gazebo with curtains for privacy.",
     price: 799.99,
@@ -3730,6 +3908,7 @@ export const dataProduct = [
   },
   {
     id: 123456,
+    categoryName: "Children's Furniture",
     title: "Classic Bunk Bed",
     summary:
       "A sturdy and safe bunk bed perfect for maximizing bedroom space for kids.",
@@ -3749,6 +3928,7 @@ export const dataProduct = [
   },
   {
     id: 654321,
+    categoryName: "Children's Furniture",
     title: "Triple Twin Bunk Bed",
     summary:
       "Space-saving triple twin bunk bed ideal for large families or sleepovers.",
@@ -3768,6 +3948,7 @@ export const dataProduct = [
   },
   {
     id: 111222,
+    categoryName: "Children's Furniture",
     title: "Adjustable Study Desk",
     summary:
       "A versatile and ergonomic study desk designed for kids of all ages.",
@@ -3787,6 +3968,7 @@ export const dataProduct = [
   },
   {
     id: 222111,
+    categoryName: "Children's Furniture",
     title: "Wooden Study Desk with Storage",
     summary:
       "Classic wooden study desk featuring built-in storage drawers for school supplies.",
@@ -3806,6 +3988,7 @@ export const dataProduct = [
   },
   {
     id: 333444,
+    categoryName: "Children's Furniture",
     title: "Toy Organizer Cabinet",
     summary:
       "A cabinet-style toy organizer with multiple bins for efficient toy storage.",
@@ -3825,6 +4008,7 @@ export const dataProduct = [
   },
   {
     id: 444333,
+    categoryName: "Children's Furniture",
     title: "Portable Toy Storage Basket",
     summary: "A collapsible and portable toy storage basket for easy cleanup.",
     price: 49.99,
@@ -3843,6 +4027,7 @@ export const dataProduct = [
   },
   {
     id: 555666,
+    categoryName: "Children's Furniture",
     title: "Convertible Baby Crib",
     summary: "A versatile baby crib that can be converted into a toddler bed.",
     price: 299.99,
@@ -3861,6 +4046,7 @@ export const dataProduct = [
   },
   {
     id: 666555,
+    categoryName: "Children's Furniture",
     title: "Sleigh-Style Baby Crib",
     summary:
       "A beautifully crafted sleigh-style crib designed to provide a secure sleep environment.",
@@ -3880,6 +4066,7 @@ export const dataProduct = [
   },
   {
     id: 777888,
+    categoryName: "Children's Furniture",
     title: "Wooden Toddler Bed",
     summary:
       "A low-profile wooden toddler bed with guardrails for added safety.",
@@ -3899,6 +4086,7 @@ export const dataProduct = [
   },
   {
     id: 888777,
+    categoryName: "Children's Furniture",
     title: "Modern Toddler Bed with Storage",
     summary:
       "A modern toddler bed featuring built-in storage drawers underneath.",
@@ -3918,6 +4106,7 @@ export const dataProduct = [
   },
   {
     id: 999111,
+    categoryName: "Children's Furniture",
     title: "Kids' Dresser with Mirror",
     summary:
       "A stylish dresser designed for kids with a built-in mirror for functionality.",
@@ -3937,6 +4126,7 @@ export const dataProduct = [
   },
   {
     id: 111999,
+    categoryName: "Children's Furniture",
     title: "Classic Wooden Dresser",
     summary:
       "Traditional wooden dresser with spacious drawers for organizing clothes.",
@@ -3956,6 +4146,7 @@ export const dataProduct = [
   },
   {
     id: 222333,
+    categoryName: "Children's Furniture",
     title: "Children's Bookcase with Bins",
     summary:
       "A bookcase with bins for easy storage of books and toys for kids.",
@@ -3975,6 +4166,7 @@ export const dataProduct = [
   },
   {
     id: 333222,
+    categoryName: "Children's Furniture",
     title: "Wooden Storybook Bookcase",
     summary:
       "A charming wooden bookcase designed to display children's storybooks.",
@@ -3994,6 +4186,7 @@ export const dataProduct = [
   },
   {
     id: 444555,
+    categoryName: "Children's Furniture",
     title: "Play Table with Storage",
     summary:
       "A multi-functional play table with storage space for toys and craft supplies.",
@@ -4019,6 +4212,7 @@ export const dataProduct = [
   },
   {
     id: 555444,
+    categoryName: "Children's Furniture",
     title: "Compact Round Play Table",
     summary:
       "A compact round play table perfect for small spaces and playrooms.",
@@ -4038,6 +4232,7 @@ export const dataProduct = [
   },
   {
     id: 666777,
+    categoryName: "Children's Furniture",
     title: "Kid's Wooden Chair Set",
     summary:
       "A set of wooden chairs designed specifically for kids with colorful finishes.",
@@ -4057,6 +4252,7 @@ export const dataProduct = [
   },
   {
     id: 777666,
+    categoryName: "Children's Furniture",
     title: "Adjustable Plastic Kid Chair",
     summary:
       "A lightweight and adjustable plastic chair perfect for kids' activities.",
@@ -4082,6 +4278,7 @@ export const dataProduct = [
   },
   {
     id: 888999,
+    categoryName: "Children's Furniture",
     title: "Bean Bag Chair for Kids",
     summary:
       "A cozy and comfortable bean bag chair designed for kids' relaxation.",
@@ -4101,6 +4298,7 @@ export const dataProduct = [
   },
   {
     id: 999888,
+    categoryName: "Children's Furniture",
     title: "Outdoor Bean Bag Chair",
     summary:
       "Durable and water-resistant bean bag chair suitable for indoor and outdoor use.",
@@ -4126,6 +4324,7 @@ export const dataProduct = [
   },
   {
     id: 111333,
+    categoryName: "Children's Furniture",
     title: "Loft Bed with Study Desk",
     summary:
       "A loft bed that features a built-in study desk underneath for space-saving.",
@@ -4145,6 +4344,7 @@ export const dataProduct = [
   },
   {
     id: 222444,
+    categoryName: "Children's Furniture",
     title: "Twin Loft Bed with Workspace",
     summary:
       "A twin loft bed featuring a spacious workspace and shelves for storage.",
@@ -4164,6 +4364,7 @@ export const dataProduct = [
   },
   {
     id: 555999,
+    categoryName: "Children's Furniture",
     title: "Changing Table with Drawers",
     summary:
       "A practical changing table equipped with spacious drawers for storage.",
@@ -4183,6 +4384,7 @@ export const dataProduct = [
   },
   {
     id: 999555,
+    categoryName: "Children's Furniture",
     title: "Compact Portable Changing Table",
     summary:
       "A portable and compact changing table with wheels for easy movement.",
@@ -4202,6 +4404,7 @@ export const dataProduct = [
   },
   {
     id: 333555,
+    categoryName: "Children's Furniture",
     title: "Kids' Armoire with Mirror",
     summary:
       "A spacious kids' armoire with a built-in mirror and multiple shelves for storage.",
@@ -4221,6 +4424,7 @@ export const dataProduct = [
   },
   {
     id: 555333,
+    categoryName: "Children's Furniture",
     title: "Rustic Wooden Armoire",
     summary:
       "A rustic wooden armoire featuring ample storage space for your child's wardrobe.",
@@ -4240,6 +4444,7 @@ export const dataProduct = [
   },
   {
     id: 666111,
+    categoryName: "Children's Furniture",
     title: "Toy Box with Lid",
     summary:
       "A spacious toy box with a lid for safe and easy storage of kids' toys.",
@@ -4259,6 +4464,7 @@ export const dataProduct = [
   },
   {
     id: 111666,
+    categoryName: "Children's Furniture",
     title: "Personalized Wooden Toy Box",
     summary:
       "A personalized wooden toy box that can be customized with your child's name.",
@@ -4278,6 +4484,7 @@ export const dataProduct = [
   },
   {
     id: 222555,
+    categoryName: "Children's Furniture",
     title: "Mini Kids' Sofa Set",
     summary:
       "A comfortable mini sofa set designed for kids with a fun and colorful design.",
@@ -4297,6 +4504,7 @@ export const dataProduct = [
   },
   {
     id: 555222,
+    categoryName: "Children's Furniture",
     title: "Plush Kids' Sofa Bed",
     summary:
       "A plush kids' sofa that easily converts into a bed for naps or play.",
@@ -4316,6 +4524,7 @@ export const dataProduct = [
   },
   {
     id: 777444,
+    categoryName: "Children's Furniture",
     title: "Classic Wooden Rocking Chair",
     summary:
       "A classic rocking chair made from solid wood, designed for kids' comfort.",
@@ -4335,6 +4544,7 @@ export const dataProduct = [
   },
   {
     id: 444777,
+    categoryName: "Children's Furniture",
     title: "Modern Padded Rocking Chair",
     summary:
       "A modern rocking chair with padded seating and backrest for extra comfort.",
@@ -4354,6 +4564,7 @@ export const dataProduct = [
   },
   {
     id: 123456,
+    categoryName: "Bathroom Furniture",
     title: "Modern Vanity Set",
     summary:
       "A sleek and modern vanity set perfect for contemporary bathrooms.",
@@ -4373,6 +4584,7 @@ export const dataProduct = [
   },
   {
     id: 234567,
+    categoryName: "Bathroom Furniture",
     title: "Rustic Wood Vanity",
     summary: "Handcrafted rustic vanity made with reclaimed wood.",
     price: 749.99,
@@ -4391,6 +4603,7 @@ export const dataProduct = [
   },
   {
     id: 345678,
+    categoryName: "Bathroom Furniture",
     title: "Wall Mounted Bathroom Cabinet",
     summary: "Space-saving wall-mounted bathroom cabinet with ample storage.",
     price: 199.99,
@@ -4415,6 +4628,7 @@ export const dataProduct = [
   },
   {
     id: 456789,
+    categoryName: "Bathroom Furniture",
     title: "Classic Freestanding Bathroom Cabinet",
     summary: "Elegant freestanding cabinet for extra bathroom storage.",
     price: 299.99,
@@ -4433,6 +4647,7 @@ export const dataProduct = [
   },
   {
     id: 567890,
+    categoryName: "Bathroom Furniture",
     title: "Teak Shower Bench",
     summary: "Durable teak shower bench for relaxation and storage.",
     price: 99.99,
@@ -4451,6 +4666,7 @@ export const dataProduct = [
   },
   {
     id: 678901,
+    categoryName: "Bathroom Furniture",
     title: "Adjustable Bamboo Shower Bench",
     summary: "Eco-friendly bamboo shower bench with adjustable height.",
     price: 89.99,
@@ -4469,6 +4685,7 @@ export const dataProduct = [
   },
   {
     id: 789012,
+    categoryName: "Bathroom Furniture",
     title: "Metal Over-Toilet Storage Rack",
     summary: "Over-the-toilet rack for convenient bathroom storage.",
     price: 59.99,
@@ -4487,6 +4704,7 @@ export const dataProduct = [
   },
   {
     id: 890123,
+    categoryName: "Bathroom Furniture",
     title: "Wooden Over-Toilet Storage Cabinet",
     summary: "Stylish wooden storage cabinet for over-the-toilet installation.",
     price: 129.99,
@@ -4505,6 +4723,7 @@ export const dataProduct = [
   },
   {
     id: 901234,
+    categoryName: "Bathroom Furniture",
     title: "Slim Bathroom Tower",
     summary: "A slim and tall bathroom tower for compact spaces.",
     price: 149.99,
@@ -4523,6 +4742,7 @@ export const dataProduct = [
   },
   {
     id: 112345,
+    categoryName: "Bathroom Furniture",
     title: "Classic Wooden Bathroom Tower",
     summary: "Elegant wooden bathroom tower for storing essentials.",
     price: 179.99,
@@ -4541,6 +4761,7 @@ export const dataProduct = [
   },
   {
     id: 123456,
+    categoryName: "Bathroom Furniture",
     title: "Tall Linen Cabinet",
     summary: "A tall and spacious linen cabinet for all your bathroom needs.",
     price: 249.99,
@@ -4559,6 +4780,7 @@ export const dataProduct = [
   },
   {
     id: 134567,
+    categoryName: "Bathroom Furniture",
     title: "Rustic Linen Cabinet",
     summary: "Handcrafted rustic linen cabinet for a natural bathroom look.",
     price: 299.99,
@@ -4577,6 +4799,7 @@ export const dataProduct = [
   },
   {
     id: 145678,
+    categoryName: "Bathroom Furniture",
     title: "Recessed Medicine Cabinet",
     summary: "A recessed medicine cabinet for a sleek bathroom look.",
     price: 129.99,
@@ -4595,6 +4818,7 @@ export const dataProduct = [
   },
   {
     id: 156789,
+    categoryName: "Bathroom Furniture",
     title: "Traditional Medicine Cabinet",
     summary: "A traditional medicine cabinet with a mirror and ample storage.",
     price: 99.99,
@@ -4613,6 +4837,7 @@ export const dataProduct = [
   },
   {
     id: 167890,
+    categoryName: "Bathroom Furniture",
     title: "Expandable Bath Caddy",
     summary: "Adjustable bath caddy for holding bath accessories.",
     price: 49.99,
@@ -4631,6 +4856,7 @@ export const dataProduct = [
   },
   {
     id: 178901,
+    categoryName: "Bathroom Furniture",
     title: "Wooden Bath Caddy Tray",
     summary: "Elegant wooden bath caddy for a luxurious bath experience.",
     price: 59.99,
@@ -4649,6 +4875,7 @@ export const dataProduct = [
   },
   {
     id: 189012,
+    categoryName: "Bathroom Furniture",
     title: "Round Bathroom Mirror",
     summary: "A sleek round bathroom mirror for modern aesthetics.",
     price: 89.99,
@@ -4667,6 +4894,7 @@ export const dataProduct = [
   },
   {
     id: 190123,
+    categoryName: "Bathroom Furniture",
     title: "Frameless Bathroom Mirror",
     summary: "A frameless mirror for a clean and elegant bathroom look.",
     price: 109.99,
@@ -4685,6 +4913,7 @@ export const dataProduct = [
   },
   {
     id: 201234,
+    categoryName: "Bathroom Furniture",
     title: "Ceramic Bathroom Set",
     summary: "A modern ceramic bathroom set to organize your essentials.",
     price: 29.99,
@@ -4703,6 +4932,7 @@ export const dataProduct = [
   },
   {
     id: 212345,
+    categoryName: "Bathroom Furniture",
     title: "Wooden Bathroom Accessory Set",
     summary: "A rustic wooden bathroom set for a natural touch.",
     price: 39.99,
@@ -4721,6 +4951,7 @@ export const dataProduct = [
   },
   {
     id: 223456,
+    categoryName: "Bathroom Furniture",
     title: "Wall-Mounted Toilet Paper Holder",
     summary: "A simple yet elegant wall-mounted toilet paper holder.",
     price: 19.99,
@@ -4739,6 +4970,7 @@ export const dataProduct = [
   },
   {
     id: 234567,
+    categoryName: "Bathroom Furniture",
     title: "Freestanding Toilet Paper Stand",
     summary: "A freestanding toilet paper holder with storage for spare rolls.",
     price: 29.99,
@@ -4763,6 +4995,7 @@ export const dataProduct = [
   },
   {
     id: 245678,
+    categoryName: "Bathroom Furniture",
     title: "Wall-Mounted Towel Rack",
     summary: "A wall-mounted towel rack to keep your towels organized.",
     price: 49.99,
@@ -4787,6 +5020,7 @@ export const dataProduct = [
   },
   {
     id: 256789,
+    categoryName: "Bathroom Furniture",
     title: "Freestanding Towel Stand",
     summary: "A freestanding towel stand for a classic touch.",
     price: 69.99,
@@ -4805,6 +5039,7 @@ export const dataProduct = [
   },
   {
     id: 267890,
+    categoryName: "Bathroom Furniture",
     title: "Folding Bathroom Stool",
     summary: "A convenient folding bathroom stool for easy storage.",
     price: 24.99,
@@ -4823,6 +5058,7 @@ export const dataProduct = [
   },
   {
     id: 278901,
+    categoryName: "Bathroom Furniture",
     title: "Bamboo Bathroom Stool",
     summary: "A sturdy and eco-friendly bamboo bathroom stool.",
     price: 39.99,
@@ -4841,6 +5077,7 @@ export const dataProduct = [
   },
   {
     id: 289012,
+    categoryName: "Bathroom Furniture",
     title: "Collapsible Laundry Hamper",
     summary: "A collapsible laundry hamper for easy transport and storage.",
     price: 34.99,
@@ -4859,6 +5096,7 @@ export const dataProduct = [
   },
   {
     id: 290123,
+    categoryName: "Bathroom Furniture",
     title: "Wicker Laundry Basket",
     summary: "A large wicker laundry basket with a fabric liner.",
     price: 49.99,
@@ -4877,6 +5115,7 @@ export const dataProduct = [
   },
   {
     id: 301234,
+    categoryName: "Bathroom Furniture",
     title: "Corner Shower Caddy",
     summary: "A corner shower caddy for efficient storage in the shower.",
     price: 24.99,
@@ -4895,6 +5134,7 @@ export const dataProduct = [
   },
   {
     id: 312345,
+    categoryName: "Bathroom Furniture",
     title: "Adjustable Hanging Shower Caddy",
     summary: "A hanging shower caddy with adjustable shelves.",
     price: 29.99,
@@ -4913,6 +5153,7 @@ export const dataProduct = [
   },
   {
     id: 323456,
+    categoryName: "Bathroom Furniture",
     title: "White Makeup Vanity Table",
     summary: "A sleek and modern makeup vanity table with a large mirror.",
     price: 199.99,
@@ -4931,6 +5172,7 @@ export const dataProduct = [
   },
   {
     id: 334567,
+    categoryName: "Bathroom Furniture",
     title: "Rustic Makeup Vanity with Stool",
     summary: "A rustic makeup vanity table with a matching stool.",
     price: 229.99,
@@ -4949,6 +5191,7 @@ export const dataProduct = [
   },
   {
     id: 123456,
+    categoryName: "Storage and Organization",
     title: "Modern Shelving Unit",
     summary:
       "A contemporary shelving unit perfect for organizing your living space stylishly.",
@@ -4974,6 +5217,7 @@ export const dataProduct = [
   },
   {
     id: 654321,
+    categoryName: "Storage and Organization",
     title: "Classic Wooden Shelving",
     summary:
       "Elegant wooden shelving unit to add both style and function to your room.",
@@ -4993,6 +5237,7 @@ export const dataProduct = [
   },
   {
     id: 987654,
+    categoryName: "Storage and Organization",
     title: "Upholstered Storage Ottoman",
     summary:
       "A versatile ottoman for storage and seating with a cushioned top.",
@@ -5012,6 +5257,7 @@ export const dataProduct = [
   },
   {
     id: 321789,
+    categoryName: "Storage and Organization",
     title: "Leather Storage Ottoman",
     summary:
       "A luxurious leather ottoman offering both style and hidden storage.",
@@ -5031,6 +5277,7 @@ export const dataProduct = [
   },
   {
     id: 111222,
+    categoryName: "Storage and Organization",
     title: "Freestanding Coat Rack",
     summary:
       "Stylish freestanding coat rack with multiple hooks for easy organization.",
@@ -5050,6 +5297,7 @@ export const dataProduct = [
   },
   {
     id: 333444,
+    categoryName: "Storage and Organization",
     title: "Wooden Wall-Mounted Coat Rack",
     summary: "Wall-mounted coat rack crafted from wood with elegant hooks.",
     price: 35.0,
@@ -5068,6 +5316,7 @@ export const dataProduct = [
   },
   {
     id: 555666,
+    categoryName: "Storage and Organization",
     title: "Modern Bookcase",
     summary: "An open bookcase with multiple shelves for display and storage.",
     price: 199.99,
@@ -5086,6 +5335,7 @@ export const dataProduct = [
   },
   {
     id: 777888,
+    categoryName: "Storage and Organization",
     title: "Rustic Wooden Bookcase",
     summary: "A charming rustic bookcase with a natural wood finish.",
     price: 250.0,
@@ -5104,6 +5354,7 @@ export const dataProduct = [
   },
   {
     id: 999000,
+    categoryName: "Storage and Organization",
     title: "Cube Organizer with Fabric Bins",
     summary: "Cube organizer with removable fabric bins for versatile storage.",
     price: 80.5,
@@ -5122,6 +5373,7 @@ export const dataProduct = [
   },
   {
     id: 112233,
+    categoryName: "Storage and Organization",
     title: "Wooden Cube Organizer",
     summary: "Solid wooden cube organizer for stylish and practical storage.",
     price: 99.99,
@@ -5140,6 +5392,7 @@ export const dataProduct = [
   },
   {
     id: 445566,
+    categoryName: "Storage and Organization",
     title: "Closet Shelving System",
     summary:
       "Fully adjustable closet shelving system to maximize storage space.",
@@ -5159,6 +5412,7 @@ export const dataProduct = [
   },
   {
     id: 667788,
+    categoryName: "Storage and Organization",
     title: "Modular Closet System",
     summary:
       "A modular closet system that can be tailored to your storage needs.",
@@ -5178,6 +5432,7 @@ export const dataProduct = [
   },
   {
     id: 556677,
+    categoryName: "Storage and Organization",
     title: "3-Tier Shoe Rack",
     summary:
       "A compact 3-tier shoe rack to keep your footwear neatly organized.",
@@ -5197,6 +5452,7 @@ export const dataProduct = [
   },
   {
     id: 889900,
+    categoryName: "Storage and Organization",
     title: "Expandable Shoe Rack",
     summary: "An expandable shoe rack to fit varying shoe storage needs.",
     price: 45.5,
@@ -5215,6 +5471,7 @@ export const dataProduct = [
   },
   {
     id: 334455,
+    categoryName: "Storage and Organization",
     title: "Storage Bench with Cushion",
     summary: "A stylish storage bench that doubles as a comfortable seat.",
     price: 120.0,
@@ -5233,6 +5490,7 @@ export const dataProduct = [
   },
   {
     id: 778899,
+    categoryName: "Storage and Organization",
     title: "Rustic Wooden Storage Bench",
     summary:
       "A rustic storage bench that adds character and function to any space.",
@@ -5252,6 +5510,7 @@ export const dataProduct = [
   },
   {
     id: 223344,
+    categoryName: "Storage and Organization",
     title: "Vintage Storage Trunk",
     summary:
       "A vintage-style storage trunk that adds both function and decor to any room.",
@@ -5271,6 +5530,7 @@ export const dataProduct = [
   },
   {
     id: 445566,
+    categoryName: "Storage and Organization",
     title: "Modern Storage Trunk",
     summary:
       "A sleek modern storage trunk with ample space for your belongings.",
@@ -5290,6 +5550,7 @@ export const dataProduct = [
   },
   {
     id: 998877,
+    categoryName: "Storage and Organization",
     title: "Floating Shelf Set",
     summary:
       "A set of floating shelves for displaying decor or storing items stylishly.",
@@ -5309,6 +5570,7 @@ export const dataProduct = [
   },
   {
     id: 112244,
+    categoryName: "Storage and Organization",
     title: "Rustic Floating Shelves",
     summary:
       "Rustic floating shelves to add a touch of natural charm to your walls.",
@@ -5328,6 +5590,7 @@ export const dataProduct = [
   },
   {
     id: 334477,
+    categoryName: "Storage and Organization",
     title: "Wall-Mounted Storage Cabinet",
     summary: "A practical wall-mounted storage cabinet to organize your space.",
     price: 90.99,
@@ -5346,6 +5609,7 @@ export const dataProduct = [
   },
   {
     id: 776655,
+    categoryName: "Storage and Organization",
     title: "Rustic Wall Storage Cabinet",
     summary: "Rustic wall cabinet that adds a touch of farmhouse charm.",
     price: 110.0,
@@ -5364,6 +5628,7 @@ export const dataProduct = [
   },
   {
     id: 889922,
+    categoryName: "Storage and Organization",
     title: "Entryway Mudroom Bench",
     summary:
       "A functional mudroom bench for storing shoes and coats in your entryway.",
@@ -5383,6 +5648,7 @@ export const dataProduct = [
   },
   {
     id: 221133,
+    categoryName: "Storage and Organization",
     title: "Rustic Mudroom Organizer",
     summary:
       "An all-in-one mudroom organizer with hooks, shelves, and a bench.",
@@ -5402,6 +5668,7 @@ export const dataProduct = [
   },
   {
     id: 998822,
+    categoryName: "Storage and Organization",
     title: "Standing Jewelry Armoire",
     summary:
       "A standing jewelry armoire with multiple drawers and mirror for accessory storage.",
@@ -5421,6 +5688,7 @@ export const dataProduct = [
   },
   {
     id: 334455,
+    categoryName: "Storage and Organization",
     title: "Wall-Mounted Jewelry Organizer",
     summary: "A wall-mounted jewelry organizer with hooks and compartments.",
     price: 80.75,
@@ -5439,6 +5707,7 @@ export const dataProduct = [
   },
   {
     id: 112233,
+    categoryName: "Storage and Organization",
     title: "Under-Bed Storage Box",
     summary: "A spacious under-bed storage box with handles for easy access.",
     price: 35.99,
@@ -5457,6 +5726,7 @@ export const dataProduct = [
   },
   {
     id: 556677,
+    categoryName: "Storage and Organization",
     title: "Rolling Under-Bed Storage Drawer",
     summary: "A rolling storage drawer designed to maximize under-bed space.",
     price: 40.5,
@@ -5475,6 +5745,7 @@ export const dataProduct = [
   },
   {
     id: 443322,
+    categoryName: "Storage and Organization",
     title: "Wooden Magazine Rack",
     summary: "A wooden magazine rack with multiple compartments for storage.",
     price: 30.99,
@@ -5493,6 +5764,7 @@ export const dataProduct = [
   },
   {
     id: 778899,
+    categoryName: "Storage and Organization",
     title: "Metal Magazine Holder",
     summary: "A sleek metal magazine holder for modern and minimalist decor.",
     price: 25.5,
@@ -5517,6 +5789,7 @@ export const dataProduct = [
   },
   {
     id: 998877,
+    categoryName: "Storage and Organization",
     title: "Wooden Key Organizer",
     summary: "A wall-mounted wooden key organizer with hooks and compartments.",
     price: 20.99,
@@ -5535,6 +5808,7 @@ export const dataProduct = [
   },
   {
     id: 334455,
+    categoryName: "Storage and Organization",
     title: "Metal Key Holder with Shelf",
     summary:
       "A modern metal key holder with a small shelf for additional storage.",
@@ -5560,6 +5834,7 @@ export const dataProduct = [
   },
   {
     id: 234567,
+    categoryName: "Accent Furniture",
     title: "Classic Console Table",
     summary:
       "A beautifully designed console table that enhances any living room space.",
@@ -5579,6 +5854,7 @@ export const dataProduct = [
   },
   {
     id: 987654,
+    categoryName: "Accent Furniture",
     title: "Industrial Console Table",
     summary:
       "A sturdy and stylish console table suitable for modern and industrial-themed rooms.",
@@ -5598,6 +5874,7 @@ export const dataProduct = [
   },
   {
     id: 546789,
+    categoryName: "Accent Furniture",
     title: "Wooden Room Divider",
     summary:
       "A multi-panel room divider crafted from premium wood for a natural touch.",
@@ -5617,6 +5894,7 @@ export const dataProduct = [
   },
   {
     id: 123890,
+    categoryName: "Accent Furniture",
     title: "Bamboo Folding Screen",
     summary:
       "An elegant folding screen made of bamboo to divide your room effortlessly.",
@@ -5636,6 +5914,7 @@ export const dataProduct = [
   },
   {
     id: 786543,
+    categoryName: "Accent Furniture",
     title: "Modern Accent Chair",
     summary:
       "A chic accent chair that complements any contemporary living room decor.",
@@ -5655,6 +5934,7 @@ export const dataProduct = [
   },
   {
     id: 234578,
+    categoryName: "Accent Furniture",
     title: "Velvet Accent Chair",
     summary:
       "A luxurious velvet accent chair that adds a touch of elegance to any room.",
@@ -5674,6 +5954,7 @@ export const dataProduct = [
   },
   {
     id: 345678,
+    categoryName: "Accent Furniture",
     title: "Round Pouf Ottoman",
     summary:
       "A stylish round pouf ottoman that provides comfort and function in any room.",
@@ -5693,6 +5974,7 @@ export const dataProduct = [
   },
   {
     id: 765432,
+    categoryName: "Accent Furniture",
     title: "Knitted Pouf Ottoman",
     summary:
       "A hand-knitted pouf ottoman perfect for adding texture and style to your living space.",
@@ -5712,6 +5994,7 @@ export const dataProduct = [
   },
   {
     id: 654321,
+    categoryName: "Accent Furniture",
     title: "Elegant Side Table",
     summary:
       "A compact side table that adds both function and style to your room.",
@@ -5731,6 +6014,7 @@ export const dataProduct = [
   },
   {
     id: 100001,
+    categoryName: "Accent Furniture",
     title: "Elegant Nesting Table Set",
     summary:
       "The elegant nesting table set features a modern design that combines functionality and style, making it suitable for various home decors. Crafted from high-quality materials, this set enhances the aesthetic of any living area.",
@@ -5756,6 +6040,7 @@ export const dataProduct = [
   },
   {
     id: 100002,
+    categoryName: "Accent Furniture",
     title: "Rustic Nesting Side Tables",
     summary:
       "These rustic nesting side tables bring warmth and charm to your living space. Their unique design and handmade features make them perfect for those who appreciate craftsmanship and natural materials.",
@@ -5775,6 +6060,7 @@ export const dataProduct = [
   },
   {
     id: 100003,
+    categoryName: "Accent Furniture",
     title: "Modern Decorative Screen",
     summary:
       "Enhance your space with this modern decorative screen, designed to separate areas while adding a stylish touch. Its sleek design and elegant lines are perfect for contemporary homes.",
@@ -5794,6 +6080,7 @@ export const dataProduct = [
   },
   {
     id: 100004,
+    categoryName: "Accent Furniture",
     title: "Classic Bamboo Decorative Screen",
     summary:
       "This classic bamboo decorative screen provides a touch of Asian-inspired elegance. It's perfect for adding privacy or separating spaces while imparting a serene and calming atmosphere.",
@@ -5813,6 +6100,7 @@ export const dataProduct = [
   },
   {
     id: 100005,
+    categoryName: "Accent Furniture",
     title: "Stylish Pedestal Table",
     summary:
       "This stylish pedestal table is an excellent addition to any living space, offering a chic place to set drinks or décor. Its unique design makes it a focal point in any room.",
@@ -5832,6 +6120,7 @@ export const dataProduct = [
   },
   {
     id: 100006,
+    categoryName: "Accent Furniture",
     title: "Rustic Wooden Pedestal",
     summary:
       "This rustic wooden pedestal adds character to your space while serving as a functional table. Perfect for displaying plants or decorative items, it captures natural charm.",
@@ -5851,6 +6140,7 @@ export const dataProduct = [
   },
   {
     id: 100007,
+    categoryName: "Accent Furniture",
     title: "Elegant Plant Stand",
     summary:
       "Showcase your plants with this elegant plant stand, designed to elevate your greenery and add elegance to your home decor. It blends perfectly with any interior style.",
@@ -5870,6 +6160,7 @@ export const dataProduct = [
   },
   {
     id: 100008,
+    categoryName: "Accent Furniture",
     title: "Vintage Wooden Plant Stand",
     summary:
       "This vintage wooden plant stand is perfect for adding a touch of classic elegance to your indoor garden. It’s designed to hold multiple pots while being a decor piece itself.",
@@ -5889,6 +6180,7 @@ export const dataProduct = [
   },
   {
     id: 100009,
+    categoryName: "Accent Furniture",
     title: "Elegant Etageres Shelf",
     summary:
       "This elegant etageres shelf is a beautiful addition to any room, providing space for displaying books, decor items, or plants. Its design suits both modern and classic interiors.",
@@ -5908,6 +6200,7 @@ export const dataProduct = [
   },
   {
     id: 100010,
+    categoryName: "Accent Furniture",
     title: "Rustic Cottage Etageres",
     summary:
       "This rustic cottage etageres provides a charming space for displaying your beloved collections. Its quaint design features open shelving that exudes warmth and character.",
@@ -5927,6 +6220,7 @@ export const dataProduct = [
   },
   {
     id: 100011,
+    categoryName: "Accent Furniture",
     title: "Luxurious Chaise Lounge",
     summary:
       "This luxurious chaise lounge invites you to unwind in style. Perfect for reading nooks or living rooms, it combines comfort and aesthetics seamlessly.",
@@ -5946,6 +6240,7 @@ export const dataProduct = [
   },
   {
     id: 100012,
+    categoryName: "Accent Furniture",
     title: "Comfortable Reclining Chaise",
     summary:
       "The comfortable reclining chaise is perfect for those lazy afternoons. It combines function with style, making it a great addition to any living space.",
@@ -5965,6 +6260,7 @@ export const dataProduct = [
   },
   {
     id: 100013,
+    categoryName: "Accent Furniture",
     title: "Sleek Bench",
     summary:
       "This sleek bench serves as a stylish seating option for any part of your home, from entryways to living rooms. Its contemporary design makes it appealing and versatile.",
@@ -5984,6 +6280,7 @@ export const dataProduct = [
   },
   {
     id: 100014,
+    categoryName: "Accent Furniture",
     title: "Classic Wooden Bench",
     summary:
       "This classic wooden bench adds timeless elegance to your space. Perfect for entryways or as extra seating in your living area, it beautifully combines style and function.",
@@ -6003,6 +6300,7 @@ export const dataProduct = [
   },
   {
     id: 100015,
+    categoryName: "Accent Furniture",
     title: "Modern Ottoman",
     summary:
       "This modern ottoman serves as a versatile seating option or a stylish footrest, adding functionality to any room. Its sleek design complements contemporary decor effortlessly.",
@@ -6022,6 +6320,7 @@ export const dataProduct = [
   },
   {
     id: 100016,
+    categoryName: "Accent Furniture",
     title: "Comfortable Fabric Ottoman",
     summary:
       "This comfortable fabric ottoman is perfect for lounging and enhances your decor. Ideal for resting your feet or as additional seating, it’s a versatile piece for your home.",
@@ -6041,6 +6340,7 @@ export const dataProduct = [
   },
   {
     id: 100017,
+    categoryName: "Accent Furniture",
     title: "Luxury Bar Cart",
     summary:
       "This luxury bar cart is perfect for entertaining guests in style. Its sophisticated design and elegant finish make it a focal point in any gathering.",
@@ -6060,6 +6360,7 @@ export const dataProduct = [
   },
   {
     id: 100018,
+    categoryName: "Accent Furniture",
     title: "Rustic Wooden Bar Cart",
     summary:
       "This rustic wooden bar cart combines functionality with charm, perfect for hosting gatherings. Its sturdy design offers ample storage space for your bar essentials.",
@@ -6079,6 +6380,7 @@ export const dataProduct = [
   },
   {
     id: 123456,
+    categoryName: "Accent Furniture",
     title: "Elegant Bar Cart",
     summary:
       "This elegant bar cart is ideal for entertaining guests, offering a stylish and functional solution for serving drinks. Its design complements any modern or classic decor.",
@@ -6098,6 +6400,7 @@ export const dataProduct = [
   },
   {
     id: 654321,
+    categoryName: "Accent Furniture",
     title: "Rustic Wooden Bar Cart",
     summary:
       "This rustic wooden bar cart brings charm and functionality to your home, perfect for showcasing your favorite liquors or cocktail essentials. It's a great addition to any gathering.",
@@ -6123,6 +6426,7 @@ export const dataProduct = [
   },
   {
     id: 789012,
+    categoryName: "Accent Furniture",
     title: "Vintage Storage Trunk",
     summary:
       "This vintage trunk serves as a beautiful storage solution while adding a touch of nostalgia to your decor. Its classic design makes it versatile for any space.",
@@ -6142,6 +6446,7 @@ export const dataProduct = [
   },
   {
     id: 210987,
+    categoryName: "Accent Furniture",
     title: "Modern Decorative Trunk",
     summary:
       "This modern decorative trunk combines storage with style, making it an excellent addition to contemporary interiors. Perfect for organizing your essentials while adding flair.",
@@ -6161,6 +6466,7 @@ export const dataProduct = [
   },
   {
     id: 345678,
+    categoryName: "Accent Furniture",
     title: "Comfortable Wooden Stool",
     summary:
       "This comfortable wooden stool is perfect for extra seating in any room, offering both functionality and style. Its simple design makes it a versatile choice for any decor.",
@@ -6180,6 +6486,7 @@ export const dataProduct = [
   },
   {
     id: 987654,
+    categoryName: "Accent Furniture",
     title: "Stylish Upholstered Stool",
     summary:
       "This stylish upholstered stool adds a pop of color and comfort to your space. Ideal for casual seating or as an accent piece, it enhances any room's aesthetic.",

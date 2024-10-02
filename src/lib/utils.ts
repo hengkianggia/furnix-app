@@ -46,5 +46,11 @@ export function getRandomEvenNumber(min: number, max: number): number {
   return randomNum;
 }
 
-// Contoh penggunaan
-const randomEvenNumber = getRandomEvenNumber(2, 100);
+export function calculateFinalPrice(price: number, discount: number): number {
+  if (discount < 0 || discount > 100) {
+    throw new Error("Discount must be between 0 and 100.");
+  }
+  const discountAmount = (price * discount) / 100;
+  const finalPrice = price - discountAmount;
+  return finalPrice
+}

@@ -15,8 +15,16 @@ import Wrapper from "@/components/Wrapper";
 import { Icons } from "@/data/data";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import React from "react";
+import { dataProduct } from "@/data/data";
+import StarsRating from "@/components/StarsRating";
+import { calculateFinalPrice } from "@/lib/utils";
 
-const ProductInformation = () => {
+const ProductInformation = ({ title }: { title: string }) => {
+  let [dataShow] = dataProduct.filter(
+    (item) => item?.title?.toLowerCase() == title.toLowerCase()
+  );
+
+  const finalPrice = calculateFinalPrice(dataShow.price, dataShow.discount);
   return (
     <Wrapper
       full
@@ -49,27 +57,17 @@ const ProductInformation = () => {
       >
         {/* rating */}
         <Div flex itemsCenter className="space-x-3">
-          <Div flex itemsCenter>
-            <Icon icon={Icons.Stars} className="text-myOrange" />
-            <Icon icon={Icons.Stars} className="text-myOrange" />
-            <Icon icon={Icons.Stars} className="text-myOrange" />
-            <Icon icon={Icons.Stars} className="text-myOrange" />
-            <Icon icon={Icons.Stars} className="text-myOrange" />
-          </Div>
+          <StarsRating />
 
           <p className="text-myDarkGray">2 reviews</p>
         </Div>
 
         {/* info */}
-        <h1 className="text-6xl font-thin text-balance max-md:text-3xl">
-          Cane Elegance TV Cabinet
+        <h1 className="text-6xl font-thin max-lg:text-balance max-md:text-3xl">
+          {dataShow.title}
         </h1>
-        <p className="text-myDarkGray text-balances">
-          Ullamcorper morbi tincidunt ornare massa eget. Viverra adipiscing at
-          in tellus integer feugiat scelerisque varius. Pulvinar proin gravida
-          hendrerit lectus.
-        </p>
-        <h2 className="text-4xl font-thin">$899</h2>
+        <p className="text-myDarkGray text-balances">{dataShow.summary}</p>
+        <h2 className="text-4xl font-thin">$ {finalPrice.toFixed()}</h2>
 
         {/* select */}
         <Div
@@ -83,15 +81,15 @@ const ProductInformation = () => {
             <Div>
               <Select>
                 <SelectTrigger className="w-full rounded-full h-12">
-                  <SelectValue placeholder="Default sorting" />
+                  <SelectValue placeholder="Select Color" />
                 </SelectTrigger>
                 <SelectContent>
                   <SelectGroup>
-                    <SelectItem value="apple">Apple</SelectItem>
-                    <SelectItem value="banana">Banana</SelectItem>
-                    <SelectItem value="blueberry">Blueberry</SelectItem>
-                    <SelectItem value="grapes">Grapes</SelectItem>
-                    <SelectItem value="pineapple">Pineapple</SelectItem>
+                    {dataShow.colors.map((color, idx) => (
+                      <SelectItem value={color} key={idx}>
+                        {color}
+                      </SelectItem>
+                    ))}
                   </SelectGroup>
                 </SelectContent>
               </Select>
@@ -99,19 +97,19 @@ const ProductInformation = () => {
           </Div>
 
           <Div className="space-y-2 basis-5/12">
-            <h4 className="uppercase text-sm text-myDarkGray">primary color</h4>
+            <h4 className="uppercase text-sm text-myDarkGray">style</h4>
             <Div full>
               <Select>
                 <SelectTrigger className="w-full rounded-full h-12">
-                  <SelectValue placeholder="Default sorting" />
+                  <SelectValue placeholder="Select Style" />
                 </SelectTrigger>
                 <SelectContent>
                   <SelectGroup>
-                    <SelectItem value="apple">Apple</SelectItem>
-                    <SelectItem value="banana">Banana</SelectItem>
-                    <SelectItem value="blueberry">Blueberry</SelectItem>
-                    <SelectItem value="grapes">Grapes</SelectItem>
-                    <SelectItem value="pineapple">Pineapple</SelectItem>
+                    {dataShow.style.map((style, idx) => (
+                      <SelectItem value={style} key={idx}>
+                        {style}
+                      </SelectItem>
+                    ))}
                   </SelectGroup>
                 </SelectContent>
               </Select>
@@ -130,52 +128,49 @@ const ProductInformation = () => {
         <Div full column className="space-y-4 mt-5">
           <h2 className="text-2xl font-thin">Description</h2>
           <Separator />
-          <p className="text-myDarkGray">
-            Elevate your home decor with this exquisite Mid-Century TV Cabinet
-            featuring a seamless blend of wood and cane doors. Designed to
-            impress, its charm and modern functionality make it the perfect
-            addition to your living space.
-          </p>
-          <h4 className="uppercase">Features</h4>
-          <ul className="space-y-2 list-disc list-inside text-myDarkGray">
-            <li>
-              Please note, the natural wood used in this piece showcases unique
-              variations in color and texture.
-            </li>
-            <li>
-              For safety, secure it to the wall as per the assembly instructions
-              provided.
-            </li>
-          </ul>
+          <p className="text-myDarkGray">{dataShow.description}</p>
         </Div>
 
         {/* detail */}
         <Div full column className="space-y-4 mt-5">
           <h2 className="text-2xl font-thin">Detail</h2>
           <Separator />
-          <Div full column className="py-10 bg-mySmoothGray space-y-4">
+          <Div
+            full
+            column
+            className="py-10 bg-mySmoothGray space-y-4 overflow-x-hidden"
+          >
             <Div flex itemsCenter full className="mx-8 max-md:mx-4">
               <h4 className="capitalize text-myDarkGray basis-4/12">style</h4>
-              <p>Mid-century modern</p>
+              <p>{dataShow.detail.style}</p>
             </Div>
             <Separator />
             <Div flex itemsCenter full className="mx-8 max-md:mx-4">
               <h4 className="capitalize text-myDarkGray basis-4/12">
                 Dimensions
               </h4>
-              <p>37.5”H x 34.5”W x 18”D</p>
+              <p>{dataShow.detail.dimension}</p>
             </Div>
             <Separator />
-            <Div flex itemsCenter full className="mx-8 max-md:mx-4">
+            <Div
+              flex
+              itemsCenter
+              full
+              className="mx-8 max-md:mx-4 overflow-x-hidden"
+            >
               <h4 className="capitalize text-myDarkGray basis-4/12">
                 materials
               </h4>
-              <p>Solid oak, MDF, oak veneer, steel</p>
+              <div className="w-fit flex-wrap flex gap-x-2 ">
+                {dataShow.detail.materials.map((item) => {
+                  return <p>{item}</p>;
+                })}
+              </div>
             </Div>
             <Separator />
             <Div flex itemsCenter full className="mx-8 max-md:mx-4">
               <h4 className="capitalize text-myDarkGray basis-4/12">SKU No.</h4>
-              <p>SKU001119</p>
+              <p>{dataShow.detail.SKU}</p>
             </Div>
           </Div>
         </Div>
@@ -183,5 +178,4 @@ const ProductInformation = () => {
     </Wrapper>
   );
 };
-
 export default ProductInformation;
