@@ -9,6 +9,7 @@ import { Button } from "./ui/button";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { Icons } from "@/data/data";
 import { useRouter } from "next/navigation";
+import { cn } from "@/lib/utils";
 
 export function PaginationComponents({
   categoryPath,
@@ -62,7 +63,10 @@ export function PaginationComponents({
           </>
         )}
         <PaginationItem>
-          <Button variant={"ghost"} className="space-x-2">
+          <Button
+            variant={"ghost"}
+            className={cn("space-x-2", pages == totalPage && "bg-gray-200")}
+          >
             {totalPage}
           </Button>
         </PaginationItem>

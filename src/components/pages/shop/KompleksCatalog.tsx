@@ -30,14 +30,27 @@ const KompleksCatalog = ({
     (item) => item.name === category[0]
   )?.productTypes;
 
+  let dataFilter = [];
+
   let data = dataProduct.filter(
     (item) => item?.categoryName?.toLowerCase() == category[0].toLowerCase()
   );
 
+  dataFilter = data;
+  console.log(type);
+
+  if (type) {
+    let dataType = dataFilter.filter(
+      (item) => item?.typeCategory?.toLowerCase() == String(type).toLowerCase()
+    );
+
+    dataFilter = dataType;
+  }
+
   let pages = page ?? 1;
 
-  let dataShow = paginateProducts(data, data.length, 9, +pages!);
-  const totalPage = Math.ceil(data.length / 9);
+  let dataShow = paginateProducts(dataFilter, dataFilter.length, 9, +pages!);
+  const totalPage = Math.ceil(dataFilter.length / 9);
 
   return (
     <Wrapper
@@ -49,8 +62,8 @@ const KompleksCatalog = ({
         <Div full flex itemsCenter between className="max-md:justify-end">
           <p className="uppercase text-sm text-myDarkGray max-md:hidden">
             Showing{" "}
-            {pages == totalPage ? data.length : dataShow.length * +pages!} of{" "}
-            {data.length} results
+            {pages == totalPage ? dataFilter.length : dataShow.length * +pages!}{" "}
+            of {dataFilter.length} results
           </p>
 
           <Div>

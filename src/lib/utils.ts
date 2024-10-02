@@ -1,3 +1,4 @@
+import { Product } from "@/types/Product";
 import { type ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 
@@ -53,24 +54,6 @@ export function calculateFinalPrice(price: number, discount: number): number {
   const discountAmount = (price * discount) / 100;
   const finalPrice = price - discountAmount;
   return finalPrice;
-}
-
-interface Product {
-  id: number;
-  title: string;
-  summary: string;
-  price: number;
-  discount: number;
-  description: string;
-  colors: string[];
-  style: string[];
-  typeCategory: string;
-  detail: {
-    style: string;
-    dimension: string;
-    materials: string[];
-    SKU: string;
-  };
 }
 
 export function paginateProducts(
