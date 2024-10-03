@@ -15,6 +15,7 @@ interface ItemProductProps {
   title?: string;
   price?: number;
   discount?: number;
+  categoryProduct?: string;
 }
 
 const ItemProduct = ({
@@ -23,6 +24,7 @@ const ItemProduct = ({
   title,
   price,
   discount,
+  categoryProduct,
 }: ItemProductProps) => {
   const [like, setLike] = useState(false);
   const [isPrice, setisPrice] = useState(true);
@@ -30,8 +32,12 @@ const ItemProduct = ({
   const params = useParams();
   const priceAfterDiscount = calculateFinalPrice(price!, discount!);
 
+  let category = params.category ?? categoryProduct;
+
+  let path: string = `/shop/${category}/${title}`;
+
   return (
-    <Link href={`/shop/${params.category}/${title}`} className="w-full">
+    <Link href={path} className="w-full">
       <Div
         full
         column

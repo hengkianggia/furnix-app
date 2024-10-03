@@ -242,6 +242,8 @@ export const Icons = {
   ArrowRight: "lucide:move-right",
   ArrowRightCircle: "icons8:right-round",
   ArrowLeftCircle: "icons8:left-round",
+  LeftPage: "formkit:left",
+  RightPage: "formkit:right",
   ArrowRightUp: "tdesign:arrow-right-up",
   Question: "ph:question-light",
   Return: "icon-park-outline:return",

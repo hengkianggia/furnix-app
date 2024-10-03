@@ -12,8 +12,14 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { dataProduct } from "@/data/data";
+import { paginateProducts } from "@/lib/utils";
 
-const ShopCatalog = () => {
+const ShopCatalog = ({ page }: { page: string | undefined }) => {
+  let pages = page ?? 1;
+  let dataShow = paginateProducts(dataProduct, dataProduct.length, 9, +pages!);
+  const totalPage = Math.ceil(dataProduct.length / 9);
+
   return (
     <Wrapper full className="space-y-4 max-md:px-4 max-lg:px-10">
       <Div full flex between itemsCenter className="max-md:justify-end">
@@ -27,7 +33,13 @@ const ShopCatalog = () => {
         </Div>
 
         <Div flex itemsCenter className="space-x-4">
-          <p className="text-myDarkGray text-sm">12 items</p>
+          <p className="uppercase text-sm text-myDarkGray max-md:hidden">
+            Showing{" "}
+            {+pages == totalPage
+              ? dataProduct.length
+              : dataShow.length * +pages}{" "}
+            of {dataProduct.length} results
+          </p>
           <Div>
             <Select>
               <SelectTrigger className="w-[180px]">
@@ -49,14 +61,21 @@ const ShopCatalog = () => {
 
       {/* product */}
       <Div full grid className="grid-cols-3 gap-4 max-md:grid-cols-2">
-        <ItemProduct title="Product 1" price={131} discount={10} />
-        <ItemProduct title="Product 1" price={131} discount={10} />
-        <ItemProduct title="Product 1" price={131} discount={10} />
-        <ItemProduct title="Product 1" price={131} discount={10} />
-        <ItemProduct title="Product 1" price={131} discount={10} />
-        <ItemProduct title="Product 1" price={131} discount={10} />
+        {dataShow.map((item, idx) => (
+          <ItemProduct
+            key={idx}
+            title={item.title}
+            price={item.price}
+            discount={item.discount}
+            categoryProduct={item.typeCategory}
+          />
+        ))}
       </Div>
-      <PaginationComponents />
+      <PaginationComponents
+        totalPage={totalPage}
+        page={String(pages)}
+        pathname="shop"
+      />
     </Wrapper>
   );
 };

@@ -5,8 +5,15 @@ import ReviewProduct from "@/components/pages/detail product/ReviewProduct";
 import SimilarProduct from "@/components/pages/detail product/SimilarProduct";
 import { Separator } from "@/components/ui/separator";
 import Wrapper from "@/components/Wrapper";
+import { dataProduct } from "@/data/data";
 import { cleanPath } from "@/lib/utils";
 import React from "react";
+
+export function generateStaticParams() {
+  return dataProduct.map((item) => ({
+    id: item.title,
+  }));
+}
 
 const DetailProduct = ({ params }: { params: { id: string } }) => {
   const cleanParams = cleanPath(params.id);

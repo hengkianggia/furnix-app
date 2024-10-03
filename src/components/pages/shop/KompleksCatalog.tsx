@@ -109,6 +109,7 @@ const KompleksCatalog = ({
           type={type}
           page={page}
           totalPage={totalPage}
+          pathname="shop"
         />
       </Div>
 

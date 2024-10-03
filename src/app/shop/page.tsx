@@ -10,7 +10,11 @@ export const metadata: Metadata = {
   title: "Shop",
 };
 
-const Shop = () => {
+const Shop = ({
+  searchParams,
+}: {
+  searchParams?: { [key: string]: string | undefined };
+}) => {
   return (
     <Div as={"section"} column className="gap-20">
       <Headers
@@ -18,7 +22,7 @@ const Shop = () => {
         desc="Discover a curated collection of home essentials that elevate your space and simplify everyday living"
       />
       <ShopCategory />
-      <ShopCatalog />
+      <ShopCatalog page={searchParams?.page} />
       <BannerShop />
     </Div>
   );
