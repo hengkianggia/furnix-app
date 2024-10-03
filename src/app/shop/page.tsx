@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 const Shop = () => {
   return (
-    <Div as={"section"} column className="gap-32">
+    <Div as={"section"} column className="gap-20">
       <Headers
         title="Shop All"
         desc="Discover a curated collection of home essentials that elevate your space and simplify everyday living"

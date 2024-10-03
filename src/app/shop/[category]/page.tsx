@@ -11,7 +11,7 @@ import React from "react";
 
 export function generateStaticParams() {
   return furnitureCategories.map((item) => ({
-    id: item.name,
+    category: item.name,
   }));
 }
 const Category = ({
@@ -24,7 +24,7 @@ const Category = ({
   const cleanParams = cleanPath(params.category);
 
   return (
-    <Div as={"section"} full column className="gap-32 max-md:gap-20">
+    <Div as={"section"} full column className="gap-20 max-md:gap-20">
       <Headers
         title={cleanParams}
         desc="Discover a curated collection of home essentials that elevate your space and simplify everyday living"

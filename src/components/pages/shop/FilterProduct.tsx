@@ -11,6 +11,7 @@ import {
 import { Checkbox } from "@/components/ui/checkbox";
 import TinyItemProduct from "./TinyItemProduct";
 import { useRouter } from "next/navigation";
+import { getCurrentUrlWithoutQuery } from "@/lib/utils";
 
 const colors = [
   "Red",
@@ -34,6 +35,11 @@ const FilterProduct = ({
   categoryPath: string;
 }) => {
   const router = useRouter();
+
+  // Contoh penggunaan
+  // const currentUrlWithoutQuery = getCurrentUrlWithoutQuery();
+  // console.log(`Current URL without query is: ${currentUrlWithoutQuery}`);
+
   return (
     <Div
       column

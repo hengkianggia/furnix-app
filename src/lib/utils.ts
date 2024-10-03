@@ -1,5 +1,6 @@
 import { Product } from "@/types/Product";
 import { type ClassValue, clsx } from "clsx";
+import { redirect } from "next/navigation";
 import { twMerge } from "tailwind-merge";
 
 export function cn(...inputs: ClassValue[]) {
@@ -60,13 +61,15 @@ export function paginateProducts(
   products: Product[],
   totalData: number,
   itemsPerPage: number,
-  currentPage: number
+  currentPage: number,
+  redirectDefaultPage?: string
 ): Product[] {
   const totalPages = Math.ceil(totalData / itemsPerPage);
 
   // Validasi halaman saat ini
   if (currentPage < 1 || currentPage > totalPages) {
-    throw new Error("Current page is out of range.");
+    // throw new Error("Current page is out of range.");
+    redirect(redirectDefaultPage!);
   }
 
   const startIndex = (currentPage - 1) * itemsPerPage;
@@ -74,4 +77,13 @@ export function paginateProducts(
 
   // Mengambil produk untuk halaman saat ini
   return products.slice(startIndex, endIndex);
+}
+
+export function getCurrentUrl(): string {
+  return window.location.href;
+}
+
+export function getCurrentUrlWithoutQuery(): string {
+  const { protocol, hostname, port, pathname } = window.location;
+  return `${protocol}//${hostname}${port ? `:${port}` : ""}${pathname}`;
 }

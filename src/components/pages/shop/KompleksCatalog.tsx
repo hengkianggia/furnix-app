@@ -16,6 +16,7 @@ import { PaginationComponents } from "@/components/PaginationComponents";
 import { dataProduct, furnitureCategories } from "@/data/data";
 import FilterProduct from "./FilterProduct";
 import { paginateProducts } from "@/lib/utils";
+import { Product } from "@/types/Product";
 
 const KompleksCatalog = ({
   category,
@@ -48,7 +49,16 @@ const KompleksCatalog = ({
 
   let pages = page ?? 1;
 
-  let dataShow = paginateProducts(dataFilter, dataFilter.length, 9, +pages!);
+  let dataShow: Product[] = [];
+
+  dataShow = paginateProducts(
+    dataFilter,
+    dataFilter.length,
+    9,
+    +pages!,
+    `/shop/${category[0]}/?type=${type}`
+  );
+
   const totalPage = Math.ceil(dataFilter.length / 9);
 
   return (
@@ -111,5 +121,4 @@ const KompleksCatalog = ({
     </Wrapper>
   );
 };
-
 export default KompleksCatalog;

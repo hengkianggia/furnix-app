@@ -67,7 +67,17 @@ const ProductInformation = ({ title }: { title: string }) => {
           {dataShow.title}
         </h1>
         <p className="text-myDarkGray text-balances">{dataShow.summary}</p>
-        <h2 className="text-4xl font-thin">$ {finalPrice.toFixed()}</h2>
+        <Div flex itemsCenter className="gap-4">
+          <h2 className="text-4xl font-thin">$ {finalPrice.toFixed()}</h2>
+          <Div relative flex itemsCenter className="gap-4">
+            <p className="text-2xl font-thin text-red-500 line-through">
+              $ {dataShow.price.toFixed()}
+            </p>
+            <Div className="p-1 px-2 text-sm rounded-md bg-red-500  text-white">
+              {dataShow.discount}% Off
+            </Div>
+          </Div>
+        </Div>
 
         {/* select */}
         <Div
@@ -142,14 +152,14 @@ const ProductInformation = ({ title }: { title: string }) => {
           >
             <Div flex itemsCenter full className="px-8 max-md:px-4">
               <h4 className="capitalize text-myDarkGray basis-4/12">style</h4>
-              <p>{dataShow.detail.style}</p>
+              <p className="basis-8/12">{dataShow.detail.style}</p>
             </Div>
             <Separator />
             <Div flex itemsCenter full className="px-8 max-md:px-4">
               <h4 className="capitalize text-myDarkGray basis-4/12">
                 Dimensions
               </h4>
-              <p>{dataShow.detail.dimension}</p>
+              <p className="basis-8/12">{dataShow.detail.dimension}</p>
             </Div>
             <Separator />
             <Div
@@ -161,16 +171,23 @@ const ProductInformation = ({ title }: { title: string }) => {
               <h4 className="capitalize text-myDarkGray basis-4/12">
                 materials
               </h4>
-              <div className="w-fit flex-wrap flex gap-x-1">
+              <div className="w-fit flex-wrap flex gap-x-1 basis-8/12">
                 {dataShow.detail.materials.map((item, idx) => {
-                  return <p key={idx}>{item}, </p>;
+                  return (
+                    <p key={idx}>
+                      {item}
+                      {idx !== dataShow.detail.materials.length - 1
+                        ? ", "
+                        : "."}
+                    </p>
+                  );
                 })}
               </div>
             </Div>
             <Separator />
             <Div flex itemsCenter full className="px-8 max-md:px-4">
               <h4 className="capitalize text-myDarkGray basis-4/12">SKU No.</h4>
-              <p>{dataShow.detail.SKU}</p>
+              <p className="basis-8/12">{dataShow.detail.SKU}</p>
             </Div>
           </Div>
         </Div>

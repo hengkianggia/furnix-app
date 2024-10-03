@@ -56,7 +56,7 @@ const ItemProduct = ({
               center
               className="px-2 py-1 text-xs bg-myOrange text-myBlack rounded-full capitalize"
             >
-              <p>Discount {discount} %</p>
+              <p>{discount} % Off</p>
             </Div>
             <Div
               pointer
