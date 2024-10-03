@@ -10,8 +10,10 @@ import {
 } from "@/components/ui/accordion";
 import { Checkbox } from "@/components/ui/checkbox";
 import TinyItemProduct from "./TinyItemProduct";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { getCurrentUrlWithoutQuery } from "@/lib/utils";
+import { Icon } from "@iconify/react/dist/iconify.js";
+import { Icons } from "@/data/data";
 
 const colors = [
   "Red",
@@ -35,7 +37,12 @@ const FilterProduct = ({
   categoryPath: string;
 }) => {
   const router = useRouter();
+  const searchParams = useSearchParams();
 
+  const availableSearchParams =
+    searchParams.get("type") ||
+    searchParams.get("sort") ||
+    searchParams.get("color");
   // Contoh penggunaan
   // const currentUrlWithoutQuery = getCurrentUrlWithoutQuery();
   // console.log(`Current URL without query is: ${currentUrlWithoutQuery}`);
@@ -43,9 +50,22 @@ const FilterProduct = ({
   return (
     <Div
       column
-      className="basis-3/12 h-fit sticky top-24 gap-6 overflow-hidden max-md:hidden max-lg:basis-4/12"
+      className="basis-3/12 h-fit sticky top-24 gap-3 overflow-hidden max-md:hidden max-lg:basis-4/12"
     >
       <Input placeholder="Search by product" className="w-full m-0" />
+
+      {availableSearchParams != null && (
+        <Div
+          full
+          flex
+          itemsCenter
+          className="gap-3 cursor-pointer mt-3"
+          onClick={() => router.push(`/shop/${categoryPath}`)}
+        >
+          <p className="text-sm hover:text-red-500">Remove Filter</p>
+          <Icon icon={Icons.Close} className="text-xl text-red-500" />
+        </Div>
+      )}
 
       <Accordion type="single" collapsible className="w-full">
         <AccordionItem value="item-1">

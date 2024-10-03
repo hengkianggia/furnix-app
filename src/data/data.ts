@@ -267,6 +267,7 @@ export const Icons = {
   Comment: "ant-design:comment-outlined",
   Menu: "ic:round-menu",
   Trash: "iconoir:trash",
+  Close: "carbon:close"
 };
 
 export const rules = [
