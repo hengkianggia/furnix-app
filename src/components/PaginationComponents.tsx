@@ -22,7 +22,7 @@ export function PaginationComponents({
   type?: string | string[] | undefined;
   page?: string | string[] | undefined;
   totalPage?: number;
-  pathname: string;
+  pathname?: string;
 }) {
   const router = useRouter();
   let pages = page ?? 1;
@@ -112,7 +112,9 @@ export function PaginationComponents({
           </>
         )}
         {pages && totalPage != 1 && (
-          <PaginationItem>
+          <PaginationItem
+            onClick={() => router.push(`${path}?page=${totalPage}`)}
+          >
             <Button
               variant={"ghost"}
               className={cn("space-x-2", pages == totalPage && "bg-gray-200")}
