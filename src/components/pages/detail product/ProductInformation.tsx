@@ -29,7 +29,7 @@ const ProductInformation = ({ title }: { title: string }) => {
     <Wrapper
       full
       flex
-      className="gap-10 pb-14 border-b border-myDarkGray max-md:px-4 max-lg:px-10 max-lg:flex-col"
+      className="gap-10 pb-14 border-b  max-md:px-4 max-lg:px-10 max-lg:flex-col"
     >
       <Div
         grid

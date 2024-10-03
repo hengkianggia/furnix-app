@@ -1,14 +1,14 @@
 import Div from "@/components/Div";
 import Wrapper from "@/components/Wrapper";
-import { Icons } from "@/data/data";
+import { dataProduct, Icons } from "@/data/data";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import React from "react";
 import ItemProduct from "../shop/ItemProduct";
-import { cn } from "@/lib/utils";
-
-const similar = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+import { cn, getRandomEvenNumber } from "@/lib/utils";
 
 const SimilarProduct = () => {
+  const randomNumber = getRandomEvenNumber(1, dataProduct.length - 10);
+  const dataShow = dataProduct.slice(randomNumber, randomNumber + 10);
   return (
     <Wrapper full className="space-y-8 mt-20 max-md:px-4 max-lg:px-10">
       <Div full between itemsCenter>
@@ -24,12 +24,16 @@ const SimilarProduct = () => {
         flex
         className="space-x-5 overflow-x-scroll scrollbar-none snap-x snap-mandatory"
       >
-        {similar.map((item, index) => (
+        {dataShow.map((item, index) => (
           <ItemProduct
-            key={item}
+            key={item.id}
+            title={item.title}
+            price={item.price}
+            discount={item.discount}
+            categoryProduct={item.typeCategory}
             className={cn(
               "min-w-80 pt-8 snap-center snap-always",
-              item % 2 == 0 && "pt-0"
+              index + (1 % 2) == 0 && "pt-0"
             )}
           />
         ))}
