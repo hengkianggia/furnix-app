@@ -31,7 +31,7 @@ const listItem = [
 
 const Category = () => {
   return (
-    <Wrapper flex full className="justify-between px-32 h-72 max-md:px-4 max-lg:px-10 max-md:justify-center">
+    <Wrapper flex full className="justify-between lg:px-32 h-72 max-md:px-4 max-lg:px-10 max-md:justify-center">
       <Div
         Hfull
         column

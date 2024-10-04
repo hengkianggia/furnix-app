@@ -10,8 +10,14 @@ import React from "react";
 const CustomFurniture = () => {
   return (
     <Div as={"section"} full>
-      <Wrapper full flex between itemsCenter className="px-32 gap-6 max-md:px-4 max-lg:px-10 max-md:flex-col">
-        <Div className="basis-6/12 space-y-4 max-md:text-center">
+      <Wrapper
+        full
+        flex
+        between
+        itemsCenter
+        className="gap-6 max-md:px-4 max-lg:px-10 max-md:flex-col lg:px-32"
+      >
+        <Div full column className="basis-6/12 gap-y-4 max-md:text-center">
           <h1 className="text-4xl font-thin text-balance">
             120+ Fabrics for Your Custom Furniture
           </h1>
@@ -38,8 +44,8 @@ const CustomFurniture = () => {
         </Div>
 
         {/* images */}
-        <Div className="basis-6/12 max-md:w-full">
-          <Images className="aspect-square rounded-md" />
+        <Div className="basis-6/12 max-md:w-full ">
+          <Images className="aspect-square rounded-md opacity-50" />
         </Div>
       </Wrapper>
     </Div>

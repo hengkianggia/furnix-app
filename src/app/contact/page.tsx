@@ -22,7 +22,7 @@ const Contact = () => {
         title={"Contacts"}
         desc="Have questions? Contact us using the form below"
       />
-      <Wrapper full className="px-32 max-md:px-4 max-lg:px-10">
+      <Wrapper full className="lg:px-32 max-md:px-4 max-lg:px-10">
         <Div full grid className="grid-cols-2 gap-16 place-items-center max-md:grid-cols-1 max-md:gap-6 max-lg:gap-10">
           <h1 className="text-4xl font-thin text-balance max-md:col-span-1 max-lg:col-span-2 max-lg:text-center max-md:text-start">
             Contact Information for Furnix in Different Cities

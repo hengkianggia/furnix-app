@@ -51,7 +51,7 @@ export const Banner1 = () => {
 export const Banner2 = () => {
   return (
     <section className="w-full bg-myBrokenWhite pt-10 max-lg:pb-10">
-      <Wrapper className="grid grid-cols-2 gap-10 px-32 items-center max-md:px-4 max-lg:px-10">
+      <Wrapper className="grid grid-cols-2 gap-10 lg:px-32 items-center max-md:px-4 max-lg:px-10">
         <Div className="space-y-7 max-lg:col-span-2">
           <h1 className="font-normal max-md:w-full max-lg:w-[80%]">
             &quot;Absolutely thrilled with the new coffee table! We&apos;ve
@@ -209,7 +209,7 @@ export const BannerShop = () => {
 export const BannerWishlist = () => {
   return (
     <section className="w-full bg-myBrokenWhite pt-10 relative h-80 overflow-hidden max-lg:py-10 max-lg:h-full mt-32 max-lg:mt-20">
-      <Wrapper className="grid grid-cols-2 gap-10 px-32 items-center z-30 max-md:px-4 max-lg:px-10">
+      <Wrapper className="grid grid-cols-2 gap-10 lg:px-32 items-center z-30 max-md:px-4 max-lg:px-10">
         <Div full className="space-y-7 max-lg:space-y-2 max-md:col-span-2">
           <h1 className="text-4xl max-md:text-2xl text-balance font-thin">
             We&apos;re solving the biggest problems in furniture

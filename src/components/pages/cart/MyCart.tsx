@@ -217,7 +217,7 @@ const MyCart = () => {
       <Div
         full
         grid
-        className="grid-cols-3 gap-6 px-32 max-md:grid-cols-1 max-md:px-4 max-lg:px-0 max-lg:gap-0 max-md:gap-4"
+        className="grid-cols-3 gap-6 px-20 max-md:grid-cols-1 max-md:px-4 max-lg:px-0 max-lg:gap-0 max-md:gap-4"
       >
         <Div flex className="gap-4">
           <Icon icon={Icons.Question} className="text-3xl" />
