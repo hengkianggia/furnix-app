@@ -1,6 +1,6 @@
 import Div from "@/components/Div";
 import Wrapper from "@/components/Wrapper";
-import { Icons } from "@/data/data";
+import { dataProduct, Icons } from "@/data/data";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import React from "react";
 import ItemProduct from "../shop/ItemProduct";
@@ -9,10 +9,14 @@ import { Separator } from "@/components/ui/separator";
 import LeaveComment from "../detail product/LeaveComment";
 import ItemsBlog from "../blog/ItemsBlog";
 import ShareMedia from "@/components/ShareMedia";
+import { getRandomEvenNumber } from "@/lib/utils";
+import TinyItemBlogPost from "./TinyItemBlogPost";
 
 const DetailPost = () => {
+  const randomNumber = getRandomEvenNumber(1, dataProduct.length - 3);
+  const dataShow = dataProduct.slice(randomNumber, randomNumber + 3);
   return (
-    <Wrapper className="space-y-6">
+    <Wrapper column className="gap-y-6">
       <Div column className="px-32 mt-6 gap-4 max-md:px-4 max-lg:px-10">
         <Div
           flex
@@ -85,9 +89,15 @@ const DetailPost = () => {
       </Div>
 
       <Div full className="grid grid-cols-3 gap-4 max-md:hidden max-lg:px-10">
-        <ItemProduct />
-        <ItemProduct />
-        <ItemProduct />
+        {dataShow.map((item, index) => (
+          <ItemProduct
+            key={item.id}
+            title={item.title}
+            price={item.price}
+            discount={item.discount}
+            categoryProduct={item.typeCategory}
+          />
+        ))}
       </Div>
 
       <Div column className="px-32 mt-6 gap-4 max-md:px-4 max-lg:px-10">
@@ -194,11 +204,12 @@ const DetailPost = () => {
       <Div
         full
         grid
-        className="grid-cols-3 gap-4 max-md:grid-cols-1 max-md:px-4 max-lg:px-10"
+        className="grid-cols-4 gap-4 max-md:grid-cols-1 max-md:px-4 max-lg:px-10 mt-5 max-lg:grid-cols-2"
       >
-        <ItemsBlog classNameImage="aspect-square" />
-        <ItemsBlog classNameImage="aspect-square" />
-        <ItemsBlog classNameImage="aspect-square" />
+        <TinyItemBlogPost />
+        <TinyItemBlogPost />
+        <TinyItemBlogPost />
+        <TinyItemBlogPost />
       </Div>
     </Wrapper>
   );

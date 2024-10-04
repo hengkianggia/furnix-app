@@ -29,7 +29,7 @@ const Wrapper = ({
   return (
     <div
       className={cn(
-        "mx-auto w-full max-w-[1320px] relative",
+        "mx-auto w-full max-w-[1320px] relative lg:px-10",
         className,
         full && "w-full",
         Hfull && "h-full",

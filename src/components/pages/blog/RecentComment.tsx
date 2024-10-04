@@ -12,9 +12,10 @@ const RecentComment = () => {
       pointer
       className="space-x-4 text-myDarkGray hover:text-myBlack"
     >
-      <Icon icon={Icons.Comment} className="text-3xl" />
-      <h3 className="line-clamp-2">
-        Lisanne Viscaal Excepteur sint occaecat cupidatat non proident …
+      <Icon icon={Icons.Comment} className="text-5xl" />
+      <h3 className="line-clamp-2 text-sm">
+        Lisanne Viscaal Excepteur sint occaecat cupidatat non proiden Viscaal
+        Excepteur sint occaecat cupidatat non proiden
       </h3>
     </Div>
   );

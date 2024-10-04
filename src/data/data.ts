@@ -266,10 +266,10 @@ export const Icons = {
   Stars: "material-symbols:star",
   Dot: "ph:dot-outline",
   RightTriangle: "mdi:menu-right-outline",
-  Comment: "ant-design:comment-outlined",
+  Comment: "iconamoon:comment-dots-light",
   Menu: "ic:round-menu",
   Trash: "iconoir:trash",
-  Close: "carbon:close"
+  Close: "carbon:close",
 };
 
 export const rules = [

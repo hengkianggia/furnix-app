@@ -127,10 +127,6 @@ const Blog = () => {
               <RecentComment />
             </Div>
           </Div>
-
-          <Div full>
-            <Images className="h-96" />
-          </Div>
         </Div>
       </Wrapper>
     </Div>
