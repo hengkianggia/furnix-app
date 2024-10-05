@@ -22,16 +22,7 @@ const ShopCatalog = ({ page }: { page: string | undefined }) => {
 
   return (
     <Wrapper full className="space-y-4 max-md:px-4 max-lg:px-10">
-      <Div full flex between itemsCenter className="max-md:justify-end">
-        <Div flex itemsCenter className="space-x-4 max-md:hidden">
-          <Button className="bg-transparent text-myBlack border border-myBlack capitalize hover:text-myBrokenWhite">
-            rice
-          </Button>
-          <Button className="bg-transparent text-myBlack border border-myBlack capitalize hover:text-myBrokenWhite">
-            rating
-          </Button>
-        </Div>
-
+      <Div full flex between itemsCenter className="justify-end">
         <Div flex itemsCenter className="space-x-4">
           <p className="uppercase text-sm text-myDarkGray max-md:hidden">
             Showing{" "}
@@ -40,6 +31,7 @@ const ShopCatalog = ({ page }: { page: string | undefined }) => {
               : dataShow.length * +pages}{" "}
             of {dataProduct.length} results
           </p>
+
           <Div>
             <Select>
               <SelectTrigger className="w-[180px]">
@@ -47,11 +39,9 @@ const ShopCatalog = ({ page }: { page: string | undefined }) => {
               </SelectTrigger>
               <SelectContent>
                 <SelectGroup>
-                  <SelectItem value="apple">Apple</SelectItem>
-                  <SelectItem value="banana">Banana</SelectItem>
-                  <SelectItem value="blueberry">Blueberry</SelectItem>
-                  <SelectItem value="grapes">Grapes</SelectItem>
-                  <SelectItem value="pineapple">Pineapple</SelectItem>
+                  <SelectItem value="lowerprice">Lower Price</SelectItem>
+                  <SelectItem value="higherprice">Higher Price</SelectItem>
+                  <SelectItem value="morediscount">More Discount</SelectItem>
                 </SelectGroup>
               </SelectContent>
             </Select>

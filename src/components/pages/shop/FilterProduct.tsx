@@ -11,7 +11,6 @@ import {
 import { Checkbox } from "@/components/ui/checkbox";
 import TinyItemProduct from "./TinyItemProduct";
 import { useRouter, useSearchParams } from "next/navigation";
-import { getCurrentUrlWithoutQuery } from "@/lib/utils";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { Icons } from "@/data/data";
 

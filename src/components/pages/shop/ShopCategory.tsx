@@ -13,9 +13,10 @@ const ShopCategory = () => {
       <Div full flex between itemsCenter>
         <h1 className="text-4xl font-thin max-md:text-2xl">Shop by Category</h1>
 
-        <Div flex itemsCenter pointer className="space-x-3">
-          <Icon icon={Icons.ArrowLeft} className="text-2xl text-myDarkGray" />
-          <Icon icon={Icons.ArrowRight} className="text-2xl text-myDarkGray" />
+        <Div flex itemsCenter pointer className="space-x-3 text-myDarkGray">
+          <Icon icon={Icons.ArrowLeft} className="text-2xl " />
+          <p>scroll</p>
+          <Icon icon={Icons.ArrowRight} className="text-2xl " />
         </Div>
       </Div>
 
@@ -36,17 +37,19 @@ export default ShopCategory;
 
 export const ItemCategory = ({ title }: { title: string }) => {
   return (
-    <Div relative pointer className="snap-center snap-always">
-      <Images className="min-w-80 aspect-square" />
+    <Link href={`/shop/${title}`}>
+      <Div relative pointer className="snap-center snap-always">
+        <Images className="min-w-80 aspect-square" />
 
-      <Div center absolute className="bottom-4 left-0 w-full">
-        <Button
-          variant={"secondary"}
-          className="rounded-full capitalize bg-myBrokenWhite hover:bg-myBlack hover:text-myBrokenWhite"
-        >
-          <Link href={`/shop/${title}`}>{title}</Link>
-        </Button>
+        <Div center absolute className="bottom-4 left-0 w-full">
+          <Button
+            variant={"secondary"}
+            className="rounded-full capitalize bg-myBrokenWhite hover:bg-myBlack hover:text-myBrokenWhite"
+          >
+            {title}
+          </Button>
+        </Div>
       </Div>
-    </Div>
+    </Link>
   );
 };

@@ -82,11 +82,9 @@ const KompleksCatalog = ({
               </SelectTrigger>
               <SelectContent>
                 <SelectGroup>
-                  <SelectItem value="apple">Apple</SelectItem>
-                  <SelectItem value="banana">Banana</SelectItem>
-                  <SelectItem value="blueberry">Blueberry</SelectItem>
-                  <SelectItem value="grapes">Grapes</SelectItem>
-                  <SelectItem value="pineapple">Pineapple</SelectItem>
+                  <SelectItem value="lowerprice">Lower Price</SelectItem>
+                  <SelectItem value="higherprice">Higher Price</SelectItem>
+                  <SelectItem value="morediscount">More Discount</SelectItem>
                 </SelectGroup>
               </SelectContent>
             </Select>

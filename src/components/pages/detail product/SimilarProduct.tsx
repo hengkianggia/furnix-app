@@ -13,8 +13,9 @@ const SimilarProduct = () => {
     <Wrapper full className="space-y-8 mt-20 max-md:px-4 max-lg:px-10">
       <Div full between itemsCenter>
         <h3 className="text-3xl font-thin">You may also need</h3>
-        <Div flex itemsCenter className="space-x-3">
+        <Div flex itemsCenter className="space-x-3 text-myDarkGray">
           <Icon icon={Icons.ArrowLeft} />
+          <p className="text-sm">scroll</p>
           <Icon icon={Icons.ArrowRight} />
         </Div>
       </Div>
