@@ -11,6 +11,9 @@ import {
   convertTeksToUrl,
   convertUrlToTeks,
   paginateProducts,
+  sortByHighestDiscount,
+  sortByHighestPrice,
+  sortByLowestPrice,
 } from "@/lib/utils";
 import { Product } from "@/types/Product";
 import SelectFilter from "@/components/SelectFilter";
@@ -26,6 +29,7 @@ const KompleksCatalog = ({
   page: string | undefined;
   sort: string | undefined;
 }) => {
+  let pages = page ?? 1;
   const listProductType = furnitureCategories.find(
     (item) => item.name.toLocaleLowerCase() === category
   )?.productTypes;
@@ -46,7 +50,28 @@ const KompleksCatalog = ({
     dataFilter = dataType;
   }
 
-  let pages = page ?? 1;
+  if (sort) {
+    if (sort == "lowerprice") {
+      dataFilter = sortByLowestPrice(dataProduct);
+    } else if (sort == "higherprice") {
+      dataFilter = sortByHighestPrice(dataProduct);
+    } else if (sort == "morediscount") {
+      dataFilter = sortByHighestDiscount(dataProduct);
+    }
+  }
+
+  if (type && sort) {
+    let dataType = dataFilter.filter(
+      (item) => item?.typeCategory?.toLowerCase() == convertUrlToTeks(type)
+    );
+    if (sort == "lowerprice") {
+      dataFilter = sortByLowestPrice(dataType);
+    } else if (sort == "higherprice") {
+      dataFilter = sortByHighestPrice(dataType);
+    } else if (sort == "morediscount") {
+      dataFilter = sortByHighestDiscount(dataType);
+    }
+  }
 
   let dataShow: Product[] = [];
 
