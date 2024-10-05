@@ -387,6 +387,506 @@ export const dataProduct = [
     },
   },
   {
+    id: 942829,
+    categoryName: "Living Room Furniture",
+    title: "Classic Sectional Sofa Set",
+    summary:
+      "A spacious and comfortable sectional sofa set that fits perfectly into any corner of your living room.",
+    price: 1199.99,
+    discount: 15,
+    description:
+      "This classic sectional sofa set offers ample seating space, providing both comfort and elegance. The durable upholstery and solid construction ensure it will be a mainstay in your home for years to come.",
+    colors: ["Blue", "Navy", "Green", "Yellow", "Gray"],
+    style: ["Classic", "Cozy", "Transitional", "Contemporary", "Eclectic"],
+    typeCategory: "Sectional sofas",
+    detail: {
+      style: "Classic",
+      dimension: "120 x 40 x 34 inches",
+      materials: ["Fabric", "Wood", "Foam", "Polyester", "Nailhead trim"],
+      SKU: "SEC-002",
+    },
+  },
+  {
+    id: 942829,
+    categoryName: "Living Room Furniture",
+    title: "Classic Sectional Sofa Set",
+    summary:
+      "A spacious and comfortable sectional sofa set that fits perfectly into any corner of your living room.",
+    price: 1199.99,
+    discount: 15,
+    description:
+      "This classic sectional sofa set offers ample seating space, providing both comfort and elegance. The durable upholstery and solid construction ensure it will be a mainstay in your home for years to come.",
+    colors: ["Blue", "Navy", "Green", "Yellow", "Gray"],
+    style: ["Classic", "Cozy", "Transitional", "Contemporary", "Eclectic"],
+    typeCategory: "Sectional sofas",
+    detail: {
+      style: "Classic",
+      dimension: "120 x 40 x 34 inches",
+      materials: ["Fabric", "Wood", "Foam", "Polyester", "Nailhead trim"],
+      SKU: "SEC-002",
+    },
+  },
+  {
+    id: 942829,
+    categoryName: "Living Room Furniture",
+    title: "Classic Sectional Sofa Set",
+    summary:
+      "A spacious and comfortable sectional sofa set that fits perfectly into any corner of your living room.",
+    price: 1199.99,
+    discount: 15,
+    description:
+      "This classic sectional sofa set offers ample seating space, providing both comfort and elegance. The durable upholstery and solid construction ensure it will be a mainstay in your home for years to come.",
+    colors: ["Blue", "Navy", "Green", "Yellow", "Gray"],
+    style: ["Classic", "Cozy", "Transitional", "Contemporary", "Eclectic"],
+    typeCategory: "Sectional sofas",
+    detail: {
+      style: "Classic",
+      dimension: "120 x 40 x 34 inches",
+      materials: ["Fabric", "Wood", "Foam", "Polyester", "Nailhead trim"],
+      SKU: "SEC-002",
+    },
+  },
+  {
+    id: 942829,
+    categoryName: "Living Room Furniture",
+    title: "Classic Sectional Sofa Set",
+    summary:
+      "A spacious and comfortable sectional sofa set that fits perfectly into any corner of your living room.",
+    price: 1199.99,
+    discount: 15,
+    description:
+      "This classic sectional sofa set offers ample seating space, providing both comfort and elegance. The durable upholstery and solid construction ensure it will be a mainstay in your home for years to come.",
+    colors: ["Blue", "Navy", "Green", "Yellow", "Gray"],
+    style: ["Classic", "Cozy", "Transitional", "Contemporary", "Eclectic"],
+    typeCategory: "Sectional sofas",
+    detail: {
+      style: "Classic",
+      dimension: "120 x 40 x 34 inches",
+      materials: ["Fabric", "Wood", "Foam", "Polyester", "Nailhead trim"],
+      SKU: "SEC-002",
+    },
+  },
+  {
+    id: 942829,
+    categoryName: "Living Room Furniture",
+    title: "Classic Sectional Sofa Set",
+    summary:
+      "A spacious and comfortable sectional sofa set that fits perfectly into any corner of your living room.",
+    price: 1199.99,
+    discount: 15,
+    description:
+      "This classic sectional sofa set offers ample seating space, providing both comfort and elegance. The durable upholstery and solid construction ensure it will be a mainstay in your home for years to come.",
+    colors: ["Blue", "Navy", "Green", "Yellow", "Gray"],
+    style: ["Classic", "Cozy", "Transitional", "Contemporary", "Eclectic"],
+    typeCategory: "Sectional sofas",
+    detail: {
+      style: "Classic",
+      dimension: "120 x 40 x 34 inches",
+      materials: ["Fabric", "Wood", "Foam", "Polyester", "Nailhead trim"],
+      SKU: "SEC-002",
+    },
+  },
+  {
+    id: 942829,
+    categoryName: "Living Room Furniture",
+    title: "Classic Sectional Sofa Set",
+    summary:
+      "A spacious and comfortable sectional sofa set that fits perfectly into any corner of your living room.",
+    price: 1199.99,
+    discount: 15,
+    description:
+      "This classic sectional sofa set offers ample seating space, providing both comfort and elegance. The durable upholstery and solid construction ensure it will be a mainstay in your home for years to come.",
+    colors: ["Blue", "Navy", "Green", "Yellow", "Gray"],
+    style: ["Classic", "Cozy", "Transitional", "Contemporary", "Eclectic"],
+    typeCategory: "Sectional sofas",
+    detail: {
+      style: "Classic",
+      dimension: "120 x 40 x 34 inches",
+      materials: ["Fabric", "Wood", "Foam", "Polyester", "Nailhead trim"],
+      SKU: "SEC-002",
+    },
+  },
+  {
+    id: 942829,
+    categoryName: "Living Room Furniture",
+    title: "Classic Sectional Sofa Set",
+    summary:
+      "A spacious and comfortable sectional sofa set that fits perfectly into any corner of your living room.",
+    price: 1199.99,
+    discount: 15,
+    description:
+      "This classic sectional sofa set offers ample seating space, providing both comfort and elegance. The durable upholstery and solid construction ensure it will be a mainstay in your home for years to come.",
+    colors: ["Blue", "Navy", "Green", "Yellow", "Gray"],
+    style: ["Classic", "Cozy", "Transitional", "Contemporary", "Eclectic"],
+    typeCategory: "Sectional sofas",
+    detail: {
+      style: "Classic",
+      dimension: "120 x 40 x 34 inches",
+      materials: ["Fabric", "Wood", "Foam", "Polyester", "Nailhead trim"],
+      SKU: "SEC-002",
+    },
+  },
+  {
+    id: 942829,
+    categoryName: "Living Room Furniture",
+    title: "Classic Sectional Sofa Set",
+    summary:
+      "A spacious and comfortable sectional sofa set that fits perfectly into any corner of your living room.",
+    price: 1199.99,
+    discount: 15,
+    description:
+      "This classic sectional sofa set offers ample seating space, providing both comfort and elegance. The durable upholstery and solid construction ensure it will be a mainstay in your home for years to come.",
+    colors: ["Blue", "Navy", "Green", "Yellow", "Gray"],
+    style: ["Classic", "Cozy", "Transitional", "Contemporary", "Eclectic"],
+    typeCategory: "Sectional sofas",
+    detail: {
+      style: "Classic",
+      dimension: "120 x 40 x 34 inches",
+      materials: ["Fabric", "Wood", "Foam", "Polyester", "Nailhead trim"],
+      SKU: "SEC-002",
+    },
+  },
+  {
+    id: 942829,
+    categoryName: "Living Room Furniture",
+    title: "Classic Sectional Sofa Set",
+    summary:
+      "A spacious and comfortable sectional sofa set that fits perfectly into any corner of your living room.",
+    price: 1199.99,
+    discount: 15,
+    description:
+      "This classic sectional sofa set offers ample seating space, providing both comfort and elegance. The durable upholstery and solid construction ensure it will be a mainstay in your home for years to come.",
+    colors: ["Blue", "Navy", "Green", "Yellow", "Gray"],
+    style: ["Classic", "Cozy", "Transitional", "Contemporary", "Eclectic"],
+    typeCategory: "Sectional sofas",
+    detail: {
+      style: "Classic",
+      dimension: "120 x 40 x 34 inches",
+      materials: ["Fabric", "Wood", "Foam", "Polyester", "Nailhead trim"],
+      SKU: "SEC-002",
+    },
+  },
+  {
+    id: 942829,
+    categoryName: "Living Room Furniture",
+    title: "Classic Sectional Sofa Set",
+    summary:
+      "A spacious and comfortable sectional sofa set that fits perfectly into any corner of your living room.",
+    price: 1199.99,
+    discount: 15,
+    description:
+      "This classic sectional sofa set offers ample seating space, providing both comfort and elegance. The durable upholstery and solid construction ensure it will be a mainstay in your home for years to come.",
+    colors: ["Blue", "Navy", "Green", "Yellow", "Gray"],
+    style: ["Classic", "Cozy", "Transitional", "Contemporary", "Eclectic"],
+    typeCategory: "Sectional sofas",
+    detail: {
+      style: "Classic",
+      dimension: "120 x 40 x 34 inches",
+      materials: ["Fabric", "Wood", "Foam", "Polyester", "Nailhead trim"],
+      SKU: "SEC-002",
+    },
+  },
+  {
+    id: 942829,
+    categoryName: "Living Room Furniture",
+    title: "Classic Sectional Sofa Set",
+    summary:
+      "A spacious and comfortable sectional sofa set that fits perfectly into any corner of your living room.",
+    price: 1199.99,
+    discount: 15,
+    description:
+      "This classic sectional sofa set offers ample seating space, providing both comfort and elegance. The durable upholstery and solid construction ensure it will be a mainstay in your home for years to come.",
+    colors: ["Blue", "Navy", "Green", "Yellow", "Gray"],
+    style: ["Classic", "Cozy", "Transitional", "Contemporary", "Eclectic"],
+    typeCategory: "Sectional sofas",
+    detail: {
+      style: "Classic",
+      dimension: "120 x 40 x 34 inches",
+      materials: ["Fabric", "Wood", "Foam", "Polyester", "Nailhead trim"],
+      SKU: "SEC-002",
+    },
+  },
+  {
+    id: 942829,
+    categoryName: "Living Room Furniture",
+    title: "Classic Sectional Sofa Set",
+    summary:
+      "A spacious and comfortable sectional sofa set that fits perfectly into any corner of your living room.",
+    price: 1199.99,
+    discount: 15,
+    description:
+      "This classic sectional sofa set offers ample seating space, providing both comfort and elegance. The durable upholstery and solid construction ensure it will be a mainstay in your home for years to come.",
+    colors: ["Blue", "Navy", "Green", "Yellow", "Gray"],
+    style: ["Classic", "Cozy", "Transitional", "Contemporary", "Eclectic"],
+    typeCategory: "Sectional sofas",
+    detail: {
+      style: "Classic",
+      dimension: "120 x 40 x 34 inches",
+      materials: ["Fabric", "Wood", "Foam", "Polyester", "Nailhead trim"],
+      SKU: "SEC-002",
+    },
+  },
+  {
+    id: 942829,
+    categoryName: "Living Room Furniture",
+    title: "Classic Sectional Sofa Set",
+    summary:
+      "A spacious and comfortable sectional sofa set that fits perfectly into any corner of your living room.",
+    price: 1199.99,
+    discount: 15,
+    description:
+      "This classic sectional sofa set offers ample seating space, providing both comfort and elegance. The durable upholstery and solid construction ensure it will be a mainstay in your home for years to come.",
+    colors: ["Blue", "Navy", "Green", "Yellow", "Gray"],
+    style: ["Classic", "Cozy", "Transitional", "Contemporary", "Eclectic"],
+    typeCategory: "Sectional sofas",
+    detail: {
+      style: "Classic",
+      dimension: "120 x 40 x 34 inches",
+      materials: ["Fabric", "Wood", "Foam", "Polyester", "Nailhead trim"],
+      SKU: "SEC-002",
+    },
+  },
+  {
+    id: 942829,
+    categoryName: "Living Room Furniture",
+    title: "Classic Sectional Sofa Set",
+    summary:
+      "A spacious and comfortable sectional sofa set that fits perfectly into any corner of your living room.",
+    price: 1199.99,
+    discount: 15,
+    description:
+      "This classic sectional sofa set offers ample seating space, providing both comfort and elegance. The durable upholstery and solid construction ensure it will be a mainstay in your home for years to come.",
+    colors: ["Blue", "Navy", "Green", "Yellow", "Gray"],
+    style: ["Classic", "Cozy", "Transitional", "Contemporary", "Eclectic"],
+    typeCategory: "Sectional sofas",
+    detail: {
+      style: "Classic",
+      dimension: "120 x 40 x 34 inches",
+      materials: ["Fabric", "Wood", "Foam", "Polyester", "Nailhead trim"],
+      SKU: "SEC-002",
+    },
+  },
+  {
+    id: 942829,
+    categoryName: "Living Room Furniture",
+    title: "Classic Sectional Sofa Set",
+    summary:
+      "A spacious and comfortable sectional sofa set that fits perfectly into any corner of your living room.",
+    price: 1199.99,
+    discount: 15,
+    description:
+      "This classic sectional sofa set offers ample seating space, providing both comfort and elegance. The durable upholstery and solid construction ensure it will be a mainstay in your home for years to come.",
+    colors: ["Blue", "Navy", "Green", "Yellow", "Gray"],
+    style: ["Classic", "Cozy", "Transitional", "Contemporary", "Eclectic"],
+    typeCategory: "Sectional sofas",
+    detail: {
+      style: "Classic",
+      dimension: "120 x 40 x 34 inches",
+      materials: ["Fabric", "Wood", "Foam", "Polyester", "Nailhead trim"],
+      SKU: "SEC-002",
+    },
+  },
+  {
+    id: 942829,
+    categoryName: "Living Room Furniture",
+    title: "Classic Sectional Sofa Set",
+    summary:
+      "A spacious and comfortable sectional sofa set that fits perfectly into any corner of your living room.",
+    price: 1199.99,
+    discount: 15,
+    description:
+      "This classic sectional sofa set offers ample seating space, providing both comfort and elegance. The durable upholstery and solid construction ensure it will be a mainstay in your home for years to come.",
+    colors: ["Blue", "Navy", "Green", "Yellow", "Gray"],
+    style: ["Classic", "Cozy", "Transitional", "Contemporary", "Eclectic"],
+    typeCategory: "Sectional sofas",
+    detail: {
+      style: "Classic",
+      dimension: "120 x 40 x 34 inches",
+      materials: ["Fabric", "Wood", "Foam", "Polyester", "Nailhead trim"],
+      SKU: "SEC-002",
+    },
+  },
+  {
+    id: 942829,
+    categoryName: "Living Room Furniture",
+    title: "Classic Sectional Sofa Set",
+    summary:
+      "A spacious and comfortable sectional sofa set that fits perfectly into any corner of your living room.",
+    price: 1199.99,
+    discount: 15,
+    description:
+      "This classic sectional sofa set offers ample seating space, providing both comfort and elegance. The durable upholstery and solid construction ensure it will be a mainstay in your home for years to come.",
+    colors: ["Blue", "Navy", "Green", "Yellow", "Gray"],
+    style: ["Classic", "Cozy", "Transitional", "Contemporary", "Eclectic"],
+    typeCategory: "Sectional sofas",
+    detail: {
+      style: "Classic",
+      dimension: "120 x 40 x 34 inches",
+      materials: ["Fabric", "Wood", "Foam", "Polyester", "Nailhead trim"],
+      SKU: "SEC-002",
+    },
+  },
+  {
+    id: 942829,
+    categoryName: "Living Room Furniture",
+    title: "Classic Sectional Sofa Set",
+    summary:
+      "A spacious and comfortable sectional sofa set that fits perfectly into any corner of your living room.",
+    price: 1199.99,
+    discount: 15,
+    description:
+      "This classic sectional sofa set offers ample seating space, providing both comfort and elegance. The durable upholstery and solid construction ensure it will be a mainstay in your home for years to come.",
+    colors: ["Blue", "Navy", "Green", "Yellow", "Gray"],
+    style: ["Classic", "Cozy", "Transitional", "Contemporary", "Eclectic"],
+    typeCategory: "Sectional sofas",
+    detail: {
+      style: "Classic",
+      dimension: "120 x 40 x 34 inches",
+      materials: ["Fabric", "Wood", "Foam", "Polyester", "Nailhead trim"],
+      SKU: "SEC-002",
+    },
+  },
+  {
+    id: 942829,
+    categoryName: "Living Room Furniture",
+    title: "Classic Sectional Sofa Set",
+    summary:
+      "A spacious and comfortable sectional sofa set that fits perfectly into any corner of your living room.",
+    price: 1199.99,
+    discount: 15,
+    description:
+      "This classic sectional sofa set offers ample seating space, providing both comfort and elegance. The durable upholstery and solid construction ensure it will be a mainstay in your home for years to come.",
+    colors: ["Blue", "Navy", "Green", "Yellow", "Gray"],
+    style: ["Classic", "Cozy", "Transitional", "Contemporary", "Eclectic"],
+    typeCategory: "Sectional sofas",
+    detail: {
+      style: "Classic",
+      dimension: "120 x 40 x 34 inches",
+      materials: ["Fabric", "Wood", "Foam", "Polyester", "Nailhead trim"],
+      SKU: "SEC-002",
+    },
+  },
+  {
+    id: 942829,
+    categoryName: "Living Room Furniture",
+    title: "Classic Sectional Sofa Set",
+    summary:
+      "A spacious and comfortable sectional sofa set that fits perfectly into any corner of your living room.",
+    price: 1199.99,
+    discount: 15,
+    description:
+      "This classic sectional sofa set offers ample seating space, providing both comfort and elegance. The durable upholstery and solid construction ensure it will be a mainstay in your home for years to come.",
+    colors: ["Blue", "Navy", "Green", "Yellow", "Gray"],
+    style: ["Classic", "Cozy", "Transitional", "Contemporary", "Eclectic"],
+    typeCategory: "Sectional sofas",
+    detail: {
+      style: "Classic",
+      dimension: "120 x 40 x 34 inches",
+      materials: ["Fabric", "Wood", "Foam", "Polyester", "Nailhead trim"],
+      SKU: "SEC-002",
+    },
+  },
+  {
+    id: 942829,
+    categoryName: "Living Room Furniture",
+    title: "Classic Sectional Sofa Set",
+    summary:
+      "A spacious and comfortable sectional sofa set that fits perfectly into any corner of your living room.",
+    price: 1199.99,
+    discount: 15,
+    description:
+      "This classic sectional sofa set offers ample seating space, providing both comfort and elegance. The durable upholstery and solid construction ensure it will be a mainstay in your home for years to come.",
+    colors: ["Blue", "Navy", "Green", "Yellow", "Gray"],
+    style: ["Classic", "Cozy", "Transitional", "Contemporary", "Eclectic"],
+    typeCategory: "Sectional sofas",
+    detail: {
+      style: "Classic",
+      dimension: "120 x 40 x 34 inches",
+      materials: ["Fabric", "Wood", "Foam", "Polyester", "Nailhead trim"],
+      SKU: "SEC-002",
+    },
+  },
+  {
+    id: 942829,
+    categoryName: "Living Room Furniture",
+    title: "Classic Sectional Sofa Set",
+    summary:
+      "A spacious and comfortable sectional sofa set that fits perfectly into any corner of your living room.",
+    price: 1199.99,
+    discount: 15,
+    description:
+      "This classic sectional sofa set offers ample seating space, providing both comfort and elegance. The durable upholstery and solid construction ensure it will be a mainstay in your home for years to come.",
+    colors: ["Blue", "Navy", "Green", "Yellow", "Gray"],
+    style: ["Classic", "Cozy", "Transitional", "Contemporary", "Eclectic"],
+    typeCategory: "Sectional sofas",
+    detail: {
+      style: "Classic",
+      dimension: "120 x 40 x 34 inches",
+      materials: ["Fabric", "Wood", "Foam", "Polyester", "Nailhead trim"],
+      SKU: "SEC-002",
+    },
+  },
+  {
+    id: 942829,
+    categoryName: "Living Room Furniture",
+    title: "Classic Sectional Sofa Set",
+    summary:
+      "A spacious and comfortable sectional sofa set that fits perfectly into any corner of your living room.",
+    price: 1199.99,
+    discount: 15,
+    description:
+      "This classic sectional sofa set offers ample seating space, providing both comfort and elegance. The durable upholstery and solid construction ensure it will be a mainstay in your home for years to come.",
+    colors: ["Blue", "Navy", "Green", "Yellow", "Gray"],
+    style: ["Classic", "Cozy", "Transitional", "Contemporary", "Eclectic"],
+    typeCategory: "Sectional sofas",
+    detail: {
+      style: "Classic",
+      dimension: "120 x 40 x 34 inches",
+      materials: ["Fabric", "Wood", "Foam", "Polyester", "Nailhead trim"],
+      SKU: "SEC-002",
+    },
+  },
+  {
+    id: 942829,
+    categoryName: "Living Room Furniture",
+    title: "Classic Sectional Sofa Set",
+    summary:
+      "A spacious and comfortable sectional sofa set that fits perfectly into any corner of your living room.",
+    price: 1199.99,
+    discount: 15,
+    description:
+      "This classic sectional sofa set offers ample seating space, providing both comfort and elegance. The durable upholstery and solid construction ensure it will be a mainstay in your home for years to come.",
+    colors: ["Blue", "Navy", "Green", "Yellow", "Gray"],
+    style: ["Classic", "Cozy", "Transitional", "Contemporary", "Eclectic"],
+    typeCategory: "Sectional sofas",
+    detail: {
+      style: "Classic",
+      dimension: "120 x 40 x 34 inches",
+      materials: ["Fabric", "Wood", "Foam", "Polyester", "Nailhead trim"],
+      SKU: "SEC-002",
+    },
+  },
+  {
+    id: 942829,
+    categoryName: "Living Room Furniture",
+    title: "Classic Sectional Sofa Set",
+    summary:
+      "A spacious and comfortable sectional sofa set that fits perfectly into any corner of your living room.",
+    price: 1199.99,
+    discount: 15,
+    description:
+      "This classic sectional sofa set offers ample seating space, providing both comfort and elegance. The durable upholstery and solid construction ensure it will be a mainstay in your home for years to come.",
+    colors: ["Blue", "Navy", "Green", "Yellow", "Gray"],
+    style: ["Classic", "Cozy", "Transitional", "Contemporary", "Eclectic"],
+    typeCategory: "Sectional sofas",
+    detail: {
+      style: "Classic",
+      dimension: "120 x 40 x 34 inches",
+      materials: ["Fabric", "Wood", "Foam", "Polyester", "Nailhead trim"],
+      SKU: "SEC-002",
+    },
+  },
+  {
     id: 716217,
     categoryName: "Living Room Furniture",
     title: "Modern Loveseat",

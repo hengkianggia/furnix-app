@@ -21,15 +21,18 @@ import {
   paginateProducts,
 } from "@/lib/utils";
 import { Product } from "@/types/Product";
+import SelectFilter from "@/components/SelectFilter";
 
 const KompleksCatalog = ({
   category,
   type, // as a teks not url
   page,
+  sort,
 }: {
   category: string;
   type: string | undefined;
   page: string | undefined;
+  sort: string | undefined;
 }) => {
   const listProductType = furnitureCategories.find(
     (item) => item.name.toLocaleLowerCase() === category
@@ -79,20 +82,7 @@ const KompleksCatalog = ({
             of {dataFilter.length} results
           </p>
 
-          <Div>
-            <Select>
-              <SelectTrigger className="w-[180px]">
-                <SelectValue placeholder="Default sorting" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectGroup>
-                  <SelectItem value="lowerprice">Lower Price</SelectItem>
-                  <SelectItem value="higherprice">Higher Price</SelectItem>
-                  <SelectItem value="morediscount">More Discount</SelectItem>
-                </SelectGroup>
-              </SelectContent>
-            </Select>
-          </Div>
+          <SelectFilter />
         </Div>
 
         <Div full grid className="grid-cols-3 gap-3 max-lg:grid-cols-2">
@@ -107,11 +97,10 @@ const KompleksCatalog = ({
         </Div>
 
         <PaginationComponents
-          categoryPath={convertTeksToUrl(category)}
           type={type}
           page={page}
           totalPage={totalPage}
-          pathname="shop"
+          sort={sort}
         />
       </Div>
 

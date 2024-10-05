@@ -33,6 +33,7 @@ const Category = ({
         category={cleanParams}
         type={searchParams?.type}
         page={searchParams?.page}
+        sort={searchParams?.sort}
       />
       <RecomItem />
       <Separator className="max-lg:hidden" />

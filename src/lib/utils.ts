@@ -7,13 +7,6 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-// export function addPrefix(prefix: string, classNames: string): string {
-//   return classNames
-//     .split(" ")
-//     .map((className) => `${prefix}${className}`)
-//     .join(" ");
-// }
-
 export function cleanPath(path: string): string[] {
   // Menghilangkan slash di awal dan akhir path
   const trimmedPath = path.replace(/^\/|\/$/g, "");
@@ -88,10 +81,25 @@ export function paginateProducts(
 }
 
 export function getCurrentUrl(): string {
-  return window.location.href;
+  if (typeof window !== "undefined") {
+    return window.location.href;
+  }
+  return "";
 }
 
 export function getCurrentUrlWithoutQuery(): string {
-  const { protocol, hostname, port, pathname } = window.location;
-  return `${protocol}//${hostname}${port ? `:${port}` : ""}${pathname}`;
+  if (typeof window !== "undefined") {
+    const { protocol, hostname, port, pathname } = window.location;
+    return `${protocol}//${hostname}${port ? `:${port}` : ""}${pathname}`;
+  }
+  return "";
+}
+
+export function addQueryToUrl(
+  url: string,
+  queryParams: Record<string, string>
+): string {
+  const urlObj = new URL(url);
+  urlObj.search = new URLSearchParams(queryParams).toString();
+  return urlObj.toString();
 }

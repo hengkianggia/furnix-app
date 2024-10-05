@@ -22,7 +22,7 @@ const Shop = ({
         desc="Discover a curated collection of home essentials that elevate your space and simplify everyday living"
       />
       <ShopCategory />
-      <ShopCatalog page={searchParams?.page} />
+      <ShopCatalog page={searchParams?.page} sort={searchParams?.sort} />
       <BannerShop />
     </Div>
   );
