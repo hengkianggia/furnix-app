@@ -96,16 +96,10 @@ const FilterProduct = ({
                     value={item}
                     checked={
                       //need as a teks
-                      convertUrlToTeks(type!) ===
-                      item.toLocaleLowerCase()
+                      convertUrlToTeks(type!) === item.toLocaleLowerCase()
                     }
                     onClick={() => {
                       router.push(
-                        `/shop/${convertTeksToUrl(
-                          categoryPath
-                        )}?type=${convertTeksToUrl(item)}`
-                      );
-                      console.log(
                         `/shop/${convertTeksToUrl(
                           categoryPath
                         )}?type=${convertTeksToUrl(item)}`

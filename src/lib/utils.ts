@@ -103,3 +103,23 @@ export function addQueryToUrl(
   urlObj.search = new URLSearchParams(queryParams).toString();
   return urlObj.toString();
 }
+
+export function calculateDiscountedPrice(product: Product): number {
+  return product.price * (1 - product.discount / 100);
+}
+
+export function sortByLowestPrice(products: Product[]): Product[] {
+  return [...products].sort(
+    (a, b) => calculateDiscountedPrice(a) - calculateDiscountedPrice(b)
+  );
+}
+
+export function sortByHighestPrice(products: Product[]): Product[] {
+  return [...products].sort(
+    (a, b) => calculateDiscountedPrice(b) - calculateDiscountedPrice(a)
+  );
+}
+
+export function sortByHighestDiscount(products: Product[]): Product[] {
+  return [...products].sort((a, b) => b.discount - a.discount);
+}

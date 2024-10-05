@@ -10,19 +10,18 @@ import {
 } from "@/components/ui/select";
 import { usePathname, useRouter } from "next/navigation";
 
-const SelectFilter = ({
-  path,
-  category,
-}: {
-  path?: string;
-  category?: string;
-}) => {
+const SelectFilter = ({ type }: { type?: string | undefined }) => {
   const router = useRouter();
 
   const pathname = usePathname();
 
   const handleSelectChange = (value: string) => {
-    router.push(`${pathname}?sort=${value}`);
+    console.log(type + " in select components");
+    if (type !== undefined) {
+      router.push(`${pathname}?type=${type}&sort=${value}`);
+    } else {
+      router.push(`${pathname}?sort=${value}`);
+    }
   };
 
   return (

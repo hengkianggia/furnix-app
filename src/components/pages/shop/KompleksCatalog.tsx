@@ -2,14 +2,6 @@ import Div from "@/components/Div";
 import Wrapper from "@/components/Wrapper";
 import React from "react";
 
-import {
-  SelectItem,
-  Select,
-  SelectContent,
-  SelectGroup,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import ItemProduct from "./ItemProduct";
 import { PaginationComponents } from "@/components/PaginationComponents";
 
@@ -82,7 +74,7 @@ const KompleksCatalog = ({
             of {dataFilter.length} results
           </p>
 
-          <SelectFilter />
+          <SelectFilter type={type} />
         </Div>
 
         <Div full grid className="grid-cols-3 gap-3 max-lg:grid-cols-2">

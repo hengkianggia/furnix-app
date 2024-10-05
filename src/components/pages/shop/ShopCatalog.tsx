@@ -5,8 +5,14 @@ import ItemProduct from "./ItemProduct";
 import { PaginationComponents } from "@/components/PaginationComponents";
 
 import { dataProduct } from "@/data/data";
-import { paginateProducts } from "@/lib/utils";
+import {
+  paginateProducts,
+  sortByHighestDiscount,
+  sortByHighestPrice,
+  sortByLowestPrice,
+} from "@/lib/utils";
 import SelectFilter from "@/components/SelectFilter";
+import { Product } from "@/types/Product";
 
 const ShopCatalog = ({
   page,
@@ -16,7 +22,29 @@ const ShopCatalog = ({
   sort: string | undefined;
 }) => {
   let pages = page ?? 1;
-  let dataShow = paginateProducts(dataProduct, dataProduct.length, 9, +pages!);
+
+  let dataShow: Product[] = [];
+  let data = paginateProducts(dataProduct, dataProduct.length, 9, +pages!);
+  dataShow = data;
+
+  if (sort) {
+    if (sort == "lowerprice") {
+      let lowerPrice = sortByLowestPrice(dataProduct);
+      dataShow = paginateProducts(lowerPrice, dataProduct.length, 9, +pages!);
+    } else if (sort == "higherprice") {
+      let highestPrice = sortByHighestPrice(dataProduct);
+      dataShow = paginateProducts(highestPrice, dataProduct.length, 9, +pages!);
+    } else if (sort == "morediscount") {
+      let highestDiscount = sortByHighestDiscount(dataProduct);
+      dataShow = paginateProducts(
+        highestDiscount,
+        dataProduct.length,
+        9,
+        +pages!
+      );
+    }
+  }
+  
   const totalPage = Math.ceil(dataProduct.length / 9);
 
   return (
