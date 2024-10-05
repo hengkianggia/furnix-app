@@ -146,15 +146,6 @@ const FilterProduct = ({
             prefer.
           </AccordionContent>
         </AccordionItem>
-
-        <AccordionItem value="item-4">
-          <AccordionTrigger>Product</AccordionTrigger>
-          <AccordionContent className="space-y-3">
-            <TinyItemProduct />
-            <TinyItemProduct />
-            <TinyItemProduct />
-          </AccordionContent>
-        </AccordionItem>
       </Accordion>
     </Div>
   );

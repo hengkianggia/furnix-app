@@ -44,7 +44,7 @@ const ShopCatalog = ({
       );
     }
   }
-  
+
   const totalPage = Math.ceil(dataProduct.length / 9);
 
   return (
@@ -59,7 +59,7 @@ const ShopCatalog = ({
             of {dataProduct.length} results
           </p>
 
-          <SelectFilter />
+          <SelectFilter sort={sort}/>
         </Div>
       </Div>
 

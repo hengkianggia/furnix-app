@@ -367,6 +367,26 @@ export const dataProduct = [
     },
   },
   {
+    id: 172617,
+    categoryName: "Living Room Furniture",
+    title: "Contemporary Leather Sofa NEWW",
+    summary:
+      "A modern and luxurious leather sofa perfect for adding elegance to any living room.",
+    price: 899.99,
+    discount: 0,
+    description:
+      "This contemporary leather sofa is designed for comfort and style, offering an inviting place to relax in any modern home. Its sleek lines and high-quality materials make it both durable and attractive.",
+    colors: ["Black", "Brown", "White", "Gray", "Beige"],
+    style: ["Modern", "Classic", "Minimalist", "Industrial", "Scandinavian"],
+    typeCategory: "Sofas",
+    detail: {
+      style: "Modern",
+      dimension: "80 x 35 x 32 inches",
+      materials: ["Leather", "Wood", "Metal", "Foam", "Polyester"],
+      SKU: "SOF-001",
+    },
+  },
+  {
     id: 942829,
     categoryName: "Living Room Furniture",
     title: "Classic Sectional Sofa Set",

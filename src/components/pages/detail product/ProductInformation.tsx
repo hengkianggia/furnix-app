@@ -69,14 +69,16 @@ const ProductInformation = ({ title }: { title: string }) => {
         <p className="text-myDarkGray text-balances">{dataShow.summary}</p>
         <Div flex itemsCenter className="gap-4">
           <h2 className="text-4xl font-thin">$ {finalPrice.toFixed()}</h2>
-          <Div relative flex itemsCenter className="gap-4">
-            <p className="text-2xl font-thin text-red-500 line-through">
-              $ {dataShow.price.toFixed()}
-            </p>
-            <Div className="p-1 px-2 text-sm rounded-md bg-red-500  text-white">
-              {dataShow.discount}% Off
+          {dataShow.discount > 0 && (
+            <Div relative flex itemsCenter className="gap-4">
+              <p className="text-2xl font-thin text-red-500 line-through">
+                $ {dataShow.price.toFixed()}
+              </p>
+              <Div className="p-1 px-2 text-sm rounded-md bg-red-500  text-white">
+                {dataShow.discount}% Off
+              </Div>
             </Div>
-          </Div>
+          )}
         </Div>
 
         {/* select */}

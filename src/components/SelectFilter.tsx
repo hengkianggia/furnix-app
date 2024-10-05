@@ -10,7 +10,13 @@ import {
 } from "@/components/ui/select";
 import { usePathname, useRouter } from "next/navigation";
 
-const SelectFilter = ({ type }: { type?: string | undefined }) => {
+const SelectFilter = ({
+  type,
+  sort,
+}: {
+  type?: string | undefined;
+  sort?: string | undefined;
+}) => {
   const router = useRouter();
 
   const pathname = usePathname();
@@ -25,7 +31,7 @@ const SelectFilter = ({ type }: { type?: string | undefined }) => {
   };
 
   return (
-    <Select onValueChange={handleSelectChange}>
+    <Select onValueChange={handleSelectChange} value={sort}>
       <SelectTrigger className="w-[180px]">
         <SelectValue placeholder="Default sorting" />
       </SelectTrigger>

@@ -59,14 +59,20 @@ const ItemProduct = ({
             flex
             between
             itemsCenter
-            className="top-0 left-0 p-4"
+            className={cn(
+              "top-0 left-0 p-4",
+              discount! < 1 ? "justify-end" : ""
+            )}
           >
-            <Div
-              center
-              className="px-2 py-1 text-xs bg-myOrange text-myBlack rounded-full capitalize"
-            >
-              <p>{discount} % Off</p>
-            </Div>
+            {discount! > 0 && (
+              <Div
+                center
+                className="px-2 py-1 text-xs bg-myOrange text-myBlack rounded-full capitalize"
+              >
+                <p>{discount} % Off</p>
+              </Div>
+            )}
+
             <Div
               pointer
               onMouseEnter={() => setLike(true)}
@@ -108,7 +114,9 @@ const ItemProduct = ({
             {isPrice ? (
               <Div flex itemsCenter className="space-x-4">
                 <p>$ {priceAfterDiscount.toFixed()}</p>
-                <p className="text-gray-300 line-through">$ {price}</p>
+                {discount! > 0 && (
+                  <p className="text-gray-300 line-through">$ {price}</p>
+                )}
               </Div>
             ) : (
               <Button className="uppercase bg-myBlack text-myBrokenWhite">
@@ -122,5 +130,4 @@ const ItemProduct = ({
     </Link>
   );
 };
-
 export default ItemProduct;

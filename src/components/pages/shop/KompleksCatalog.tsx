@@ -99,7 +99,7 @@ const KompleksCatalog = ({
             of {dataFilter.length} results
           </p>
 
-          <SelectFilter type={type} />
+          <SelectFilter type={type} sort={sort} />
         </Div>
 
         <Div full grid className="grid-cols-3 gap-3 max-lg:grid-cols-2">
