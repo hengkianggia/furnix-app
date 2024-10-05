@@ -5,7 +5,7 @@ import RecomItem from "@/components/pages/shop/RecomItem";
 import { Separator } from "@/components/ui/separator";
 import Wrapper from "@/components/Wrapper";
 import { furnitureCategories, rules } from "@/data/data";
-import { cleanPath } from "@/lib/utils";
+import { cleanPath, convertUrlToTeks } from "@/lib/utils";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import React from "react";
 
@@ -19,9 +19,9 @@ const Category = ({
   searchParams,
 }: {
   params: { category: string };
-  searchParams?: { [key: string]: string | string[] | undefined };
+  searchParams?: { [key: string]: string | undefined };
 }) => {
-  const cleanParams = cleanPath(params.category);
+  const cleanParams = convertUrlToTeks(params.category);
 
   return (
     <Div as={"section"} full column className="gap-20 max-md:gap-20">

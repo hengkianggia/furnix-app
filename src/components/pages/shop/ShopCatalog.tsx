@@ -61,6 +61,7 @@ const ShopCatalog = ({ page }: { page: string | undefined }) => {
           />
         ))}
       </Div>
+      
       <PaginationComponents
         totalPage={totalPage}
         page={String(pages)}

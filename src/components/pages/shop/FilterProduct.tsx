@@ -13,6 +13,7 @@ import TinyItemProduct from "./TinyItemProduct";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { Icons } from "@/data/data";
+import { convertTeksToUrl, convertUrlToTeks } from "@/lib/utils";
 
 const colors = [
   "Red",
@@ -32,7 +33,7 @@ const FilterProduct = ({
   categoryPath,
 }: {
   listProductType: string[] | undefined;
-  type: string | string[] | undefined;
+  type: string | undefined;
   categoryPath: string;
 }) => {
   const router = useRouter();
@@ -42,9 +43,6 @@ const FilterProduct = ({
     searchParams.get("type") ||
     searchParams.get("sort") ||
     searchParams.get("color");
-  // Contoh penggunaan
-  // const currentUrlWithoutQuery = getCurrentUrlWithoutQuery();
-  // console.log(`Current URL without query is: ${currentUrlWithoutQuery}`);
 
   return (
     <Div
@@ -59,7 +57,7 @@ const FilterProduct = ({
           flex
           itemsCenter
           className="gap-3 cursor-pointer mt-3"
-          onClick={() => router.push(`/shop/${categoryPath}`)}
+          onClick={() => router.push(`/shop/${convertTeksToUrl(categoryPath)}`)}
         >
           <p className="text-sm hover:text-red-500">Remove Filter</p>
           <Icon icon={Icons.Close} className="text-xl text-red-500" />
@@ -84,7 +82,11 @@ const FilterProduct = ({
                     value={item}
                     checked={type?.includes(item)}
                     onClick={() =>
-                      router.push(`/shop/${categoryPath}?type=${item}`)
+                      router.push(
+                        `/shop/${convertTeksToUrl(
+                          categoryPath
+                        )}?type=${convertTeksToUrl(item)}`
+                      )
                     }
                   />
                 ) : (
@@ -93,11 +95,22 @@ const FilterProduct = ({
                     name={item}
                     value={item}
                     checked={
-                      type?.toLocaleLowerCase() === item.toLocaleLowerCase()
+                      //need as a teks
+                      convertUrlToTeks(type!) ===
+                      item.toLocaleLowerCase()
                     }
-                    onClick={() =>
-                      router.push(`/shop/${categoryPath}?type=${item}`)
-                    }
+                    onClick={() => {
+                      router.push(
+                        `/shop/${convertTeksToUrl(
+                          categoryPath
+                        )}?type=${convertTeksToUrl(item)}`
+                      );
+                      console.log(
+                        `/shop/${convertTeksToUrl(
+                          categoryPath
+                        )}?type=${convertTeksToUrl(item)}`
+                      );
+                    }}
                   />
                 )}
 

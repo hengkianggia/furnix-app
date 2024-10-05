@@ -9,7 +9,7 @@ import { Button } from "./ui/button";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { Icons } from "@/data/data";
 import { useRouter } from "next/navigation";
-import { cn } from "@/lib/utils";
+import { cn, convertTeksToUrl } from "@/lib/utils";
 
 export function PaginationComponents({
   categoryPath,
@@ -19,8 +19,8 @@ export function PaginationComponents({
   pathname,
 }: {
   categoryPath?: string;
-  type?: string | string[] | undefined;
-  page?: string | string[] | undefined;
+  type?: string | undefined;
+  page?: string | undefined;
   totalPage?: number;
   pathname?: string;
 }) {

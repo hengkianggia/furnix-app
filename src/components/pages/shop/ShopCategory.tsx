@@ -3,6 +3,7 @@ import Images from "@/components/Images";
 import { Button } from "@/components/ui/button";
 import Wrapper from "@/components/Wrapper";
 import { furnitureCategories, Icons } from "@/data/data";
+import { convertTeksToUrl } from "@/lib/utils";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import Link from "next/link";
 import React from "react";
@@ -36,8 +37,9 @@ const ShopCategory = () => {
 export default ShopCategory;
 
 export const ItemCategory = ({ title }: { title: string }) => {
+  const path = convertTeksToUrl(title);
   return (
-    <Link href={`/shop/${title}`}>
+    <Link href={`/shop/${path}`}>
       <Div relative pointer className="snap-center snap-always">
         <Images className="min-w-80 aspect-square" />
 

@@ -27,6 +27,14 @@ export function cleanPath(path: string): string[] {
     .filter((segment) => segment !== "");
 }
 
+export const convertTeksToUrl = (path: string) => {
+  return path?.toLocaleLowerCase().split(" ").join("-");
+};
+
+export function convertUrlToTeks(path: string) {
+  return path?.toLocaleLowerCase().split("-").join(" ");
+}
+
 export function getRandomEvenNumber(min: number, max: number): number {
   // Pastikan min dan max adalah bilangan bulat
   min = Math.ceil(min);

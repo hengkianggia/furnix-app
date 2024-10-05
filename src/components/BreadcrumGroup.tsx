@@ -10,11 +10,17 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { useParams, usePathname } from "next/navigation";
-import { cleanPath, cn } from "@/lib/utils";
+import { cleanPath, cn, convertUrlToTeks } from "@/lib/utils";
 
 export function BreadcrumGroup() {
   const pathname = usePathname();
   let pathNew = cleanPath(pathname);
+
+  if (pathNew.length > 1) {
+    pathNew.forEach((element) => {
+      pathNew[pathNew.indexOf(element)] = convertUrlToTeks(element);
+    });
+  }
 
   return (
     <Breadcrumb>

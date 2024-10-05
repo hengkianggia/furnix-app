@@ -6,7 +6,7 @@ import SimilarProduct from "@/components/pages/detail product/SimilarProduct";
 import { Separator } from "@/components/ui/separator";
 import Wrapper from "@/components/Wrapper";
 import { dataProduct } from "@/data/data";
-import { cleanPath } from "@/lib/utils";
+import { cleanPath, convertUrlToTeks } from "@/lib/utils";
 import React from "react";
 
 export function generateStaticParams() {
@@ -16,7 +16,7 @@ export function generateStaticParams() {
 }
 
 const DetailProduct = ({ params }: { params: { id: string } }) => {
-  const cleanParams = cleanPath(params.id);
+  const cleanParams = convertUrlToTeks(params.id);
   return (
     <Div as={"section"} full column className="gap-y-10">
       <Div>
@@ -26,7 +26,7 @@ const DetailProduct = ({ params }: { params: { id: string } }) => {
         <Separator />
       </Div>
 
-      <ProductInformation title={cleanParams[0]} />
+      <ProductInformation title={cleanParams} />
       <ReviewProduct />
 
       <SimilarProduct />

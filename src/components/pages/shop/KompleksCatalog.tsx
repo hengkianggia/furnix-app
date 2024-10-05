@@ -15,33 +15,37 @@ import { PaginationComponents } from "@/components/PaginationComponents";
 
 import { dataProduct, furnitureCategories } from "@/data/data";
 import FilterProduct from "./FilterProduct";
-import { paginateProducts } from "@/lib/utils";
+import {
+  convertTeksToUrl,
+  convertUrlToTeks,
+  paginateProducts,
+} from "@/lib/utils";
 import { Product } from "@/types/Product";
 
 const KompleksCatalog = ({
   category,
-  type,
+  type, // as a teks not url
   page,
 }: {
-  category: string | string[];
-  type: string | string[] | undefined;
-  page: string | string[] | undefined;
+  category: string;
+  type: string | undefined;
+  page: string | undefined;
 }) => {
   const listProductType = furnitureCategories.find(
-    (item) => item.name === category[0]
+    (item) => item.name.toLocaleLowerCase() === category
   )?.productTypes;
 
   let dataFilter = [];
 
   let data = dataProduct.filter(
-    (item) => item?.categoryName?.toLowerCase() == category[0].toLowerCase()
+    (item) => item?.categoryName?.toLowerCase() == category.toLowerCase()
   );
 
   dataFilter = data;
 
   if (type) {
     let dataType = dataFilter.filter(
-      (item) => item?.typeCategory?.toLowerCase() == String(type).toLowerCase()
+      (item) => item?.typeCategory?.toLowerCase() == convertUrlToTeks(type)
     );
 
     dataFilter = dataType;
@@ -56,7 +60,7 @@ const KompleksCatalog = ({
     dataFilter.length,
     9,
     +pages!,
-    `/shop/${category[0]}/?type=${type}`
+    `/shop/${convertTeksToUrl(category)}/?type=${convertTeksToUrl(type!)}` // type need as a url
   );
 
   const totalPage = Math.ceil(dataFilter.length / 9);
@@ -103,7 +107,7 @@ const KompleksCatalog = ({
         </Div>
 
         <PaginationComponents
-          categoryPath={category[0]}
+          categoryPath={convertTeksToUrl(category)}
           type={type}
           page={page}
           totalPage={totalPage}
@@ -115,7 +119,7 @@ const KompleksCatalog = ({
       <FilterProduct
         listProductType={listProductType}
         type={type}
-        categoryPath={category[0]}
+        categoryPath={category}
       />
     </Wrapper>
   );

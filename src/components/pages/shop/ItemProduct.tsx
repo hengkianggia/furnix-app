@@ -3,7 +3,7 @@ import Div from "@/components/Div";
 import Images from "@/components/Images";
 import { Button } from "@/components/ui/button";
 import { Icons } from "@/data/data";
-import { calculateFinalPrice, cn } from "@/lib/utils";
+import { calculateFinalPrice, cn, convertTeksToUrl } from "@/lib/utils";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import Link from "next/link";
 import { useParams } from "next/navigation";
@@ -32,9 +32,12 @@ const ItemProduct = ({
   const params = useParams();
   const priceAfterDiscount = calculateFinalPrice(price!, discount!);
 
-  let category = params.category ?? categoryProduct;
+  let category =
+    convertTeksToUrl(
+      Array.isArray(params.category) ? params.category[0] : params.category
+    ) ?? convertTeksToUrl(categoryProduct!);
 
-  let path: string = `/shop/${category}/${title}`;
+  let path: string = `/shop/${category}/${convertTeksToUrl(title!)}`;
 
   return (
     <Link href={path} className="w-full">
