@@ -32,6 +32,8 @@ export function PaginationComponents({
     path = `/${pathname}/${categoryPath}`;
   }
 
+  console.log(type);
+
   const prevPath = ({
     path,
     type,
@@ -78,7 +80,11 @@ export function PaginationComponents({
       <PaginationContent>
         {totalPage && +pages > 1 && (
           <>
-            <PaginationItem onClick={() => router.push(path)}>
+            <PaginationItem
+              onClick={() => {
+                type ? router.push(`${path}?type=${type}`) : router.push(path);
+              }}
+            >
               <Button variant={"ghost"} className={cn("space-x-2")}>
                 <Icon icon={Icons.LeftPage} />
                 <Icon icon={Icons.LeftPage} />
@@ -138,7 +144,12 @@ export function PaginationComponents({
         {totalPage != +pages && (
           <>
             <PaginationItem
-              onClick={() => router.push(`${path}?page=${totalPage}`)}
+              onClick={() => {
+                type
+                  ? router.push(`${path}?type=${type}&page=${totalPage}`)
+                  : router.push(`${path}?page=${totalPage}`);
+                
+              }}
             >
               <Button variant={"ghost"} className={cn("space-x-2")}>
                 <Icon icon={Icons.RightPage} />
