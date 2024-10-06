@@ -10,6 +10,7 @@ import FilterProduct from "./FilterProduct";
 import {
   convertTeksToUrl,
   convertUrlToTeks,
+  filterProductsByTitle,
   paginateProducts,
   sortByHighestDiscount,
   sortByHighestPrice,
@@ -23,11 +24,13 @@ const KompleksCatalog = ({
   type, // as a teks not url
   page,
   sort,
+  search,
 }: {
   category: string;
   type: string | undefined;
   page: string | undefined;
   sort: string | undefined;
+  search: string | undefined;
 }) => {
   let pages = page ?? 1;
   const listProductType = furnitureCategories.find(
@@ -36,27 +39,23 @@ const KompleksCatalog = ({
 
   let dataFilter = [];
 
-  let data = dataProduct.filter(
+  dataFilter = dataProduct.filter(
     (item) => item?.categoryName?.toLowerCase() == category.toLowerCase()
   );
 
-  dataFilter = data;
-
   if (type) {
-    let dataType = dataFilter.filter(
+    dataFilter = dataFilter.filter(
       (item) => item?.typeCategory?.toLowerCase() == convertUrlToTeks(type)
     );
-
-    dataFilter = dataType;
   }
 
   if (sort) {
     if (sort == "lowerprice") {
-      dataFilter = sortByLowestPrice(dataProduct);
+      dataFilter = sortByLowestPrice(dataFilter);
     } else if (sort == "higherprice") {
-      dataFilter = sortByHighestPrice(dataProduct);
+      dataFilter = sortByHighestPrice(dataFilter);
     } else if (sort == "morediscount") {
-      dataFilter = sortByHighestDiscount(dataProduct);
+      dataFilter = sortByHighestDiscount(dataFilter);
     }
   }
 
@@ -73,6 +72,8 @@ const KompleksCatalog = ({
     }
   }
 
+  console.log(search + " in kompleks catalog");
+
   let dataShow: Product[] = [];
 
   dataShow = paginateProducts(
@@ -84,6 +85,36 @@ const KompleksCatalog = ({
   );
 
   const totalPage = Math.ceil(dataFilter.length / 9);
+
+  if (search) {
+    dataFilter = filterProductsByTitle(dataFilter, search);
+    if (dataFilter.length == 0) {
+      return (
+        <Wrapper
+          full
+          flex
+          className="gap-10 relative max-md:px-4 max-lg:px-10 max-lg:gap-4"
+        >
+          <Div
+            column
+            centerColumn
+            className="basis-9/12 gap-6 max-md:basis-full"
+          >
+            <Div full flex itemsCenter center>
+              <p className="text-sm text-myDarkGray">No products found.</p>
+            </Div>
+          </Div>
+
+          {/* right */}
+          <FilterProduct
+            listProductType={listProductType}
+            type={type}
+            categoryPath={category}
+          />
+        </Wrapper>
+      );
+    }
+  }
 
   return (
     <Wrapper
@@ -103,14 +134,20 @@ const KompleksCatalog = ({
         </Div>
 
         <Div full grid className="grid-cols-3 gap-3 max-lg:grid-cols-2">
-          {dataShow?.map((item, idx) => (
-            <ItemProduct
-              key={idx}
-              title={item.title}
-              price={item.price}
-              discount={item.discount}
-            />
-          ))}
+          {dataFilter.length == 0 && (
+            <Div full flex itemsCenter center>
+              <p className="text-sm text-myDarkGray">No products found.</p>
+            </Div>
+          )}
+          {dataShow &&
+            dataShow?.map((item, idx) => (
+              <ItemProduct
+                key={idx}
+                title={item.title}
+                price={item.price}
+                discount={item.discount}
+              />
+            ))}
         </Div>
 
         <PaginationComponents

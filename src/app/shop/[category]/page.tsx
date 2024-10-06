@@ -34,6 +34,7 @@ const Category = ({
         type={searchParams?.type}
         page={searchParams?.page}
         sort={searchParams?.sort}
+        search={searchParams?.search}
       />
       <RecomItem />
       <Separator className="max-lg:hidden" />

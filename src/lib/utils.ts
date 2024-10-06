@@ -123,3 +123,12 @@ export function sortByHighestPrice(products: Product[]): Product[] {
 export function sortByHighestDiscount(products: Product[]): Product[] {
   return [...products].sort((a, b) => b.discount - a.discount);
 }
+
+export function filterProductsByTitle(
+  products: Product[],
+  searchTerm: string
+): Product[] {
+  return products.filter((product) =>
+    product.title.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+}  

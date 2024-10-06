@@ -9,11 +9,15 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Checkbox } from "@/components/ui/checkbox";
-import TinyItemProduct from "./TinyItemProduct";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { Icons } from "@/data/data";
-import { convertTeksToUrl, convertUrlToTeks } from "@/lib/utils";
+import {
+  convertTeksToUrl,
+  convertUrlToTeks,
+  getCurrentUrlWithoutQuery,
+} from "@/lib/utils";
+import { useState } from "react";
 
 const colors = [
   "Red",
@@ -27,6 +31,15 @@ const colors = [
   "Black",
   "White",
 ];
+
+function handleEnterKeyPress(
+  event: React.KeyboardEvent<HTMLInputElement>,
+  onEnterPress: () => void
+) {
+  if (event.key === "Enter") {
+    onEnterPress();
+  }
+}
 const FilterProduct = ({
   listProductType,
   type,
@@ -39,17 +52,42 @@ const FilterProduct = ({
   const router = useRouter();
   const searchParams = useSearchParams();
 
+  const getSearch = searchParams.get("search");
+  const [inputValue, setInputValue] = useState(getSearch ?? "");
+
   const availableSearchParams =
     searchParams.get("type") ||
     searchParams.get("sort") ||
-    searchParams.get("color");
+    searchParams.get("color") ||
+    searchParams.get("search");
+
+  // handle input
+  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setInputValue(event.target.value);
+  };
+
+  const url = getCurrentUrlWithoutQuery();
+
+  const handleEnterPress = () => {
+    if (inputValue !== "") {
+      router.push(`${url}?search=${convertTeksToUrl(inputValue!)}`);
+    } else {
+      router.push(url);
+    }
+  };
 
   return (
     <Div
       column
       className="basis-3/12 h-fit sticky top-24 gap-3 overflow-hidden max-md:hidden max-lg:basis-4/12"
     >
-      <Input placeholder="Search by product" className="w-full m-0" />
+      <Input
+        placeholder="Search product and hit enter"
+        className="w-full m-0"
+        value={inputValue}
+        onChange={handleInputChange}
+        onKeyDown={(event) => handleEnterKeyPress(event, handleEnterPress)}
+      />
 
       {availableSearchParams != null && (
         <Div
@@ -57,7 +95,9 @@ const FilterProduct = ({
           flex
           itemsCenter
           className="gap-3 cursor-pointer mt-3"
-          onClick={() => router.push(`/shop/${convertTeksToUrl(categoryPath)}`)}
+          onClick={() => {
+            router.push(url), setInputValue("");
+          }}
         >
           <p className="text-sm hover:text-red-500">Remove Filter</p>
           <Icon icon={Icons.Close} className="text-xl text-red-500" />
