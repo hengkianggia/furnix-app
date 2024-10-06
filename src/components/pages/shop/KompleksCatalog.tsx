@@ -76,6 +76,34 @@ const KompleksCatalog = ({
 
   let dataShow: Product[] = [];
 
+  const totalPage = Math.ceil(dataFilter.length / 9);
+
+  if (search) {
+    dataFilter = filterProductsByTitle(dataFilter, search);
+  }
+  if (dataFilter.length == 0) {
+    return (
+      <Wrapper
+        full
+        flex
+        className="gap-10 relative max-md:px-4 max-lg:px-10 max-lg:gap-4"
+      >
+        <Div column centerColumn className="basis-9/12 gap-6 max-md:basis-full">
+          <Div full flex itemsCenter center>
+            <p className="text-sm text-myDarkGray">No products found.</p>
+          </Div>
+        </Div>
+
+        {/* right */}
+        <FilterProduct
+          listProductType={listProductType}
+          type={type}
+          categoryPath={category}
+        />
+      </Wrapper>
+    );
+  }
+
   dataShow = paginateProducts(
     dataFilter,
     dataFilter.length,
@@ -83,39 +111,6 @@ const KompleksCatalog = ({
     +pages!,
     `/shop/${convertTeksToUrl(category)}/?type=${convertTeksToUrl(type!)}` // type need as a url
   );
-
-  const totalPage = Math.ceil(dataFilter.length / 9);
-
-  if (search) {
-    dataFilter = filterProductsByTitle(dataFilter, search);
-    if (dataFilter.length == 0) {
-      return (
-        <Wrapper
-          full
-          flex
-          className="gap-10 relative max-md:px-4 max-lg:px-10 max-lg:gap-4"
-        >
-          <Div
-            column
-            centerColumn
-            className="basis-9/12 gap-6 max-md:basis-full"
-          >
-            <Div full flex itemsCenter center>
-              <p className="text-sm text-myDarkGray">No products found.</p>
-            </Div>
-          </Div>
-
-          {/* right */}
-          <FilterProduct
-            listProductType={listProductType}
-            type={type}
-            categoryPath={category}
-          />
-        </Wrapper>
-      );
-    }
-  }
-
   return (
     <Wrapper
       full
@@ -134,11 +129,6 @@ const KompleksCatalog = ({
         </Div>
 
         <Div full grid className="grid-cols-3 gap-3 max-lg:grid-cols-2">
-          {dataFilter.length == 0 && (
-            <Div full flex itemsCenter center>
-              <p className="text-sm text-myDarkGray">No products found.</p>
-            </Div>
-          )}
           {dataShow &&
             dataShow?.map((item, idx) => (
               <ItemProduct
