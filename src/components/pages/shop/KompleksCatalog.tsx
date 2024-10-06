@@ -33,22 +33,27 @@ const KompleksCatalog = ({
   search: string | undefined;
 }) => {
   let pages = page ?? 1;
+
+  // fetch list product type
   const listProductType = furnitureCategories.find(
     (item) => item.name.toLocaleLowerCase() === category
   )?.productTypes;
 
   let dataFilter = [];
 
+  // filter data product by category
   dataFilter = dataProduct.filter(
     (item) => item?.categoryName?.toLowerCase() == category.toLowerCase()
   );
 
+  // filter data product by type
   if (type) {
     dataFilter = dataFilter.filter(
       (item) => item?.typeCategory?.toLowerCase() == convertUrlToTeks(type)
     );
   }
 
+  // sorting data product
   if (sort) {
     if (sort == "lowerprice") {
       dataFilter = sortByLowestPrice(dataFilter);
@@ -59,6 +64,7 @@ const KompleksCatalog = ({
     }
   }
 
+  // sorting and filter data product by type and sort
   if (type && sort) {
     let dataType = dataFilter.filter(
       (item) => item?.typeCategory?.toLowerCase() == convertUrlToTeks(type)
@@ -72,12 +78,9 @@ const KompleksCatalog = ({
     }
   }
 
-  console.log(search + " in kompleks catalog");
-
-  let dataShow: Product[] = [];
-
   const totalPage = Math.ceil(dataFilter.length / 9);
 
+  // searching data product
   if (search) {
     dataFilter = filterProductsByTitle(dataFilter, search);
   }
@@ -104,6 +107,9 @@ const KompleksCatalog = ({
     );
   }
 
+  let dataShow: Product[] = [];
+
+  // pagination data product
   dataShow = paginateProducts(
     dataFilter,
     dataFilter.length,
