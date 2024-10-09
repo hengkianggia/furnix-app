@@ -56,11 +56,6 @@ const Blog = () => {
           <ItemsBlog />
           <ItemsBlog />
           <ItemsBlog />
-          <ItemsBlog />
-          <ItemsBlog />
-          <ItemsBlog />
-          <ItemsBlog />
-          <ItemsBlog />
           <Div className="max-lg:col-span-2">
             <PaginationComponents />
           </Div>

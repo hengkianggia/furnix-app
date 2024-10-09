@@ -117,6 +117,9 @@ const KompleksCatalog = ({
     +pages!,
     `/shop/${convertTeksToUrl(category)}/?type=${convertTeksToUrl(type!)}` // type need as a url
   );
+
+  // ITS DONE FOR A MINUTE
+
   return (
     <Wrapper
       full

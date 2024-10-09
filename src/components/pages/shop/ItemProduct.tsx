@@ -1,6 +1,7 @@
 "use client";
 import Div from "@/components/Div";
 import Images from "@/components/Images";
+import StarsRating from "@/components/StarsRating";
 import { Button } from "@/components/ui/button";
 import { Icons } from "@/data/data";
 import { calculateFinalPrice, cn, convertTeksToUrl } from "@/lib/utils";
@@ -96,14 +97,8 @@ const ItemProduct = ({
             position == "normal" && "justify-start"
           )}
         >
-          <Div flex itemsCenter>
-            <Icon icon={Icons.Stars} className="text-myOrange" />
-            <Icon icon={Icons.Stars} className="text-myOrange" />
-            <Icon icon={Icons.Stars} className="text-myOrange" />
-            <Icon icon={Icons.Stars} className="text-myOrange" />
-            <Icon icon={Icons.Stars} className="text-myOrange" />
-          </Div>
-          <h4 className="line-clamp-2">{title}</h4>
+          <StarsRating />
+          <h4 className="line-clamp-2 text-center text-balance">{title}</h4>
 
           <Div
             center

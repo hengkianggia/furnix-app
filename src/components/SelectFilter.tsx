@@ -20,9 +20,10 @@ const SelectFilter = ({
   const router = useRouter();
 
   const pathname = usePathname();
+  console.log("sort " + sort);
+  console.log("type " + type);
 
   const handleSelectChange = (value: string) => {
-    console.log(type + " in select components");
     if (type !== undefined) {
       router.push(`${pathname}?type=${type}&sort=${value}`);
     } else {

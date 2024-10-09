@@ -407,7 +407,7 @@ export const dataProduct = [
     },
   },
   {
-    id: 942829,
+    id: 912829,
     categoryName: "Living Room Furniture",
     title: "Classic Sectional Sofa Set",
     summary:
@@ -5514,7 +5514,7 @@ export const dataProduct = [
     },
   },
   {
-    id: 334455,
+    id: 334715,
     categoryName: "Storage and Organization",
     title: "Storage Bench with Cushion",
     summary: "A stylish storage bench that doubles as a comfortable seat.",
@@ -5731,7 +5731,7 @@ export const dataProduct = [
     },
   },
   {
-    id: 334455,
+    id: 724455,
     categoryName: "Storage and Organization",
     title: "Wall-Mounted Jewelry Organizer",
     summary: "A wall-mounted jewelry organizer with hooks and compartments.",

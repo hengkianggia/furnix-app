@@ -59,7 +59,7 @@ const ShopCatalog = ({
             of {dataProduct.length} results
           </p>
 
-          <SelectFilter sort={sort}/>
+          <SelectFilter sort={sort} />
         </Div>
       </Div>
 
