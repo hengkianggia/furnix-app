@@ -102,6 +102,7 @@ export function PaginationComponents({
                     )
                   : router.push(path);
               }}
+              className="max-md:hidden"
             >
               <Button variant={"ghost"} className={cn("space-x-2")}>
                 <Icon icon={Icons.LeftPage} />
@@ -175,6 +176,7 @@ export function PaginationComponents({
                     )
                   : router.push(`${path}?page=${totalPage}`);
               }}
+              className="max-md:hidden"
             >
               <Button variant={"ghost"} className={cn("space-x-2")}>
                 <Icon icon={Icons.RightPage} />
